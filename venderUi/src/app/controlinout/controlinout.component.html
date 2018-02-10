@@ -1,0 +1,148 @@
+<div class="totop">
+  <a [routerLink] = "['../test']"><button class="btn btn-success btn_route">测试</button></a><a [routerLink] = "['../inout']"><button class="btn btn-success btn_route">上/下架</button></a><a [routerLink] = "['../layout']"><button class="btn btn-success btn_route">布局</button></a>
+
+  <h2 class="text-center">布货/补货</h2>
+
+  <div *ngIf="is_load">
+    <div *ngFor="let layout_row of layout_list; index as i"  [class.layout_row] ="layout_row.length" style="position: relative">
+      <button *ngIf="layout_list[i].length" style="margin-left: 12px" class="btn btn-info  set_btn">第{{i + 1}}行</button>
+
+      <a data-toggle="modal" data-target="#put_up" >
+        <div  class="square_div" >
+          <div *ngFor="let layout_col of layout_row; index as j" (click)="ms_row(i,j)"  class="square" [class.unuse]="layout_col.status === 0"  [class.flex1] = "square_group[i][j] === 1" [class.flex2] = "square_group[i][j] === 2" [class.flex3] = "square_group[i][j] === 3" [class.flex4] = "square_group[i][j] === 4"  >
+            <div class="div_tiny_span">
+              <span>{{layout_col.name}}</span>
+              <span>库存:{{prod_quantity[i][j].quantity}}</span>
+            </div>
+            <div class="div_tiny_img">
+              <img class="tiny_img" *ngIf="product_array[i][j]" src={{product_array[i][j].images[0].path}} onerror="onerror = null; src ='./assets/hsb.png' ">
+            </div>
+            <div *ngIf="product_array[i][j].id !== '' && product_array[i][j].id !== undefined && layout_col.quantity === 0" class="sole_out">
+              <img  class="sold_out_img" src='./assets/image/sold_out.png'>
+            </div>
+            <div *ngIf="layout_col.status === 0" class="locked">
+              <span class="glyphicon glyphicon-ban-circle unuse"></span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<div *ngIf="is_load"  class="modal fade" id="put_up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="nav nav_bar">
+        <h3 class="text-center">货道编号:{{slot_name}}</h3>
+
+          <div id="mySwitch" class="switch switch-large text-center">
+            <span>是否开启此货道:&nbsp;&nbsp;</span><a (click)="unuse_slot()"><input id = "lock" type="checkbox"  checked  ></a>
+          </div>
+`
+      </div>
+      <div>
+        <select [(ngModel)] = "select"  data-live-search="true" class="form-control add_product" (change)="select_product()"> <!--(change)="ms_prod($event)"-->
+          <option>请选择上架商品</option>
+          <option  [value] = "prod_name.id" *ngFor="let prod_name of all_products_name; index as i">{{i}}.{{prod_name.name}}&nbsp;&nbsp;{{prod_name.sku_no}}</option>
+        </select>
+      </div>
+
+
+      <div class="prod_img">
+        <img class="mid_img"  src={{show_img}} alt="请上架商品"> <!--src={{show.images[0].path}}-->
+      </div>
+      <div class="prod_table">
+        <table class="table table-bordered">
+          <tbody>
+          <tr>
+            <td>商品名称</td>
+            <td>{{show_name}}</td>
+          </tr>
+          <tr>
+            <td>SKU编号</td>
+            <td>{{show_sku}}</td>
+          </tr>
+          <tr>
+            <td>价格</td>
+            <td>￥&nbsp;{{show_price}}</td>
+          </tr>
+          <tr>
+            <td>商品库存</td>
+            <td>{{show_quantity}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="up_down">
+
+          <button class="btn btn-warning up_btn" data-toggle="dropdown" [disabled] = "!is_use" >上架</button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a (click)="up_click(1)">1</a>
+            </li>
+            <li>
+              <a (click)="up_click(2)">2</a>
+            </li>
+            <li>
+              <a (click)="up_click(3)">3</a>
+            </li>
+            <li>
+              <a (click)="up_click(4)">4</a>
+            </li>
+            <li>
+              <a (click)="up_click(5)">5</a>
+            </li>
+          </ul>
+
+
+        <button class="btn btn-info  down_btn" (click)="down_click()" [disabled] = "!is_use">下架</button>
+      </div>
+
+
+      <div class="foot_bar">
+        <button class="btn btn-warning foot_btn" (click)="change_submit()">确定</button><button class="btn btn-info foot_btn" (click)="change_cancel()">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="basic" class="col-lg-2 control-label">"Basic" (liveSearch enabled)</label>
+
+    <div class="col-lg-3">
+      <select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+        <option>cow</option>
+        <option>bull</option>
+        <option>ox</option>
+
+        <option>ASD</option>
+        <option selected>Bla</option>
+        <option>Ble</option>
+
+      </select>
+    </div>
+  </div>
+</form>-->
+
+
+<!--
+
+<div *ngIf="is_open" class="col-lg-2">
+  <select    [class.selectpicker] = 'is_open'   [class.show-tick] = 'is_open'  [class.form-control] = 'is_open' id="basic" [attr.data-live-search] = "is_open" >
+    <option>cow</option>
+    <option>bull</option>
+    <option>ox</option>
+    <option>ASD</option>
+    <option selected>Bla</option>
+    <option>Ble</option>
+  </select>
+</div>-->

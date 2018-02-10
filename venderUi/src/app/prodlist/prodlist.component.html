@@ -1,0 +1,155 @@
+<div class="btn_div">
+  <div *ngFor="let btn of btn_types; index as i" class="btn_flex">
+    <button  class="btn btn-default tab_btn" (click)="swiper_to(i)"  [class.btn_active]="i == slide_index" >{{btn}}</button>
+  </div>
+</div>
+
+<div *ngIf="!type_list.length">
+  <img  src="./assets/image/loading.gif">
+</div>
+
+<div *ngIf="type_list.length"  class="swiper-container swiper-container-out">
+  <div class="swiper-wrapper">
+    <div *ngFor="let types of type_list" class="swiper-slide swiper-slide-out">
+
+      <div  class="swiper-container swiper-container-in">
+        <div  class="swiper-wrapper swiper-wrapper-in">
+          <div *ngFor="let product of types" class="swiper-slide swiper-slide-in">
+            <div (click)="ms_list(product)" class="img">
+              <a data-toggle="modal" data-target="#buy_modal"><img class="product_img" src={{product.images[0].path}} onerror="onerror = null; src ='./assets/hsb.png' "></a>
+            </div>
+            <div (click)="ms_list(product)" class="desc">
+              <a data-toggle="modal" data-target="#buy_modal"><p style="color: #333333;font-size: 16px;">{{product.name}}&nbsp;<span style="color: #e4061b;font-size: 12px;font-weight: bold"> ￥</span><span style="font-size: 18px;color: #e4061b;font-weight: bold">{{(product.prices.unit_price/100).toFixed(2)}}</span></p></a>
+            </div>
+          </div>
+
+        </div>
+       <!-- <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev" ></div>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="swiper-button-next" ></div>
+<div class="swiper-button-prev" ></div>
+
+
+<!--购买模态框-->
+<div *ngIf="buying" class="modal fade" id="buy_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div  class="pay_left text-center">
+
+          <img class="img_width" [class.opacity]="stock === 0" src={{buying.images[0].path}} onerror="onerror = null; src ='./assets/hsb.png' ">
+
+        <div class="sold_out">
+          <img *ngIf="stock === 0"  class="sold_out_img" src='./assets/image/sold_out.png'> <!--*ngIf="stock === 0"-->
+        </div>
+
+      </div>
+
+      <div class="pay_right">
+        <a data-dismiss="modal"  class="close_btn"><img src="./assets/image/icon_close.png"></a>
+<!--        <button type="button" class="btn btn-default close" data-dismiss="modal" ><span style="color: black" class="glyphicon glyphicon-remove"></span></button>-->
+        <h1 class="text-center" style="padding-top: 40px;font-size: 32px">{{buying.name}}</h1>
+        <p class="text-center" style="font-size: 24px;color: #646464;margin-top: 10px">单价：￥ {{(buying.prices.unit_price/100).toFixed(2)}}</p>
+
+        <!--<p class="pay_desc text-center">{{buying.product.desc}}</p>-->
+        <div class="buy_modal_amount_content text-center">
+          <span class="text-center buy_amount">购买数量</span>
+          <a (click)="amount_minus()"><div style="display: inline-block;width: 60px;height: 60px;border: solid 1px #eaeaea;padding: 12px">
+            <img id="minus" src="./assets/image/sub_default.svg">
+          </div></a>
+        <!--  <button id="minus" class="btn btn-default" type="button" (click)="amount_minus()">-</button>-->
+          <input type="text" class="form-control text-center"  style="font-size: 24px" [(value)]="orders">
+
+          <div style="display: inline-block;width: 60px;height: 60px;border: solid 1px #eaeaea;padding: 12px">
+            <a (click)="amount_plus()"><img  class="text-center" id="plus" src="./assets/image/add_default.svg"></a>
+          </div>
+          <!--<button id="plus" class="btn btn-default" type="button" (click)="amount_plus()">+</button>-->
+          <span class="stock_amount">剩余:{{stock}}件</span>
+        </div>
+
+        <div  class="buy_modal_total">
+          <p class="text-center" style="margin-left: -40px;font-size: 24px">合计:<span style="color: #e4061b">￥</span><span style="color: #e4061b;font-size: 32px">{{(total/100).toFixed(2)}}</span></p>
+        </div>
+        <div class="buy_modal_paybtn text-center">
+          <button class="btn btn-info buy_modal_btn" [disabled] = "stock === 0" style="margin-right: 20px;font-size: 18px" data-dismiss="modal" data-toggle="modal" data-target="#pay_modal" (click)="get_pay_code(1,buying.name,total)">
+            <img src="./assets/image/icon_alipay.png " style="width: 24px" >&nbsp;支付宝支付</button>
+          <button class="btn btn-success buy_modal_btn" [disabled] = "stock === 0" style="font-size: 18px" data-dismiss="modal" data-toggle="modal" data-target="#pay_modal"  (click)="get_pay_code(0,buying.name,total)">&nbsp;
+            <img src="./assets/image/icon_wechatpay.png" style="width: 24px" >&nbsp;微信支付&nbsp;</button>
+        </div>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+
+<!--支付模态框-->
+<div *ngIf="buying" class="modal fade" id="pay_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div  class="pay_left">
+        <div class="buy_modal_img">
+          <img class="img_width text-center" src={{buying.images[0].path}} onerror="onerror = null; src ='./assets/hsb.png' ">
+        </div>
+      </div>
+
+
+      <div class="pay_right ">
+
+        <div *ngIf="loading" class="text-center" style="margin-top: 40px">
+          <h3 class="text-center" style="padding-bottom: 10px" >请扫码付款</h3>
+          <img style="width: 300px" src="./assets/image/loading.gif">
+        </div>
+
+        <div *ngIf="!loading" class="text-center" style="margin-top: 40px">
+          <h3  class="text-center">请使用{{pay_method}}扫码付款</h3>
+          <h4 class="text-center">付款金额￥{{(total/100).toFixed(2)}}</h4>
+          <qr-code  [value]= "er_wei_ma" [size] = 280 ></qr-code>
+        </div>
+        <div class="text-center">
+          <button (click)="cancel_pay()" class="btn btn-warning pay_modal_btn " data-dismiss="modal">取消支付</button>
+         <!--<button data-toggle="modal" data-target="#taking_out_modal" (click)="test_outing(buying.id)" class="btn btn-warning pay_modal_btn" data-dismiss="modal">测试出货</button>
+        --></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--出货gif模态框-->
+
+<div class="modal fade" id="taking_out_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+
+
+
+      <div class="text-center" *ngIf="take_out_process === 0">
+        <img class="take_out_image" src='./assets/image/status_shipping.gif'>
+        <p class="taking_out_modal_text text-center">正在出货</p>
+      </div>
+
+      <div class="text-center" *ngIf="take_out_process === 2">
+         <img  class="take_out_image" src='./assets/image/status_shipping.gif'>
+          <p class="taking_out_modal_text text-center">尝试其他货道出货</p>
+      </div>
+
+      <div class="text-center" *ngIf="take_out_process === 3">
+        <img  class="take_out_image" src='./assets/image/status_shipping.gif'>
+        <p class="taking_out_modal_text text-center">货栏有商品,请先取出</p>
+      </div>
+
+      <div class="text-center" *ngIf="take_out_process === 1">
+       <img  class="take_out_image" src='./assets/image/status_success.gif'>
+        <p class="taking_out_modal_text text-center">出货成功,请取货</p>
+      </div>
+
+      <div class="text-center" *ngIf="take_out_process === -1">
+        <img  class="take_out_image" src='./assets/image/status_failed.gif'>
+        <p class="taking_out_modal_text text-center">出货失败 货物不足或卡货 请退款</p>
+      </div>
+
+
+</div>

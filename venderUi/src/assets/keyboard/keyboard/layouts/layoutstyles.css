@@ -1,0 +1,25 @@
+.keyboard-input{
+    background: white;
+}
+
+.keyboard-container{
+    background: white;
+    border:1px solid #999999;
+}
+
+/* 虚拟键盘默认布局样式 */
+.ui-keyboard-layout{
+    font-size: 28px;
+}
+
+.ui-keyboard-layout-num{
+    font-size: 36px;
+}
+
+/* 虚拟键盘默认定位样式 */
+.ui-keyboard-position{
+}
+
+.ui-keyboard-position-bottom{
+    width: 100%;
+}

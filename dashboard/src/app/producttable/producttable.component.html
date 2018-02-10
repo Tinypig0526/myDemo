@@ -1,0 +1,61 @@
+
+<div *ngIf="product_data" class="table-div">
+  <div nz-col [nzSpan] = "22" >
+  <h2 class="table-title">商品销售情况表</h2>
+  <nz-table #nzTable [nzDataSource]="product_data" [nzPageSize]="15" nzShowSizeChanger  [nzBordered] = "true">
+    <thead nz-thead>
+    <tr>
+      <th nz-th>
+        <span>商品ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.id" (nzValueChange)="sort('id',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>商品名称</span>
+        <nz-table-sort [(nzValue)]="sortMap.name" (nzValueChange)="sort('name',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>当前库存</span>
+        <nz-table-sort [(nzValue)]="sortMap.quantity" (nzValueChange)="sort('quantity',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>今日售出</span>
+        <nz-table-sort [(nzValue)]="sortMap.sold" (nzValueChange)="sort('sold',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>交易额</span>
+        <nz-table-sort [(nzValue)]="sortMap.sum" (nzValueChange)="sort('sum',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>微信支付</span>
+        <nz-table-sort [(nzValue)]="sortMap.weChat" (nzValueChange)="sort('weChat',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>支付宝支付</span>
+        <nz-table-sort [(nzValue)]="sortMap.ali" (nzValueChange)="sort('ali',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>出货失败次数</span>
+        <nz-table-sort [(nzValue)]="sortMap.fail" (nzValueChange)="sort('fail',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>失败率</span>
+        <nz-table-sort [(nzValue)]="sortMap.failRate" (nzValueChange)="sort('failRate',$event)"></nz-table-sort>
+      </th>
+    </tr>
+    </thead>
+    <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let data of nzTable.data" class="table-tr">
+      <td nz-td>{{data.id}}</td>
+      <td nz-td>{{data.name}}</td>
+      <td nz-td>{{data.quantity}}件</td>
+      <td nz-td>{{data.sold}}件</td>
+      <td nz-td>{{data.sum}}元</td>
+      <td nz-td>{{data.weChat}}次</td>
+      <td nz-td>{{data.ali}}次</td>
+      <td nz-td>{{data.fail}}次</td>
+      <td nz-td>{{(data.failRate * 100).toFixed(0)}}%</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>
+</div>

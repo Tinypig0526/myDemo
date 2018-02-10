@@ -1,0 +1,42 @@
+局部
+.my-menu{
+  /*min-width: 300px;*/
+  min-width:100px;
+  height: 92vh;
+  padding-top:100px;
+}
+.my-icon:before{
+  /*font-size: 88px;*/
+  line-height: 120px;
+}
+.my-menu .my-item{
+  min-height: 120px;
+  line-height: 120px;
+  margin-bottom:24px;
+}
+.ant-menu-submenu-title{
+  height: 120px !important;
+}
+
+
+
+全局
+.my-item>div{
+  min-height: 120px !important;
+  line-height: 120px;
+}
+.ant-menu-inline .ant-menu-item,.ant-menu-inline .ant-menu-submenu-title {
+  font-size: 20px !important;
+}
+.ant-menu-inline-collapsed > .ant-menu-item .anticon,.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon{
+  font-size: 48px !important;
+}
+
+html部分
+<ul nz-menu [nzMode]="'inline'" nzTheme='dark' [nzInlineCollapsed]="isCollapsed" class="my-menu">
+    <li nz-menu-item class="my-item">
+          <span title>
+            <i class="anticon anticon-mail my-icon"></i>
+            <span>Navigation One</span>
+          </span>
+    </li>

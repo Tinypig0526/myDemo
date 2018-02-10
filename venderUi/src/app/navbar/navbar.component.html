@@ -1,0 +1,15 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" style="height: 67px">
+  <div class="container-fluid">
+    <div *ngIf="!kiosk_data.is_home" class="navbar-header">
+      <a [routerLink] = "['/']"  class="navbar-brand" >
+        <span class="glyphicon glyphicon-home"></span>
+        <span class="home">Home</span>
+      </a>
+    </div>
+
+    <div *ngIf="kiosk_data.is_control" class="right">
+      <button class="btn go_to_home" (click)="go_to_home()" >返回主页</button>
+    </div>
+  </div>
+</nav>
+

@@ -1,0 +1,40 @@
+<div  nz-row="" class="nav-div">
+  <div nz-col [nzSpan]="3" [nzOffset]="1" class="logo-div">
+    <!--<i class="icon font_family icon-logo" style="color: white;font-size: 12rem;line-height: 2rem"></i>-->
+    <img src="./assets/img/logo.png" alt="thybot">
+  </div>
+  <div nz-col [nzSpan]="18" class="route-div">
+    <button [routerLink] = "['/home']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 1" (click)="change_active(1)">首页</button>
+    <button [routerLink] = "['/solution']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 2" (click)="change_active(2)">解决方案</button>
+    <button [routerLink] = "['/product']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 3" (click)="change_active(3)">产品</button>
+    <button [routerLink] = "['/case']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 4" (click)="change_active(4)">案例</button>
+    <button [routerLink] = "['/serve']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 5" (click)="change_active(5)">服务</button>
+    <button [routerLink] = "['/about']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 6" (click)="change_active(6)">关于</button>
+  </div>
+</div>
+
+
+<div style="position: fixed;right: 0;top: 30%;margin: 0;padding: 0;z-index: 1100">
+  <div *ngIf="show == 3" style="display: inline-block;width:15rem;height: 15rem;background-color: white;vertical-align: bottom;">
+    <img id="contact-img" src="./assets/img/er_wei_ma.jpg" >
+  </div>
+  <div *ngIf="show == 2" style="display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;">
+    <!--<img id="contact-img" src="./assets/img/er_wei_ma.jpg" >-->
+    <p class="phone-num">86-0756-6893285</p>
+  </div>
+  <div *ngIf="show == 1" style="display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;">
+    <!--<img id="contact-img" src="./assets/img/er_wei_ma.jpg" >-->
+    <p class="phone-num">点击进入在线客服</p>
+  </div>
+  <div style="display: inline-block;">
+    <button (click)="change_show(1)" (mouseenter) = "change_show(1)" (mouseleave)="change_show(0)"  class="fixed-btn"><i class="icon font_family icon-btn_enquiry"></i></button>
+    <button (click)="change_show(2)" (mouseenter) ="change_show(2)" (mouseleave)="change_show(0)" class="fixed-btn"><i class="icon font_family icon-btn_phone"></i></button>
+    <button (click)="change_show(3)" (mouseenter) ="change_show(3)" (mouseleave)="change_show(0)" class="fixed-btn"><i class="icon font_family icon-btn_qrcode"></i></button>
+
+  </div>
+
+</div>
+
+<div style="margin-top: 72px">
+  <router-outlet></router-outlet>
+</div>

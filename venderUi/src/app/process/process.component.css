@@ -1,0 +1,38 @@
+.totop{
+  padding-top: 100px;
+  width: 1920px;
+  height: 1040px;
+  background-color: white;
+}
+img{
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Style when highlighting a search. */
+.ui-select-highlight {
+  font-weight: bold;
+}
+
+.ui-select-offscreen {
+  clip: rect(0 0 0 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  outline: 0 !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+
+
+.ui-select-choices-row:hover {
+  background-color: #f5f5f5;
+}
+
+

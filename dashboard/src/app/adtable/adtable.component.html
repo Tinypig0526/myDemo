@@ -1,0 +1,57 @@
+
+
+<div *ngIf="ad_data" class="table-div">
+  <div nz-col [nzSpan] = "22" >
+  <h2 class="table-title">广告播放数据表</h2>
+  <nz-table #nzTable [nzDataSource]="ad_data" [nzPageSize]="15" nzShowSizeChanger  [nzBordered] = "true">
+    <thead nz-thead>
+    <tr>
+      <th nz-th>
+        <span>广告ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.id" (nzValueChange)="sort('id',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>广告时长</span>
+        <nz-table-sort [(nzValue)]="sortMap.dur" (nzValueChange)="sort('dur',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>播放次数</span>
+        <nz-table-sort [(nzValue)]="sortMap.playCount" (nzValueChange)="sort('playCount',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>播放总时长</span>
+        <nz-table-sort [(nzValue)]="sortMap.allDur" (nzValueChange)="sort('allDur',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>点击量</span>
+        <nz-table-sort [(nzValue)]="sortMap.hits" (nzValueChange)="sort('hits',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>每分钟点击均值</span>
+        <nz-table-sort [(nzValue)]="sortMap.hitRate" (nzValueChange)="sort('hitRate',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>通过广告购买次数</span>
+        <nz-table-sort [(nzValue)]="sortMap.ad_buy_count" (nzValueChange)="sort('ad_buy_count',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>转化率</span>
+        <nz-table-sort [(nzValue)]="sortMap.ad_rate" (nzValueChange)="sort('ad_rate',$event)"></nz-table-sort>
+      </th>
+    </tr>
+    </thead>
+    <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let data of nzTable.data; index as i" class="table-tr">
+      <td nz-td>{{data.id}}</td>
+      <td nz-td>{{data.dur}}秒</td>
+      <td nz-td>{{data.playCount}}次</td>
+      <td nz-td>{{data.allDur}}秒</td>
+      <td nz-td>{{data.hits}}次</td>
+      <td nz-td>{{(data.hitRate * 60).toFixed(2)}}次</td>
+      <td nz-td>{{data.ad_buy_count}}次</td>
+      <td nz-td>{{(data.ad_rate * 100).toFixed(1)}}%</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>
+</div>

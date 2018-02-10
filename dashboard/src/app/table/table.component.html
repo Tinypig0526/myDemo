@@ -1,0 +1,140 @@
+<div *ngIf="kiosk_data">
+  <h2 style="text-align: center">售货机状态</h2>
+  <nz-table #nzTable [nzDataSource]="kiosk_data" [nzPageSize]="10" nzShowSizeChanger>
+    <thead nz-thead>
+    <tr>
+      <th nz-th><span>设备ID</span></th>
+      <th nz-th><span>设备名称</span></th>
+      <th nz-th><span>当前网络延迟</span></th>
+      <th nz-th><span>是否正常运行</span></th>
+      <th nz-th><span>门是否关好</span></th>
+      <th nz-th><span>货柜温度</span></th>
+      <th nz-th><span>已售空货道</span></th>
+      <th nz-th><span>设备位置</span></th>
+      <th nz-th><span>交互次数</span></th>
+      <th nz-th><span>出货失败次数</span></th>
+    </tr>
+    </thead>
+    <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let data of nzTable.data">
+      <td nz-td>{{data.id}}</td>
+      <td nz-td>{{data.name}}</td>
+      <td nz-td>{{data.delay}}</td>
+      <td nz-td>{{data.isNormal}}</td>
+      <td nz-td>{{data.isNormal}}</td>
+      <td nz-td>{{data.temp}}℃</td>
+      <td nz-td>{{data.empty}}个</td>
+      <td nz-td>{{data.addr}}</td>
+      <td nz-td>{{data.mutual}}次</td>
+      <td nz-td>{{data.fail}}次</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>
+
+
+<div *ngIf="product_data">
+  <h2 style="text-align: center">商品销售情况</h2>
+  <nz-table #nzTable [nzDataSource]="product_data" [nzPageSize]="10" nzShowSizeChanger>
+    <thead nz-thead>
+    <tr>
+      <th nz-th><span>商品ID</span></th>
+      <th nz-th><span>商品名称</span></th>
+      <th nz-th><span>当前库存</span></th>
+      <th nz-th><span>今日售出</span></th>
+      <th nz-th><span>交易额</span></th>
+      <th nz-th><span>微信支付</span></th>
+      <th nz-th><span>支付宝支付</span></th>
+      <th nz-th><span>出货失败次数</span></th>
+      <th nz-th><span>失败率</span></th>
+    </tr>
+    </thead>
+    <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let data of nzTable.data">
+      <td nz-td>{{data.id}}</td>
+      <td nz-td>{{data.name}}</td>
+      <td nz-td>{{data.quantity}}件</td>
+      <td nz-td>{{data.sold}}件</td>
+      <td nz-td>{{data.sum}}元</td>
+      <td nz-td>{{data.weChat}}次</td>
+      <td nz-td>{{data.ali}}次</td>
+      <td nz-td>{{data.fail}}次</td>
+      <td nz-td>{{(data.failRate * 100).toFixed(0)}}%</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>
+
+
+<div *ngIf="session_data">
+  <h2 style="text-align: center">栏目访问数据</h2>
+  <nz-table #nzTable [nzDataSource]="session_data" [nzPageSize]="10" nzShowSizeChanger>
+    <thead nz-thead>
+    <tr>
+      <th nz-th>
+        <span>栏目ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.appId" (nzValueChange)="sort('appId',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>访问时间</span>
+        <nz-table-sort [(nzValue)]="sortMap.date_string" (nzValueChange)="sort('date_string',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>交互ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.id" (nzValueChange)="sort('id',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>停留时间</span>
+        <nz-table-sort [(nzValue)]="sortMap.stay" (nzValueChange)="sort('stay',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>设备ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.kioskId" (nzValueChange)="sort('kioskId',$event)"></nz-table-sort>
+      </th>
+    </tr>
+    </thead>
+    <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let data of nzTable.data; index as i">
+      <td nz-td>{{data.appId}}</td>
+      <td nz-td>{{data.date_string}}</td>
+      <td nz-td>{{data.id}}</td>
+      <td nz-td>{{data.stay}}秒</td>
+      <td nz-td>{{data.kioskId}}</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>
+
+
+
+<div *ngIf="ad_data">
+  <h2 style="text-align: center">广告播放数据</h2>
+  <nz-table #nzTable [nzDataSource]="ad_data" [nzPageSize]="10" nzShowSizeChanger>
+    <thead nz-thead>
+    <tr>
+      <th nz-th><span>广告ID</span></th>
+      <th nz-th><span>广告时长</span></th>
+      <th nz-th><span>播放次数</span></th>
+      <th nz-th><span>播放总时长</span></th>
+      <th nz-th>
+        <span>点击量</span>
+      </th>
+      <th nz-th><span>每分钟点击均值</span></th>
+      <th nz-th><span>通过广告购买次数</span></th>
+      <th nz-th><span>转化率</span></th>
+    </tr>
+    </thead>
+    <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let data of nzTable.data; index as i">
+      <td nz-td>{{data.id}}</td>
+      <td nz-td>{{data.dur}}秒</td>
+      <td nz-td>{{data.playCount}}次</td>
+      <td nz-td>{{data.allDur}}秒</td>
+      <td nz-td>{{data.hits}}次</td>
+      <td nz-td>{{data.hitRate * 60}}次</td>
+      <td nz-td>{{ad_buy_count[i]}}次</td>
+      <td nz-td>{{(ad_rate[i] * 100).toFixed(1)}}%</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>

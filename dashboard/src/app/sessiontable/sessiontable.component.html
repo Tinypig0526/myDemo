@@ -1,0 +1,41 @@
+
+<div *ngIf="session_data" class="table-div">
+  <div nz-col [nzSpan] = "22" >
+  <h2 class="table-title">栏目访问数据表</h2>
+  <nz-table #nzTable [nzDataSource]="session_data" [nzPageSize]="15" nzShowSizeChanger  [nzBordered] = "true">
+    <thead nz-thead>
+    <tr>
+      <th nz-th>
+        <span>栏目ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.appId" (nzValueChange)="sort('appId',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>访问时间</span>
+        <nz-table-sort [(nzValue)]="sortMap.date_string" (nzValueChange)="sort('date_string',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>交互ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.id" (nzValueChange)="sort('id',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>停留时间</span>
+        <nz-table-sort [(nzValue)]="sortMap.stay" (nzValueChange)="sort('stay',$event)"></nz-table-sort>
+      </th>
+      <th nz-th>
+        <span>设备ID</span>
+        <nz-table-sort [(nzValue)]="sortMap.kioskId" (nzValueChange)="sort('kioskId',$event)"></nz-table-sort>
+      </th>
+    </tr>
+    </thead>
+    <tbody nz-tbody>
+    <tr nz-tbody-tr *ngFor="let data of nzTable.data; index as i" class="table-tr">
+      <td nz-td>{{data.appId}}</td>
+      <td nz-td>{{data.date_string}}</td>
+      <td nz-td>{{data.id}}</td>
+      <td nz-td>{{data.stay}}秒</td>
+      <td nz-td>{{data.kioskId}}</td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>
+</div>

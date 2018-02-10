@@ -1,0 +1,171 @@
+.line1-ico{
+  font-size: 8rem;
+  opacity: 0.3;
+  line-height:160px;
+
+}
+
+.line1-text-up{
+  padding-top: 10px;
+  line-height: 70px;
+  font-size: 3rem;
+
+}
+
+.line1-text-down{
+  font-size: 5rem;
+  line-height:70px;
+  font-family: 'Bebas';
+}
+
+
+.tab-btn{
+  width: 5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+
+.chart-div{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width:1600px){
+  .chart-div{
+    width: 100%;
+    height: 100%;
+  }
+  .line1-ico{
+    font-size: 8rem;
+    opacity: 0.3;
+    line-height:160px;
+
+  }
+
+  .line1-text-up{
+    padding-top: 10px;
+    line-height: 70px;
+    font-size: 3rem;
+
+  }
+
+  .line1-text-down{
+    font-size: 5rem;
+    line-height:70px;
+    font-family: 'Bebas';
+  }
+
+
+  .tab-btn{
+    width: 5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .chart-div{
+    width: 100%;
+    height: 100%;
+  }
+  .line1-ico{
+    font-size: 6rem;
+    opacity: 0.3;
+    line-height:130px;
+
+  }
+
+  .line1-text-up{
+    padding-top: 8px;
+    line-height: 55px;
+    font-size: 2.4rem;
+
+  }
+
+  .line1-text-down{
+    font-size: 4rem;
+    line-height:55px;
+    font-family: 'Bebas';
+  }
+
+
+  .tab-btn{
+    width: 4rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .chart-div{
+    width: 100%;
+    height: 100%;
+  }
+  .line1-ico{
+    font-size: 4.8rem;
+    opacity: 0.3;
+    line-height:100px;
+
+  }
+
+  .line1-text-up{
+    padding-top: 6px;
+    line-height: 45px;
+    font-size: 1.8rem;
+
+  }
+
+  .line1-text-down{
+    font-size: 3rem;
+    line-height:45px;
+    font-family: 'Bebas';
+  }
+
+
+  .tab-btn{
+    width: 1.8rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .chart-div{
+    width: 100%;
+    height: 100%;
+  }
+  .line1-ico{
+    font-size: 3rem;
+    opacity: 0.3;
+    line-height:70px;
+
+  }
+
+  .line1-text-up{
+    padding-top: 4px;
+    line-height: 30px;
+    font-size: 1.2rem;
+
+  }
+
+  .line1-text-down{
+    font-size: 2rem;
+    line-height:30px;
+    font-family: 'Bebas';
+  }
+
+
+  .tab-btn{
+    width: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+}
+

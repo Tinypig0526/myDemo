@@ -1,0 +1,79 @@
+<div class="totop">
+
+    <a [routerLink] = "['../test']"><button class="btn btn-success btn_route">测试</button></a><a [routerLink] = "['../inout']"><button class="btn btn-success btn_route">上/下架</button></a><a [routerLink] = "['../layout']"><button class="btn btn-success btn_route">布局</button></a>
+
+
+  <h2 class="text-center">布局</h2>
+
+  <div class="btn-group">
+    <button class="btn_size btn btn-info" style="margin-left: 12px" (click)="reget_layout_list()">获取布局</button>
+    <!--<button class="btn_size btn btn-info" style="margin-left: 12px" (click)="nong_huai_le()">玩坏了</button>-->
+    <a data-toggle="modal" data-target="#submit_reset"><button class="btn_size btn btn-info" style="margin-left: 15px" >统一设置布局</button></a>
+    <select style="margin-left: 5px" class="form-control option" [(ngModel)] = "num">
+      <option selected>选择货道数</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+
+<div *ngIf="is_load">
+  <div *ngFor="let layout_row of layout_list; index as i"  [class.layout_row] ="layout_row.length">
+    <a data-toggle="modal" data-target="#set_layout" (click)="ms_row(i)"><button *ngIf="layout_list[i].length" style="margin-left: 12px" class="btn btn-info  set_btn">修改第{{i + 1}}行布局</button></a>
+    <div *ngIf="square_group.length && is_updata" class="square_div">
+      <div *ngFor="let layout_col of layout_row; index as j" class="square" [class.unuse]="layout_col.status === 0" [class.flex1] = "square_group[i][j] === 1" [class.flex2] = "square_group[i][j] === 2" [class.flex3] = "square_group[i][j] === 3" [class.flex4] = "square_group[i][j] === 4">
+        <p>{{layout_col.name}}</p>
+        <div *ngIf="layout_col.status === 0" class="locked">
+          <span class="glyphicon glyphicon-ban-circle unuse"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="set_layout" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <a data-dismiss="modal"  class="close_btn" (click)="clear()"><img src="./assets/image/icon_close.png"></a>
+      <h3 class="text-center" style="padding-top: 20px">修改第{{row_no + 1}}排货道</h3>
+
+      <div id="square" class="text-center" style="margin-top: 20px">
+        <div class="square_span">货道方块:</div>
+        <div *ngFor="let square_color of colors; index as j" class="little_square" [class.green]="square_color > 0" [class.blue]="square_color < 0" [class.white]="square_color === 0"></div> <!--[ngClass] = "{ green: () ,}"-->
+      </div>
+
+      <div class="text-center" style="margin-top: 20px">
+        <button class="btn btn-success num"  (click)="set_color(1)">1</button>
+        <button class="btn btn-success num"  (click)="set_color(2)">2</button>
+        <button class="btn btn-success num"  (click)="set_color(3)">3</button>
+        <button class="btn btn-success num"  (click)="set_color(4)">4</button>
+      </div>
+      <!--<div><textarea name="" id="" cols="50" rows="2"></textarea></div>-->
+
+      <div class="text-center" style="margin-top: 20px">
+        <span>使用方法:点击上方数字，设置一个货道组的数量,上方相同数量的货道方块会被涂色，11个方格涂满点击提交即可</span>
+      </div>
+
+      <div style="margin-top: 20px;margin-left: 460px;margin-bottom: 40px">
+        <button class="btn btn-primary" style="width: 100px;background-color: lightskyblue" (click)="submit()">确定</button>
+        <button class="btn btn-primary" style="width: 100px;background-color: lightskyblue;margin-left: 20px" (click)="clear()" >清除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="submit_reset" tabindex="-1" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content text-center" style="height: 180px">
+  <h3 style="margin-bottom: 30px;padding-top: 30px ">警告:统一设置布局会下架所有在售商品,是否继续</h3>
+  <button class="btn btn-warning" style="margin-right: 100px;width: 120px" (click)="reset(num)">确定</button>
+  <button class="btn btn-info"  style="width: 120px"  (click)="stop_reset()">取消</button>
+    </div>
+  </div>
+</div>

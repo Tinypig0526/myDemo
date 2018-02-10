@@ -1,0 +1,57 @@
+<div class="swiper-container1">
+  <div class="swiper-wrapper">
+
+    <div  class="swiper-slide">
+      <div nz-row class="title-div">
+        <div nz-col [nzSpan]="8" [nzOffset]="8"><h2>今日栏目访问时间Top3</h2></div>
+        <div nz-col [nzSpan]="8" class="play-div">
+
+
+          <span class="lwitch" [class.open]="on_off_1" (click)="move_on_off(1)">
+            <span class="round-dot" [class.open]="on_off_1"></span>
+          </span>
+
+          <div style="display: inline-block;position: absolute;top: 0">
+            <span style="font-size: 20px;color: #cccccc">&nbsp;播放/暂停</span>
+          </div>
+          <!--  <nz-switch  [nzSize]="'large'" [ngModel]="on_off_1" (click)="move_on_off">
+              <span checked  (click)="move_on_off"><i class="anticon anticon-caret-right"></i></span>
+              <span unchecked (click)="move_on_off"><i class="anticon anticon-pause"></i></span>
+            </nz-switch>-->
+
+        </div>
+      </div>
+      <div id="stay_time" class="chart-div"></div>
+    </div>
+
+
+    <div  class="swiper-slide">
+      <div class="title-div">
+        <div nz-col [nzSpan]="8" [nzOffset]="8"><h2>2017年访问量/订单量</h2></div>
+        <div nz-col [nzSpan]="8" class="play-div">
+
+          <span class="lwitch" [class.open]="on_off_2" (click)="move_on_off(2)">
+            <span class="round-dot" [class.open]="on_off_2"></span>
+          </span>
+
+          <div style="display: inline-block;position: absolute;top: 0">
+            <span style="font-size: 20px;color: #cccccc">&nbsp;播放/暂停</span>
+          </div>
+
+
+
+
+          <!--<nz-switch [nzSize]="'large'" [ngModel]="on_off_2" (onchange)="move_on_off">-->
+            <!--<span checked><i class="anticon anticon-caret-right"></i></span>-->
+            <!--<span unchecked><i class="anticon anticon-pause"></i></span>-->
+          <!--</nz-switch>-->
+
+        </div>
+      </div>
+      <div id="click_and_sale" class="chart-div"></div>
+    </div>
+  </div>
+
+</div>
+
+

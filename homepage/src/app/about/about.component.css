@@ -1,0 +1,164 @@
+
+
+.child-div{
+  margin-top: -40px;
+  height: 96px;
+}
+
+.child-active{
+  border-bottom: solid 5px #3fabf3 !important;
+  color: #3fabf3;
+}
+
+.child-btn{
+  color: #9d9d9d;
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: 0;
+  border: 0;
+  background-color: white;
+}
+
+.child-btn:focus,.child-btn:hover,.child-btn:active{
+  outline: 0;
+  border: 0;
+}
+
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.title-2{
+  font-size: 2.4rem;
+  color: #3fabf3;
+  font-weight: bold;
+}
+
+.title-4{
+  font-size: 1.4rem;
+  font-family: Helvetica, monospace;
+  color: #919191;
+}
+
+.thybot-line{
+  font-size: 2.4rem;
+  color: #c9c9c9;
+
+}
+
+
+.thybot-desc{
+  font-size: 1.4rem;
+  line-height: 3rem;
+
+}
+
+.thybot-slogan{
+  /*padding-left: 1rem;*/
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+
+.map-btn{
+  border: solid 0.2rem;
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  position: absolute;
+  z-index: 900;
+  right: 20rem;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+.factory-name{
+  text-align: center;
+  margin-top: 7.4rem;
+  font-size: 2rem;
+}
+
+.triangle_right{
+  z-index: 1000;
+  position: absolute;
+  /*left: 19rem;*/
+  left: 100%;
+  top: 8rem;
+  border-top: 1.6rem solid transparent;
+  border-left: 1.6rem solid #eeeced;
+  border-bottom: 1.6rem solid transparent;
+
+}
+.triangle_left{
+  z-index: 1000;
+  position: absolute;
+  top: 8rem;
+  left: -1.6rem;
+  border-top: 1.6rem solid transparent;
+  border-right: 1.6rem solid #eeeced;
+  border-bottom: 1.6rem solid transparent;
+}
+
+.blue-div{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  background-color: rgba(63,171,243,0.6);
+  color: white;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 3  tab 4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.news-title-div{
+  text-align: center;
+  height: 3rem;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  background-color: #f0f0f0;
+}
+
+
+.news-title{
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.news-time{
+  font-size: 1rem;
+  color: #999999;
+  line-height: 3rem;
+}
+
+.news-content{
+  color: #1f1f1f;
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+
+.show-more{
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 5~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+

@@ -1,0 +1,88 @@
+
+.bg{
+  background-color: white;
+  width: 1920px;
+  /*height: 1040px;*/
+  height: auto;
+  margin-top: -40px;
+  padding: 0;
+}
+
+#screen_save{
+  width: 100%;
+  height: 100%;
+}
+/*
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+.index_page{
+  margin-top: 60px;
+  background-image: url("../assets/img/thybot_bg.jpg");
+  height: 600px;
+}
+
+.up_div{
+  background-color: white;
+  width: 45.8%;
+  height: 600px;
+  opacity: 0.7;
+}
+
+
+
+.about{
+  width: 300px;
+  height: 60px;
+  margin-top: 150px;
+  margin-left: 260px;
+  font-size: 24px;
+}
+
+h2{
+  padding-top: 160px;
+  margin-left: 210px;
+  font-size: 60px;
+}
+
+p{
+  padding-top: 40px;
+  font-size: 30px;
+  margin-left: 100px;
+}
+*/

@@ -1,0 +1,26 @@
+<div class="totop">
+  <div class="text-center">
+    <a (click)="eggshell()" data-toggle="modal" data-target="#form_Modal"><h1 class="text-center">关于我们</h1></a>
+    <img src="./assets/image/about.png">
+  </div>
+</div>
+<app-routebtn></app-routebtn>
+
+
+<div  *ngIf="is_login" class="modal fade" id="form_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <form>
+         <div class="form-group">
+           <label for="username">用户名</label>
+           <input [(ngModel)] = 'user_name'   id="username" name="username"  type="text" class="form-control" placeholder="请输入用户名" virtualKeyboard kb_position="bottom">
+           <label for="userpass" style="margin-top: 5px" >密码</label>
+           <input [(ngModel)] = 'user_pass'  id="userpass" name="userpass" type="password" class="form-control" placeholder="请输入密码" virtualKeyboard kb_position="bottom">
+           <button (click)="log_in()" class="btn btn-success" style="margin-top: 15px" >登陆</button>
+         </div>
+       </form>
+    </div>
+  </div>
+</div>
+

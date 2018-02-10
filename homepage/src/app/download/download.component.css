@@ -1,0 +1,46 @@
+.download{
+  background:url("../../assets/img/document/document-bg.png") 0 0  no-repeat;
+  background-size:100%;
+  padding-bottom: 50px;
+}
+.download>.title{
+  margin-top:28px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 4.22;
+  text-align: center;
+  color: #ffffff;
+}
+.download>.title img{
+  vertical-align: middle;
+}
+.download>.title .content{
+  cursor: pointer;
+}
+.download>.title .content:hover{
+  color: #39a3f3;
+}
+.download .container{
+  background-color: #ffffff;
+}
+.download .container>.title{
+  background-color: #39a3f3;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 16px;
+}
+.download .container .td{
+  line-height:20px;
+  font-size: 16px;
+  padding: 12px 28px;
+}
+.download .container .td:nth-child(odd){
+  background-color: #ccc;
+}
+.download .container .td:hover{
+  background-color: #39a3f3;
+  color: #ffffff;
+}

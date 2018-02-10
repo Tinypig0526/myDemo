@@ -1,0 +1,39 @@
+<div nz-row id="btn-div">
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 1" (click)="set_chart(1 , true)" >1月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 2" (click)="set_chart(2 , true)">2月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 3" (click)="set_chart(3 , true)" >3月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 4" (click)="set_chart(4 , true)"  >4月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 5" (click)="set_chart(5 , true)" >5月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 6"  (click)="set_chart(6 , true)">6月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 7"  (click)="set_chart(7 , true)">7月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 8" (click)="set_chart(8 , true)">8月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 9" (click)="set_chart(9 , true)" >9月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 10" (click)="set_chart(10 , true)" >10月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 11"  (click)="set_chart(11 , true)">11月</button>
+  </div>
+  <div nz-col [nzSpan] = "2">
+    <button nz-button [nzType]="'primary'" class="bottom-btn" [class.focus]="month_num == 12"  (click)="set_chart(12 , true)">12月</button>
+  </div>
+</div>
+<div id="chart-div"></div>

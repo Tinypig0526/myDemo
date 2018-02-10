@@ -1,0 +1,166 @@
+
+/*~~~~~~~~~~~~~~~~~~~~~~~  nav ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.navbar{
+  height: 60px;
+  margin: 0;
+  background-color: white;
+
+}
+
+#square{
+  /*background-color: #36c6d3;*/
+  height: inherit;
+}
+
+.search{
+  height: 40px;
+  margin-top: 10px;
+  background-color:#eef1f5;
+  color:#eef1f5;
+  border-radius: 0;
+}
+
+.search-btn{
+  border-radius: 0;
+  margin-top: 10px;
+  width:  100%;
+  height: 40px;
+  background-color: #36c6d3;
+}
+
+.anticon-message{
+  font-size: 36px;
+  line-height: 60px;
+}
+
+nz-avatar{
+  margin-top: 10px;
+}
+
+
+.toggle-btn{
+  background:none;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.is_fold{
+  width: 100px;
+}
+
+.anticon-menu-fold,.anticon-menu-unfold{
+  font-size: 48px;
+}
+
+
+.message-btn{
+  border: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~ menu ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*
+.ant-menu-inline-collapsed{
+  width: 100px;
+}
+*/
+
+
+.content{
+  height: 1157px;
+  background-color: #eef1f5;
+}
+
+.my-menu{
+  /*min-width: 300px;*/
+  min-width:100px;
+ /* height: 92vh;*/
+  height: 100%;
+  padding-top:100px;
+}
+.my-icon:before{
+  line-height: 120px;
+}
+.my-menu .my-item{
+  min-height: 120px;
+  line-height: 120px;
+  margin-bottom:24px;
+}
+.ant-menu-submenu-title{
+  height: 120px !important;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~ media ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.bottom-menu{
+  position: fixed;
+  bottom: 0;
+  background-color: #212d41;
+  width: 100%;
+  height: 60px;
+}
+
+.bottom-btn{
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 2em;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 0;
+}
+
+
+@media screen and (min-width:1600px){
+
+  .my-menu{
+    min-width:100px;
+  }
+
+  .bottom-menu{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+  .my-menu{
+    min-width:80px;
+  }
+  .bottom-menu{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .my-menu{
+    min-width:60px;
+  }
+  #square{
+    display: none;
+  }
+
+  #left-menu{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-menu{
+    min-width:40px;
+  }
+
+  #square{
+    display: none;
+  }
+  #left-menu{
+    display: none;
+  }
+}
+

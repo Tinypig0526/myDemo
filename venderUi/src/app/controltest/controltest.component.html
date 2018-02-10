@@ -1,0 +1,105 @@
+<div class="totop">
+
+  <div class="route">
+    <a [routerLink] = "['../test']"><button class="btn btn-success flex">测试</button></a>
+    <a [routerLink] = "['../inout']"><button class="btn btn-success flex">上/下架</button></a>
+    <a [routerLink] = "['../layout']"><button class="btn btn-success flex">布局</button></a>
+  </div>
+
+
+
+  <h2 class="text-center">设备名称:{{kiosk_name}}</h2>
+  <h4 class="text-center">设备id:{{kiosk_id}}</h4>
+
+  <div class="operation_left">
+      <div ><button class="btn btn-danger btn_rack" (click)="init_robot()">设备初始化</button></div>
+      <div ><button class="btn btn-danger btn_rack" (click)="sync_from_db()">同步数据库数据</button></div>
+      <div ><button class="btn btn-danger btn_rack" (click)="go_window()">移动到取货栏</button></div>
+      <div ><button class="btn btn-danger btn_rack" (click)="is_empty()">取货栏是否有货</button></div>
+      <div ><button class="btn btn-danger btn_rack" (click)="open_the_door()">开门</button></div>
+      <div ><button class="btn btn-danger btn_rack" (click)="close_the_door()">关门</button></div>
+
+  </div>
+  <div class="operation_middle">
+    <div ><textarea [(ngModel)] = "test_result" name="info" id="" cols="30" rows="4"></textarea></div>
+    <div><button class="btn btn-danger btn_rack" (click)="test_take_out()">测试货道传动</button></div>
+    <div class="select_div">
+    <div>
+      <select [(ngModel)] = 'row_name' name="row" class="form-control">
+        <option value="A">A货架</option>
+        <option value="B">B货架</option>
+        <option value="C">C货架</option>
+        <option value="D">D货架</option>
+        <option value="E">E货架</option>
+        <option value="F">F货架</option>
+      </select>
+    </div>
+    <div>
+      <select [(ngModel)] = 'col_name' name="col" class="form-control">
+        <option value="01-01">01-01货道</option>
+        <option value="02-02">02-02货道</option>
+        <option value="03-03">03-03货道</option>
+        <option value="04-04">04-04货道</option>
+        <option value="05-05">05-05货道</option>
+        <option value="06-06">06-06货道</option>
+        <option value="07-07">07-07货道</option>
+        <option value="08-08">08-08货道</option>
+        <option value="09-09">09-09货道</option>
+        <option value="10-10">10-10货道</option>
+        <option value="11-11">11-11货道</option>
+        <option value="01-11">测试整排货道</option>
+      </select>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="operation_right">
+    <div>
+      <span class="row_name">A</span>
+      <button class="btn btn-danger btn_rack" (click)="go_rack('A')">定位到A货架</button>
+      <button class="btn btn-danger btn_rack" (click)="y_up()">上调取货架定位↑</button>
+      <button class="btn btn-danger btn_rack" (click)="y_down()">下调取货架定位↓</button>
+      <button class="btn btn-danger btn_rack" (click)="submit_y('A')">保存</button>
+    </div>
+    <div>
+      <span class="row_name">B</span>
+      <button class="btn btn-danger btn_rack" (click)="go_rack('B')">定位到B货架</button>
+      <button class="btn btn-danger btn_rack" (click)="y_up()">上调取货架定位↑</button>
+      <button class="btn btn-danger btn_rack" (click)="y_down()">下调取货架定位↓</button>
+      <button class="btn btn-danger btn_rack" (click)="submit_y('B')">保存</button>
+    </div>
+    <div>
+      <span class="row_name">C</span>
+      <button class="btn btn-danger btn_rack" (click)="go_rack('C')">定位到C货架</button>
+      <button class="btn btn-danger btn_rack" (click)="y_up()">上调取货架定位↑</button>
+      <button class="btn btn-danger btn_rack" (click)="y_down()">下调取货架定位↓</button>
+      <button class="btn btn-danger btn_rack" (click)="submit_y('C')">保存</button>
+    </div>
+    <div>
+      <span class="row_name">D</span>
+      <button class="btn btn-danger btn_rack" (click)="go_rack('D')">定位到D货架</button>
+      <button class="btn btn-danger btn_rack" (click)="y_up()">上调取货架定位↑</button>
+      <button class="btn btn-danger btn_rack" (click)="y_down()">下调取货架定位↓</button>
+      <button class="btn btn-danger btn_rack" (click)="submit_y('D')">保存</button>
+    </div>
+    <div>
+      <span class="row_name">E</span>
+      <button class="btn btn-danger btn_rack" (click)="go_rack('E')">定位到E货架</button>
+      <button class="btn btn-danger btn_rack" (click)="y_up()">上调取货架定位↑</button>
+      <button class="btn btn-danger btn_rack" (click)="y_down()">下调取货架定位↓</button>
+      <button class="btn btn-danger btn_rack" (click)="submit_y('E')">保存</button>
+    </div>
+    <div>
+      <span class="row_name">F</span>
+      <button class="btn btn-danger btn_rack" (click)="go_rack('F')">定位到F货架</button>
+      <button class="btn btn-danger btn_rack" (click)="y_up()">上调取货架定位↑</button>
+      <button class="btn btn-danger btn_rack" (click)="y_down()">下调取货架定位↓</button>
+      <button class="btn btn-danger btn_rack" (click)="submit_y('F')">保存</button>
+    </div>
+
+  </div>
+
+
+
+</div>

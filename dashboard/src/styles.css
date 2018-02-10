@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+body,html{
+  background-color: #eef1f5;
+  height: 1288px !important;
+}
+
+
+.my-item>div{
+  min-height: 120px !important;
+  line-height: 120px;
+}
+.ant-menu-inline .ant-menu-item,.ant-menu-inline .ant-menu-submenu-title {
+  font-size: 20px !important;
+}
+.ant-menu-inline-collapsed > .ant-menu-item .anticon,.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon{
+  font-size: 48px !important;
+}
+
+/*
+
+
+@media screen and (min-width:1600px){
+
+  .ant-menu-inline-collapsed > .ant-menu-item .anticon,.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon{
+    font-size: 48px !important;
+  }
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1599px) {
+  .ant-menu-inline-collapsed > .ant-menu-item .anticon,.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon{
+    font-size: 40px !important;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .ant-menu-inline-collapsed > .ant-menu-item .anticon,.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon{
+    font-size: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ant-menu-inline-collapsed > .ant-menu-item .anticon,.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon{
+    font-size: 24px !important;
+  }
+}
+*/

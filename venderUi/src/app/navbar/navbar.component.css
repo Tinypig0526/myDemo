@@ -1,0 +1,52 @@
+.navbar{
+  padding-top: 16px;
+  height: auto;
+  width: 1920px;
+  background-image: url("../../assets/image/top_bar.png");
+
+}
+
+span{
+  color: white;
+  text-shadow:3px -2px 3px darkblue;
+  font-size: 30px;
+  line-height: 4px;
+  margin-left: 20px;
+}
+
+.home{
+  margin-left: 0;
+
+}
+
+
+.logo_img{
+  margin-left: 30px;
+}
+
+
+
+
+.right{
+  position: absolute;
+  right: 40px;
+}
+
+.go_to_home{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background:none;
+}
+/*
+.time{
+  display: inline-block;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 40px;
+}
+#time{
+  font-size: 24px;
+
+}
+*/

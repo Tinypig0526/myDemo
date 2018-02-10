@@ -1,0 +1,41 @@
+<div class="swiper-container2">
+  <div class="swiper-wrapper">
+
+    <div  class="swiper-slide">
+      <div nz-row class="title-div">
+        <div nz-col [nzSpan]="8" [nzOffset]="8"><h2>2017年栏目点击量走势</h2></div>
+        <div nz-col [nzSpan]="8"  class="play-div" >
+
+          <span class="lwitch" [class.open]="on_off_1" (click)="move_on_off(1)">
+            <span class="round-dot" [class.open]="on_off_1"></span>
+          </span>
+
+          <div style="display: inline-block;position: absolute;top: 0">
+            <span style="font-size: 20px;color: #cccccc">&nbsp;播放/暂停</span>
+          </div>
+        </div>
+      </div>
+      <div id="content_trend" class="chart-div"></div>
+    </div>
+
+    <div  class="swiper-slide">
+      <div class="title-div">
+        <div nz-col [nzSpan]="8" [nzOffset]="8"><h2>今日商品销售Top5</h2></div>
+        <div nz-col [nzSpan]="8" class="play-div">
+          <span class="lwitch" [class.open]="on_off_2" (click)="move_on_off(2)">
+            <span class="round-dot" [class.open]="on_off_2"></span>
+          </span>
+
+          <div style="display: inline-block;position: absolute;top: 0">
+            <span style="font-size: 20px;color: #cccccc">&nbsp;播放/暂停</span>
+          </div>
+
+        </div>
+      </div>
+      <div id="sale_rank" class="chart-div"></div>
+    </div>
+  </div>
+
+</div>
+
+

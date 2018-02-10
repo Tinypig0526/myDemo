@@ -1,0 +1,29 @@
+.foot_btn{
+  border-radius:25px;
+  width: 120px;
+  height:48px;
+  font-size: 18px;
+  background-color: #72bded;
+  color: white;
+  box-shadow:0 16px 12px -8px rgba(114,189,237,0.5);
+  border: 0;
+  font-weight: bold;
+}
+
+
+.fixed_bottom{
+  position: fixed;
+  bottom: 32px;
+  right: 48px;
+  z-index: 99;
+}
+
+.route_btn{
+  display: inline-block;
+  position: relative;
+  margin-left: 24px;
+}
+
+.glyphicon-shopping-cart{
+  padding-right: 3px;
+}

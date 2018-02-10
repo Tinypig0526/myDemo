@@ -1,0 +1,80 @@
+.totop{
+  width: 1920px;
+  height: 1080px;
+  padding-top: 106px;
+
+}
+
+.route{
+  width: 1920px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex{
+  width: 640px;
+  margin: 0;
+  border-radius: 0;
+  border: solid 1px white;
+}
+
+.btn_size{
+  width: 160px;
+}
+
+.operation_left{
+  display: inline-block;
+  padding-left: 240px;
+  padding-top: 40px;
+}
+
+
+.operation_middle{
+  display: inline-block;
+  padding-left: 140px;
+  padding-top: 40px;
+}
+
+.operation_right{
+  display: inline-block;
+  padding-left: 180px;
+  padding-top: 40px;
+}
+.btn_operation{
+  width: 140px;
+  height: 80px;
+  margin-top: 30px;
+}
+
+.btn_rack{
+  width: 140px;
+  height: 60px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+textarea{
+  width: 280px;
+  resize:none
+}
+
+.row_name{
+
+  line-height: 60px;
+  padding-right: 20px;
+  vertical-align:middle;
+  font-size: 28px;
+}
+
+select{
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.select_div{
+  width: 300px;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -60px;
+}

@@ -1,0 +1,179 @@
+
+    <div nz-row class="navbar">
+      <div nz-col [nzLg] = "{span: 2}" [nzMd] = "{span: 2}" [nzSm] = "{span: 3}" [nzXs] = "{span: 4}" id="square">
+        <div style="background-color: #36c6d3;height: 100%" [class.is_fold] = "isCollapsed">
+          <button nz-button [nzType]="'primary'" (click)="toggleCollapsed()" class="toggle-btn" [class.is_fold] = "isCollapsed">
+            <i class="anticon" [class.anticon-menu-unfold]="isCollapsed" [class.anticon-menu-fold]="!isCollapsed"></i>
+          </button>
+        </div>
+      </div>
+      <div nz-col [nzLg] = "{span: 5}" [nzMd] = "{span: 5 }" [nzSm] = "{span: 0}" [nzXs] = "{span: 0}">
+        <input type="text" class="form-control search" placeholder="Search for..." style="color: #333333">
+      </div>
+      <div nz-col [nzLg] = "{span: 1}" [nzMd] = "{span: 1}" [nzSm] = "{span: 0}" [nzXs] = "{span: 0}" >
+        <button class="btn search-btn"><i class="anticon anticon-search"></i></button>
+      </div>
+      <div nz-col [nzLg] = "{span: 1, offset: 10}" [nzMd] = "{span: 1, offset: 10}" [nzSm] = "{span: 2, offset: 6}" [nzXs] = "{span: 2, offset: 6}">
+        <button nz-button class="message-btn" [nzType]="'default'" (click)="createBasicNotification()"><i class="anticon anticon-message"></i><span style="color: red;font-size: 18px">2</span></button>
+
+      </div>
+      <div nz-col [nzLg] = "{span: 1}" [nzMd] = "{span: 1}" [nzSm] = "{span: 3,offset: 1}" [nzXs] = "{span: 3,offset: 1}">
+        <nz-avatar [nzShape]="'square'" [nzSize]="'large'" [nzIcon]="'user'"></nz-avatar>
+      </div>
+
+      <div nz-col [nzLg] = "{span: 3}" [nzMd] = "{span: 3}" [nzSm] = "{span: 5}" [nzXs] = "{span: 5}">
+        <nz-dropdown>
+        <a class="ant-dropdown-link" nz-dropdown>
+          <span style="font-size: 2rem;line-height: 60px;vertical-align: top">&nbsp;Admin&nbsp;&nbsp;<i class="anticon anticon-down" style="line-height: 60px"></i></span>
+        </a>
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a target="_blank" >注册</a>
+          </li>
+          <li nz-menu-item>
+            <a target="_blank">登陆</a>
+          </li>
+          <li nz-menu-item>
+            <a target="_blank">注销</a>
+          </li>
+        </ul>
+        </nz-dropdown>
+      </div>
+
+    </div>
+
+    <div nz-row class="content"  style="height: 100%;background-color: #eef1f5">
+      <div nz-col [nzLg] = "{span: 2}" [nzMd] = "{span: 2}" [nzSm] = "{span: 3}" [nzXs] = "{span: 4}" id ="left-menu" style="height: 100%">
+
+        <ul nz-menu [nzMode]="'inline'" nzTheme='dark' [nzInlineCollapsed]="isCollapsed" class="my-menu">
+          <li nz-menu-item class="my-item">
+            <a [routerLink] = "['/map']"><span title>
+            <i class="anticon anticon-environment my-icon"></i>
+            <span>Map</span>
+          </span></a>
+          </li>
+
+          <li nz-menu-item class="my-item">
+            <a [routerLink] = "['/dash']"><span title>
+            <i class="anticon anticon-appstore my-icon"></i>
+            <span>Dashboard</span>
+          </span></a>
+          </li>
+
+          <li nz-submenu class="my-item">
+          <span title>
+            <i class="anticon anticon-calendar my-icon"></i>
+            <span>Table</span>
+          </span>
+            <ul>
+              <a [routerLink] = "['/kiosktable']"><li nz-menu-item>售货机状态表</li></a>
+              <a [routerLink] = "['/sessiontable']"><li nz-menu-item>栏目访问记录表</li></a>
+              <a [routerLink] = "['/producttable']"><li nz-menu-item>商品销售情况表</li></a>
+              <a [routerLink] = "['/adtable']"><li nz-menu-item>广告展示情况表</li></a>
+            </ul>
+          </li>
+          <li nz-submenu class="my-item">
+          <span title>
+            <i class="anticon anticon-area-chart my-icon"></i>
+            <span>Chart</span>
+          </span>
+            <ul>
+              <a [routerLink] = "['/kioskchart']"><li nz-menu-item>设备状态图</li></a>
+              <a [routerLink] = "['/sessionchart']"><li nz-menu-item>栏目访问图</li></a>
+              <a [routerLink] = "['/productchart']"><li nz-menu-item>商品销售图</li></a>
+              <a [routerLink] = "['/adchart']"><li nz-menu-item>广告展示图</li></a>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+      <div nz-col [nzLg] = "{span: 22}" [nzMd] = "{span: 22}" [nzSm] = "{span: 21}" [nzXs] = "{span: 20}"  style="height: 1020px;">
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+
+    <div nz-row class="bottom-menu">
+      <div nz-col [nzSpan] = "6">
+        <button nz-button [nzType]="'default'" class="bottom-btn" [routerLink] = "['/map']" ><i class="anticon anticon-environment"></i></button>
+      </div>
+      <div nz-col [nzSpan] = "6">
+        <button nz-button [nzType]="'default'" class="bottom-btn" [routerLink] = "['/dash']" ><i class="anticon anticon-appstore"></i></button>
+      </div>
+      <div nz-col [nzSpan] = "6">
+
+           <button nz-button  [nzType]="'default'" class="bottom-btn" [routerLink] = "['/table']" ><i class="anticon anticon-calendar"></i></button>
+   <!--       <ul nz-menu>
+           <li nz-menu-item> <a [routerLink] = "['/kiosktable']">售货机状态表</a></li>
+            <li nz-menu-item><a [routerLink] = "['/sessiontable']">栏目访问记录表</a></li>
+        &lt;!&ndash;    <a [routerLink] = "['/producttable']"><li nz-menu-item>商品销售情况表</li></a>
+            <a [routerLink] = "['/adtable']"><li nz-menu-item>广告展示情况表</li></a>&ndash;&gt;
+          </ul>-->
+
+      </div>
+      <div nz-col [nzSpan] = "6">
+
+          <button nz-button  [nzType]="'default'" class="bottom-btn"  [routerLink] = "['/chart']"><i class="anticon anticon-area-chart"></i></button>
+          <!--<ul  nz-menu>
+            <a [routerLink] = "['/kioskchart']"><li nz-menu-item>设备状态图</li></a>
+            <a [routerLink] = "['/sessionchart']"><li nz-menu-item>栏目访问图</li></a>
+            <a [routerLink] = "['/productchart']"><li nz-menu-item>商品销售图</li></a>
+            <a [routerLink] = "['/adchart']"><li nz-menu-item>广告展示图</li></a>
+          </ul>-->
+
+      </div>
+    </div>
+
+
+
+    <!--  <div nz-col [nzLg] = "{span: 1}" [nzMd] = "{span: 2}" [nzSm] = "{span: 3}" [nzXs] = "{span: 4}" style="height: 100%;">
+          <ul nz-menu [nzMode]="'inline'"  [nzTheme]="'dark'" [nzInlineCollapsed]="isCollapsed" class="menu">
+
+          <li class="list" nz-menu-item  style="padding-top: 10px;padding-bottom: 10px;height: 80px;line-height: 80px">
+            <a [routerLink] = "['/map']"><span title>
+              <i class="anticon anticon-environment"></i>
+              <span class="list-content">Map</span>
+            </span></a>
+          </li>
+
+
+          <li class="list" nz-menu-item  style="padding-top: 10px;padding-bottom: 10px;height: 80px">
+            <a [routerLink] = "['/dash']"><span title>
+                <i class="anticon anticon-appstore"></i>
+                <span class="list-content">Dashboard</span>
+            </span></a>
+          </li>
+
+
+          <li nz-submenu class="list" style="padding-top: 10px;padding-bottom: 10px;height: 80px">
+          <span title>
+            <i class="anticon anticon-calendar"></i>
+            <span class="list-content">Table</span>
+          </span>
+            <ul>
+              <a [routerLink] = "['/kiosktable']"><li nz-menu-item>售货机状态表</li></a>
+              <a [routerLink] = "['/sessiontable']"><li nz-menu-item>栏目访问记录表</li></a>
+              <a [routerLink] = "['/producttable']"><li nz-menu-item>商品销售情况表</li></a>
+              <a [routerLink] = "['/adtable']"><li nz-menu-item>广告展示情况表</li></a>
+            </ul>
+          </li>
+
+
+
+          <li nz-submenu class="list" style="padding-top: 10px;padding-bottom: 10px;height: 80px">
+          <span title>
+            <i class="anticon anticon-area-chart"></i>
+            <span class="list-content">Chart</span>
+          </span>
+            <ul>
+              <a [routerLink] = "['/kioskchart']"><li nz-menu-item>设备状态图</li></a>
+              <a [routerLink] = "['/sessionchart']"><li nz-menu-item>栏目访问图</li></a>
+              <a [routerLink] = "['/productchart']"><li nz-menu-item>商品销售图</li></a>
+              <a [routerLink] = "['/adchart']"><li nz-menu-item>广告展示图</li></a>
+            </ul>
+          </li>
+
+          </ul>
+        </div>
+-->
