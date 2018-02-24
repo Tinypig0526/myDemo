@@ -19,23 +19,22 @@
 <div *ngIf="tab_num == 1">
   <div nz-row style="padding-top: 120px;" id="no_1">
     <div nz-col [nzSpan]="10" [nzOffset]="2" class="tech-img-div">
-      <!--<img [src]="black[0]" src='./assets/img/gif_stop_1.jpg' onmouseover='this.src="./assets/img/gif_1.gif"'  onmouseout='this.src="./assets/img/gif_stop_1.jpg"' style="width: 100%;">-->
       <img  [src]="is_move[0]?move[0]:stop[0]" (mouseover)="change_move(0,true)" (mouseout)="change_move(0,false)">
     </div>
-    <div nz-col [nzSpan]="10" [nzOffset]="2" id="no_01" >
+    <div nz-col [nzSpan]="10" [nzOffset]="2" class="animate-div" [class.down-animate]="top >= height[0]" >
       <h1 class="tech-num">01</h1>
       <h2 class="tech-name">货道灵活调整</h2>
       <p class="tech-desc">履带安全出货+智能升降系统</p>
     </div>
   </div>
 
-  <div nz-row style="padding-top: 120px;background-color: #f8f8f8" id="no_2">
-    <div nz-col [nzSpan]="10" [nzOffset]="2" id="no_02" >
+  <div nz-row style="background-color: #f8f8f8" id="no_2">
+    <div nz-col [nzSpan]="8" [nzOffset]="4" class="animate-div" [class.down-animate-2]="top >= height[1]" >
       <h1 class="tech-num">02</h1>
       <h2 class="tech-name">无动力货仓</h2>
       <p class="tech-desc">多轴机械臂精准定位取货</p>
     </div>
-    <div nz-col [nzSpan]="8" [nzOffset]="2" class="tech-img-div">
+    <div nz-col [nzSpan]="12"  class="tech-img-div">
       <img  [src]="is_move[1]?move[1]:stop[1]" (mouseover)="change_move(1,true)" (mouseout)="change_move(1,false)">
     </div>
   </div>
@@ -44,7 +43,7 @@
     <div nz-col [nzSpan]="10" [nzOffset]="2" class="tech-img-div">
       <img  [src]="is_move[2]?move[2]:stop[2]" (mouseover)="change_move(2,true)" (mouseout)="change_move(2,false)">
     </div>
-    <div nz-col [nzSpan]="10" [nzOffset]="2" id="no_03" >
+    <div nz-col [nzSpan]="10" [nzOffset]="2" class="animate-div" [class.down-animate]="top >= height[2]" >
       <h1 class="tech-num">03</h1>
       <h2 class="tech-name">智能货仓</h2>
       <p class="tech-desc">自动上货出货</p>
@@ -88,9 +87,9 @@
     </div>
   </div>
 
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="10" [nzOffset]="2">
-      <div class="title-div" style="margin: 30px 0 100px 0;width: 40%">可视化后台管理系统</div>
+  <div nz-row class="row-div" >
+    <div nz-col [nzSpan]="10" [nzOffset]="2" >
+      <div class="title-div" style="margin: 30px 0 100px 0;width: 40%;">可视化后台管理系统</div>
       <img src="./assets/img/system_3.png" >
     </div>
     <div nz-col [nzSpan]="4" [nzOffset]="1" style="margin-top: 160px">
@@ -110,9 +109,9 @@
     </div>
   </div>
 
-  <div nz-row style="padding: 30px 0 100px 0">
+  <div nz-row style="padding: 30px 0 100px 0;background-color: #f8f8f8">
     <div nz-col [nzSpan]="4" [nzOffset]="6">
-      <img src="./assets/img/system_4.png" style="width: 90%">
+      <img src="./assets/img/system_4.png" style="width: 80%;margin-top: 4rem">
     </div>
     <div nz-col [nzSpan]="8" [nzOffset]="3">
       <img src="./assets/img/system_5.png" >
@@ -182,20 +181,20 @@
 
   <div nz-row class="row-div">
     <div nz-col [nzSpan]="6" [nzOffset]="2">
-      <div style="height: 400px;text-align: center;">
+      <div style="text-align: center;">
         <img src="./assets/img/channel_1.png" style="width: 80%">
       </div>
 
       <p class="chanel-text">APP购买</p>
     </div>
     <div nz-col [nzSpan]="6" [nzOffset]="1">
-      <div style="height: 400px;text-align: center;">
+      <div style="text-align: center;">
         <img src="./assets/img/channel_2.png" style="width: 80%">
       </div>
       <p class="chanel-text">直接在机器上购买</p>
     </div>
     <div nz-col [nzSpan]="6" [nzOffset]="1">
-      <div style="height: 400px;text-align: center;">
+      <div style="text-align: center;">
         <img src="./assets/img/channel_3.png" style="width: 80%">
       </div>
       <p class="chanel-text">其他平台购买</p>
@@ -210,31 +209,43 @@
     <h4 class="title-4">MODE&nbsp;OF&nbsp;PAYMENT</h4>
 
     <div nz-row style="padding-top: 60px">
-      <div nz-col [nzSpan]="6" [nzOffset]="2">
+      <div nz-col [nzSpan]="9" >
         <p style="text-align: center;margin-bottom: 40px">
           <span class="payment-name">现金支付</span>
           <span class="payment-name">硬币支付</span>
           <span class="payment-name">刷卡支付</span>
         </p>
-        <div style="height: 400px;text-align: center;">
+      </div>
+      <div nz-col [nzSpan]="4" [nzOffset]="1">
+        <p style="text-align: right;margin-bottom: 6px">
+          <span class="payment-name">NFC支付</span>
+        </p>
+      </div>
+
+      <div nz-col [nzSpan]="4" [nzOffset]="1">
+        <p style="text-align: right;margin-bottom: 12px">
+          <span class="payment-name">扫码支付</span>
+        </p>
+      </div>
+    </div>
+
+    <div nz-row >
+      <div nz-col [nzSpan]="6" [nzOffset]="2">
+        <div style="text-align: center;">
           <img src="./assets/img/pay_1.png" style="width: 80%">
         </div>
       </div>
 
       <div nz-col [nzSpan]="6" [nzOffset]="1">
-        <p style="text-align: right;margin-bottom: 6px">
-          <span class="payment-name">NFC支付</span>
-        </p>
-        <div  style="height: 400px;text-align: center;">
+
+        <div  style="text-align: center;">
           <img src="./assets/img/pay_2.png" style="width: 80%">
         </div>
 
       </div>
       <div nz-col [nzSpan]="6" [nzOffset]="1">
-        <p style="text-align: right;margin-bottom: 12px">
-          <span class="payment-name">扫码支付</span>
-        </p>
-        <div  style="height: 400px;text-align: center;">
+
+        <div  style="text-align: center;">
           <img src="./assets/img/pay_3.png" style="width: 80%">
         </div>
       </div>

@@ -24,16 +24,22 @@
   font-size: 1.8rem;
 }
 
+
+/*img{*/
+  /*width: 100%;*/
+/*}*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~label~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
 
 .label-div{
   border: solid 1px #3fabf3;
-  width: 10rem;
+  /*width: 10rem;*/
   height: 60px;
+  width: 100%;
   border-radius: 4px;
-  margin: 24px 0 0 3rem;
+  margin-top: 2rem;
+  /*margin: 24px 0 0 3rem;*/
   display: inline-block;
 
 }
@@ -64,12 +70,12 @@
 }
 
 .label-title-div-short{
-  height:140px;
+  height: 10rem;
   display: inline-block;
   background-color: #3fabf3;
   text-align:center;
   letter-spacing: 0.3rem;
-  padding-top: 0.3rem;
+  padding-top: 0.5rem;
 }
 
 
@@ -163,7 +169,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(204,204,204,0.7);
+  /*background-color: rgba(204,204,204,0.7);*/
+  background-color: rgba(0,0,0,0.4);
   z-index: 1201;
   display: none;
 }

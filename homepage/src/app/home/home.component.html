@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div style="position: fixed;top: 32%;left: 2rem" *ngIf="swiper">
+<div style="position: fixed;bottom: 2rem;left: 48%" *ngIf="swiper">
   <div (click)="change_swiper(0)"  class="point-btn"  [class.point-active]="swiper.activeIndex == 0"></div>
 
   <div (click)="change_swiper(1)" class="point-btn"  [class.point-active]="swiper.activeIndex == 1"></div>
@@ -24,10 +24,10 @@
 </div>
 
 
-<div id="animate" *ngIf="play == 1">
+<div id="animate" *ngIf="play == 1" style="height: 92%">
   <img [src]="animate_img" >
 </div>
 
-<div id="hide-animate" *ngIf="play == 2">
+<div id="hide-animate" *ngIf="play == 2" style="height: 92%">
   <img src="./assets/img/home/banner1.jpg" >
 </div>

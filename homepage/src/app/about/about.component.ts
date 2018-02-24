@@ -15,6 +15,9 @@ export class AboutComponent implements OnInit, AfterViewInit {
   map_chart: any;
 
   chart_c = 0;
+
+  zoom = 0.8;
+
   constructor() { }
 
   ngOnInit() {
@@ -40,6 +43,20 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
     }
   }
+
+  change_map(option) {
+    if (option == 1 && this.zoom < 1.8) {
+      this.zoom = this.zoom + 0.1;
+      this.set_map(0);
+    }
+
+    if (option == 0 && this.zoom > 0.8) {
+      this.zoom = this.zoom - 0.1;
+      this.set_map(0);
+    }
+
+  }
+
 
   set_map(real_data) {
 
@@ -188,10 +205,11 @@ export class AboutComponent implements OnInit, AfterViewInit {
       },
       geo: {
         map: 'china',
-        zoom: 0.8,
+        // zoom: 0.8,
+        zoom: this.zoom,
         scaleLimit: {
           min: 0.8,
-          max: 1.4,
+          max: 1.8,
         },
         roam: false,
         label: {

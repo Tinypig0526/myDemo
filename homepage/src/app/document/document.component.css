@@ -1,5 +1,5 @@
 .document{
-  background:url("../../assets/img/document/document-bg.png") 0 0  no-repeat;
+  background:url("../../assets/img/document/document-bg.png") 0 0  repeat-y;
   background-size:100%;
   padding-bottom: 50px;
 }
@@ -15,12 +15,12 @@
 .document>.title img{
   vertical-align: middle;
 }
-.document>.title .content{
-  cursor: pointer;
-}
-.document>.title .content:hover{
-  color: #39a3f3;
-}
+/*.document>.title .content{*/
+  /*cursor: pointer;*/
+/*}*/
+/*.document>.title .content:hover{*/
+  /*color: #39a3f3;*/
+/*}*/
 .document .about,.document .ercode{
   text-align: left;
   font-family: MicrosoftYaHei;
@@ -63,4 +63,39 @@
   padding: 20px 45px;
   outline: none;
   border: 0;
+}
+
+
+
+.tab-btn{
+  background:none;
+  color: white;
+
+  line-height: 3rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 0;
+  padding: 0 1rem 0 1rem;
+  border-radius: 1.5rem;
+}
+
+.tab-btn:hover,.tab-btn:focus{
+  color: white !important;
+  background-color: #3fabf3;
+  outline: none;
+}
+
+
+.tab-active{
+  color: white !important;
+  background-color: #3fabf3;
+}
+
+
+
+
+.tips{
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
 }

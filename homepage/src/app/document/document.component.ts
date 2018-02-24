@@ -9,5 +9,10 @@ import {Component} from '@angular/core';
 })
 export class DocumentComponent {
 
+  tab = 1;
 
+
+  change_tab(num) {
+    this.tab = num;
+  }
 }

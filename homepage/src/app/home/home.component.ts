@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.animate_img = this.img_path[a];
         a = a + 1;
       }
-      }, 200);
+      }, 100);
 
   }
 
@@ -94,7 +94,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         stopOnLastSlide: false,
         disableOnInteraction: true,
       },
-      effect: 'flip',
+      effect: 'fade',
     });
   }
 

@@ -12,7 +12,15 @@ export class AppComponent implements OnInit {
   show = 0;
 
   ngOnInit() {
-
+    switch (location.pathname) {
+      case '/home': this.active = 1; break;
+      case '/solution': this.active = 2; break;
+      case '/product': this.active = 3; break;
+      case '/case': this.active = 4; break;
+      case '/serve': this.active = 5; break;
+      case '/about': this.active = 6; break;
+      case '/document': this.active = 7; break;
+    }
   }
 
   change_active(num) {
@@ -20,7 +28,6 @@ export class AppComponent implements OnInit {
   }
 
   change_show(num) {
-    console.log(num);
     this.show = num;
   }
 

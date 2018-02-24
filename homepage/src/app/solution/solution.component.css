@@ -29,11 +29,38 @@ img{
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-#no_01,#no_02,#no_03{
-  animation-duration: 3s;
-  animation-delay: 0.5s;
-  display: none;
+.animate-div{
+  margin-top: 6rem;
+  opacity: 0;
 }
+
+.down-animate{
+
+
+  animation: down_animate 3s;
+  animation-fill-mode : forwards;
+}
+
+
+@keyframes down_animate {
+  0%  {margin-top: 6rem;opacity: 0;}
+  100% {margin-top:0;opacity: 1;}
+}
+
+.down-animate-2{
+  /*margin-top: 24rem;*/
+  /*opacity: 0;*/
+
+  animation: down_animate_2 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes down_animate_2 {
+  0%  {margin-top: 24rem;opacity: 0;}
+  100% {margin-top:18rem;opacity: 1;}
+}
+
+
 
 .tech-img-div{
   border: solid 1px #fafafa;

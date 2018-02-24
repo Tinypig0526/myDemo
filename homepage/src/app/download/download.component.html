@@ -1,32 +1,30 @@
 <div class="download">
   <table></table>
-  <div class="title">
-    <div nz-row>
-      <div nz-col [nzSpan]="8" style="text-align: left;padding-left: 40px">
-        <!--<img src="./assets/img/logo.png" alt="thybot">-->
-      </div>
-      <div nz-col [nzSpan]="8">
-        <div nz-row >
-          <div nz-col [nzSpan]="6">
-          </div>
-          <div nz-col [nzSpan]="6" class="content">
-            官网首页
-          </div>
-          <div nz-col [nzSpan]="6" class="content">
-            文档下载
-          </div>
-          <div nz-col [nzSpan]="6">
-          </div>
-        </div>
-      </div>
-      <div nz-col [nzSpan]="8">
-      </div>
-    </div>
-  </div>
+  <!--<div class="title">-->
+    <!--<div nz-row>-->
+      <!--<div nz-col [nzSpan]="8" style="text-align: left;padding-left: 40px">-->
+        <!--&lt;!&ndash;<img src="./assets/img/logo.png" alt="thybot">&ndash;&gt;-->
+      <!--</div>-->
+      <!--<div nz-col [nzSpan]="8">-->
+        <!--<div nz-row >-->
 
-  <div nz-row>
-    <div nz-col [nzSpan]="5"></div>
-    <div nz-col [nzSpan]="6" class="container">
+          <!--<div nz-col [nzSpan]="6" [nzOffset]="6" class="content">-->
+            <!--<button class="tab-btn" [class.tab-active]="tab == 1" (click)="change_tab(1)">询&nbsp;&nbsp;盘</button>-->
+          <!--</div>-->
+          <!--<div nz-col [nzSpan]="6" class="content">-->
+            <!--<button class="tab-btn" [class.tab-active]="tab == 2" (click)="change_tab(2)">文档下载</button>-->
+          <!--</div>-->
+
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div nz-col [nzSpan]="8">-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <div nz-row style="margin-top: 8rem">
+
+    <div nz-col [nzXl] = "{span: 6, offset: 5}"  [nzLg] = "{span: 7, offset: 4}" [nzMd] = "{span: 8, offset: 3}" [nzSm] = "{span: 9, offset: 2}" [nzXs] = "{span: 20, offset: 2}" class="container">
       <div class="title">
         今日热门文档（02月10日 00:00~15:27）
       </div>
@@ -52,8 +50,8 @@
         assert(value[, message])
       </div>
     </div>
-    <div nz-col [nzSpan]="2"></div>
-    <div nz-col [nzSpan]="6" class="container">
+
+    <div nz-col [nzXl] = "{span: 6, offset: 2}"  [nzLg] = "{span: 7, offset: 2}" [nzMd] = "{span: 8, offset: 2}" [nzSm] = "{span: 9, offset: 2}" [nzXs] = "{span: 20, offset: 2}" class="container">
       <div class="title">
         本周热门文档（02月04日~02月10日）
       </div>
@@ -79,6 +77,5 @@
         assert(value[, message])
       </div>
     </div>
-    <div nz-col [nzSpan]="5"></div>
   </div>
 </div>
