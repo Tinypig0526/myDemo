@@ -1,0 +1,80 @@
+.nav-div{
+  width: 100%;
+  height: 72px;
+  /*background-image: linear-gradient(to bottom, #43b0f3, #298df4);*/
+  background-color: #3fabf3;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1998;
+}
+
+
+
+.route-div{
+  text-align: right;
+}
+
+.route-btn{
+  color: white;
+  background:none;
+  margin: 16px 0.9rem 0 0.9rem;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  height: 40px;
+}
+
+.active{
+  background-color: white !important;
+  color: #3AA3F4 !important;
+}
+
+
+.route-btn:hover{
+  background-color: white;
+  color: #3AA3F4;
+}
+
+
+.fixed-btn{
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-color: #3fabf3;
+  color: white;
+  border: solid 0.1rem white;
+  vertical-align: bottom;
+}
+
+.fixed-btn:hover,.fixed-btn:focus{
+  outline-color: white;
+  color: #3fabf3;
+  background-color: white;
+}
+
+.icon {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+img{
+  width: 100%;
+}
+
+.phone-num{
+  background-color: #f6f6f6;
+  font-size: 1.4rem;
+  margin-top: 36%;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.document{
+  background-color: #f6f6f6;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}

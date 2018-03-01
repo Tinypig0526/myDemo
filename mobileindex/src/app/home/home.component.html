@@ -1,0 +1,33 @@
+<div id="banner" class="animated slideInRight">
+  <!--<img [src]="banner_img" >-->
+  <div class="swiper-container" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" >
+        <img src="./assets/img/home/banner1.jpg" style="height: 92vh">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/img/home/banner2.jpg" style="height: 92vh">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/img/home/banner3.jpg" style="height: 92vh">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="position: fixed;bottom: 2rem;left: 48%;z-index: 888" *ngIf="swiper">
+  <div (click)="change_swiper(0)"  class="point-btn"  [class.point-active]="swiper.activeIndex == 0"></div>
+
+  <div (click)="change_swiper(1)" class="point-btn"  [class.point-active]="swiper.activeIndex == 1"></div>
+
+  <div (click)="change_swiper(2)" class="point-btn"  [class.point-active]="swiper.activeIndex == 2"></div>
+</div>
+
+
+<div id="animate" *ngIf="play == 1" style="height: 92%">
+  <img [src]="animate_img" >
+</div>
+
+<div id="hide-animate" *ngIf="play == 2" style="height: 92%">
+  <img src="./assets/img/home/banner1.jpg" >
+</div>

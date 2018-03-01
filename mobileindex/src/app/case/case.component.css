@@ -1,0 +1,274 @@
+
+.exhibition-img{
+  width: 100%;
+}
+
+.factory-name{
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.name1-w{
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+
+}
+
+.name2-w{
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.name3-w{
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.4rem;
+  border: solid 2px white;
+  color: white;
+}
+
+
+.name1-b{
+
+  font-size: 1.6rem;
+  font-weight: bold;
+
+}
+
+.name2-b{
+  margin-top: 1rem;
+  font-size: 1.4rem;
+
+}
+
+.name3-b{
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-size: 1.6rem;
+  border: solid 2px black;
+
+}
+
+.name4-b{
+  font-size: 1rem;
+  color: #999999;
+  margin-top: 1rem;
+}
+
+.name4-w{
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+
+
+.triangle_right{
+  z-index: 1000;
+  position: absolute;
+  /*left: 19rem;*/
+  left: 100%;
+  top: 46%;
+  border-top: 1.6rem solid transparent;
+  border-left: 1.6rem solid white;
+  border-bottom: 1.6rem solid transparent;
+
+}
+.triangle_left{
+  z-index: 1000;
+  position: absolute;
+  top: 46%;
+  left: -1.6rem;
+  border-top: 1.6rem solid transparent;
+  border-right: 1.6rem solid white;
+  border-bottom: 1.6rem solid transparent;
+}
+
+.blue-div{
+  top:50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  /*top: 20rem;*/
+  /*left: 50%;*/
+  /*width: 50%;*/
+  /*height: 20rem;*/
+
+  position: absolute;
+
+  background-color: rgba(63,171,243,0.6);
+  color: white;
+}
+
+
+
+.line{
+  border-top:1px solid  #c9c9c9;
+  width: 100px;
+  display: inline-block;
+  margin: 0 1rem 0.6rem 1rem;
+}
+
+
+.title-2{
+  font-size: 2.4rem;
+  color: #3fabf3;
+  font-weight: bold;
+}
+
+.title-4{
+  font-size: 1.4rem;
+  font-family: Helvetica, monospace;
+  color: #919191;
+}
+
+
+.color-img{
+  width: 100%;
+  min-height: 25rem;
+  vertical-align: bottom;
+  transition: width 1s;
+
+}
+
+.color-img:hover{
+  width: 105%;
+
+
+}
+
+.color-img-big{
+  width: 100%;
+  min-height: 50rem;
+  vertical-align: bottom;
+  transition: width 1s;
+
+}
+
+.color-img-big:hover{
+  width: 105%;
+
+
+}
+
+.overflow-div{
+
+  overflow: hidden;
+}
+
+.boao-img{
+  transition: width 1s;
+  width: 90%;
+  min-height: 25rem;
+}
+.boao-img:hover{
+  width: 93%;
+  margin: auto;
+}
+
+
+
+.swiper-btn-div{
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+  z-index: 997;
+
+}
+
+.swiper-btn{
+  /*border: solid 1px rgba(63,171,243,0.7);*/
+
+  border: 0;
+  color: white;
+  background-color: rgba(63,171,243,0.7);
+  font-size: 3rem;
+  line-height: 3.6rem;
+  padding: 0.3rem
+  0.5rem 0.6rem 0.5rem;
+  margin-right: 2rem;
+
+  cursor: pointer;
+}
+
+.swiper-btn-lock{
+  box-sizing: border-box;
+  background:none;
+  cursor:not-allowed;
+  border: solid 1px white;
+  /*font-size: 3rem;*/
+  /*line-height: 3.6rem;*/
+  /*padding: 0 0.5rem 0.3rem 0.5rem;*/
+  /*margin-right: 2rem;*/
+  /*border: 0;*/
+}
+
+
+
+.swiper-slide,{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~media~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.fixed-height1{
+  height: 25rem;
+}
+
+.fixed-height2{
+  height: 50rem;
+}
+
+/*@media screen and (min-width:1600px){*/
+  /*.img1{*/
+    /*height: 20rem;*/
+  /*}*/
+/*}*/
+
+
+/*@media screen and (min-width: 1200px) and (max-width: 1600px) {*/
+  /*html{*/
+    /*font-size: 12px;*/
+  /*}*/
+/*}*/
+
+/*@media screen and (min-width: 992px) and (max-width: 1200px) {*/
+  /*html{*/
+    /*font-size: 11px;*/
+  /*}*/
+/*}*/
+
+
+/*@media screen and (min-width: 768px) and (max-width: 992px) {*/
+  /*html{*/
+    /*font-size: 10px;*/
+  /*}*/
+/*}*/
+
+/*@media only screen and (max-width: 768px) {*/
+  /*html{*/
+    /*font-size: 9px;*/
+  /*}*/
+/*}*/
