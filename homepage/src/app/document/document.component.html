@@ -2,9 +2,7 @@
   <table></table>
   <div class="title">
     <div nz-row>
-      <!--<div nz-col [nzSpan]="8" style="text-align: left;padding-left: 40px">-->
-        <!--&lt;!&ndash;<img src="./assets/img/logo.png" alt="thybot">&ndash;&gt;-->
-      <!--</div>-->
+
       <div nz-col [nzXl] = "{span: 8, offset: 8}"  [nzLg] = "{span: 10, offset: 7}" [nzMd] = "{span: 12, offset: 6}" [nzSm] = "{span: 16, offset: 4}" [nzXs] = "{span: 24}">
         <div nz-row >
 
@@ -14,9 +12,7 @@
           <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 6}" [nzSm] = "{span: 6}" [nzXs] = "{span: 8}" class="content">
             <button class="tab-btn" [class.tab-active]="tab == 2" (click)="change_tab(2)">文档下载</button>
           </div>
-          <!--<div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 20, offset: 2}" [nzMd] = "{span: 20, offset: 2}" [nzSm] = "{span: 20, offset: 2}" [nzXs] = "{span: 24}">-->
 
-          <!--</div>-->
         </div>
       </div>
 
@@ -53,60 +49,63 @@
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
           产品名称：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.product'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
           数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.amount'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
-          姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
+          <span style="color: red">*</span>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.name'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
           公司名称：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.company'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
           邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.email'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
-          电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：
+          <span style="color: red">*</span>&nbsp;电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.phone'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
-          城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市：
+          <span style="color: red">*</span>&nbsp;城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.city'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
           国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家：
         </div>
-        <div nz-col [nzXl] = "{span: 7}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'"></nz-input>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.state'></nz-input>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
           备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：
         </div>
-        <div nz-col [nzXl] = "{span: 18}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}" style="padding-top: 12px;">
-          <nz-input  [nzType]="'textarea'" [nzRows]="'12'" [nzPlaceHolder]="''"></nz-input>
+        <div nz-col [nzXl] = "{span: 17}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}" style="padding-top: 12px;">
+          <nz-input  [nzType]="'textarea'" [nzRows]="'12'" [(ngModel)] = 'client.other' [nzPlaceHolder]="''"></nz-input>
         </div>
 
         <div nz-col [nzSpan]="24" style="text-align: center;margin-top: 29px;">
-          <button class="btn" [routerLink] = "['/download']">提交</button>
+          <button (click)="submit()"  class="btn" >提交</button>
+          <span class="success" *ngIf="submit_num == 1">!提交成功，{{time}}秒后返回主页</span>
+          <span class="success" *ngIf="submit_num == 0">!请正确填写带有*的信息</span>
+
         </div>
 
       </div>

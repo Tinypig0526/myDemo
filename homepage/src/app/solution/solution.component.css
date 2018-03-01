@@ -63,7 +63,7 @@ img{
 
 
 .tech-img-div{
-  border: solid 1px #fafafa;
+  border: solid 1px #d7d7d7;
   padding: 2% 5% 2% 5%;
 }
 
@@ -173,6 +173,8 @@ img{
   background-color: white;
   font-size: 1.5rem;
   border: solid 1px #dddddd;
-  padding: 0.3rem;
+  padding: 1rem;
   margin: 0 1rem 0 1rem;
+  /*margin-right: 1rem;*/
 }
+

@@ -173,17 +173,12 @@
           </div>
         </div>
       </div>
-
-      <!--<p class="name1-b">START WITH THE WORLD</p>-->
-      <!--<p class="name4-b">公司生产全面执行TQM，引进了-->
-        <!--先进的测试设备</p>-->
-      <!--<span class="name3-b">美国自动售货展</span>-->
     </div>
   </div>
   <div nz-col [nzSpan]="14" style="position: relative" >
-    <div class="swiper-btn-div ">
-      <button class="swiper-btn" [class.swiper-btn-lock]="swiper.activeIndex == 0" (click)="swiper_pre()" ><</button>
-      <button class="swiper-btn" [class.swiper-btn-lock]="swiper.activeIndex == 5" (click)="swiper_next()" >></button>
+    <div class="swiper-btn-div " *ngIf="swiper">
+      <button class="swiper-btn"  [class.swiper-btn-lock]="swiper.activeIndex == 0" (click)="swiper_pre()" ><</button>
+      <button class="swiper-btn"  [class.swiper-btn-lock]="swiper.activeIndex == 5" (click)="swiper_next()" >></button>
     </div>
     <div id="swiper" class="swiper-container" >
       <div class="swiper-wrapper">

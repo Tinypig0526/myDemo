@@ -13,8 +13,9 @@ import { ServeComponent } from './serve/serve.component';
 import { AboutComponent } from './about/about.component';
 import {RouterModule, Routes} from '@angular/router';
 import { BottomComponent } from './bottom/bottom.component';
-import {DownloadComponent} from "./download/download.component";
-import {DocumentComponent} from "./document/document.component";
+import {DownloadComponent} from './download/download.component';
+import {DocumentComponent} from './document/document.component';
+import {ControlService} from './control.service';
 
 const routeConfig: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -49,6 +50,9 @@ const routeConfig: Routes = [
     BrowserAnimationsModule,
     NgZorroAntdModule.forRoot(),
     RouterModule.forRoot(routeConfig),
+  ],
+  providers: [
+    ControlService,
   ],
   bootstrap: [AppComponent]
 })

@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div style="position: fixed;bottom: 2rem;left: 48%" *ngIf="swiper">
+<div style="position: fixed;bottom: 2rem;left: 48%;z-index: 888" *ngIf="swiper">
   <div (click)="change_swiper(0)"  class="point-btn"  [class.point-active]="swiper.activeIndex == 0"></div>
 
   <div (click)="change_swiper(1)" class="point-btn"  [class.point-active]="swiper.activeIndex == 1"></div>

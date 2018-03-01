@@ -56,14 +56,14 @@ export class CaseComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.set_swiper();
-    }, 200);
+
 
   }
 
   ngAfterViewInit() {
-
+    setTimeout(() => {
+      this.set_swiper();
+    }, 100);
   }
 
 
@@ -89,12 +89,6 @@ export class CaseComponent implements OnInit, AfterViewInit {
         stopOnLastSlide: false,
         disableOnInteraction: true,
       },
-      // controller: {
-      //   control: [this.swiper, this.swiper1],
-      //   inverse: true,
-      //
-      // },
-      // effect: 'flip',
     });
 
 

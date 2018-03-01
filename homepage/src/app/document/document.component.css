@@ -99,3 +99,11 @@
   color: white;
   font-size: 1.6rem;
 }
+
+
+.success{
+  position: absolute;
+
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
