@@ -1,75 +1,150 @@
-<div nz-row class="nav-div">
-
-  <div nz-col class="logo-div" [nzXl] = "{span: 3, offset: 1}"  [nzLg] = "{span: 3, offset: 1}" [nzMd] = "{span: 3, offset: 1}" [nzSm] = "{span: 0}" [nzXs] = "{span: 0}">
-
-    <img src="./assets/img/logo.png" alt="thybot"  style="margin-top: 1rem;width: 100%;min-width: 16rem">
-  </div>
-
-  <div nz-col class="route-div"  [nzXl] = "{span: 18}"  [nzLg] = "{span: 18}" [nzMd] = "{span: 18}" [nzSm] = "{span: 24}" [nzXs] = "{span: 0}">
-    <button [routerLink] = "['/home']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 1" (click)="change_active(1)">首页</button>
-    <button [routerLink] = "['/solution']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 2" (click)="change_active(2)">解决方案</button>
-    <button [routerLink] = "['/product']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 3" (click)="change_active(3)">产品</button>
-    <button [routerLink] = "['/case']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 4" (click)="change_active(4)">案例</button>
-    <button [routerLink] = "['/serve']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 5" (click)="change_active(5)">服务</button>
-    <button [routerLink] = "['/about']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 6" (click)="change_active(6)">关于</button>
-    <button [routerLink] = "['/document']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 7" (click)="change_active(7)">询盘/下载</button>
-  </div>
-
-  <div nz-col class="logo-div"  [nzXl] = "{span: 0}"  [nzLg] = "{span: 0}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 12,offset:1}">
-    <img src="./assets/img/logo.png" alt="thybot"  style="margin-top: 2rem;max-height: 3rem;max-width: 12rem">
-  </div>
-  <div nz-col class="route-div"  [nzXl] = "{span: 0}"  [nzLg] = "{span: 0}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 10}">
-    <nz-dropdown [nzPlacement]="'bottomRight'">
-      <button  nz-dropdown style="background:none;color: white;border:0;margin-top:14px;outline: none">
-        <i class="icon font_family icon-platform" style="font-size: 6rem"></i>
-      </button>
-      <ul nz-menu >
-        <li nz-menu-item >
-          <a >首页</a>
-        </li>
-        <li nz-menu-item>
-          <a >解决方案</a>
-        </li>
-        <li nz-menu-item>
-          <a>产品</a>
-        </li>
-        <li nz-menu-item>
-          <a>案例</a>
-        </li>
-        <li nz-menu-item>
-          <a>服务</a>
-        </li>
-        <li nz-menu-item>
-          <a >关于</a>
-        </li>
-        <li nz-menu-item>
-          <a>询盘/下载</a>
-        </li>
-      </ul>
-    </nz-dropdown>
-  </div>
-</div>
+<div class="nav-div flex-div">
 
 
-<div style="position: fixed;right: 0;top: 30%;margin: 0;padding: 0;z-index: 1100">
-  <div *ngIf="show == 3" style="display: inline-block;width:15rem;height: 15rem;background-color: white;vertical-align: bottom;">
-    <img id="contact-img" src="./assets/img/er_wei_ma.jpg" >
+  <div style="flex: 1"></div>
+  <div style="flex: 6">
+    <img src="./assets/img/logo.png" style="width: 100%;max-width: 10rem">
   </div>
-  <div *ngIf="show == 2" style="display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;">
-    <p class="phone-num">86-0756-6893285</p>
+  <div style="flex: 4"></div>
+  <div style="flex: 2" (click)="show_menu()">
+    <i class="icon font_family icon-icon_nav" style="font-size: 3rem;color: white"></i>
   </div>
-  <div *ngIf="show == 1" style="display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;">
-    <p class="document">点击进入在线询盘</p>
-  </div>
-  <div style="display: inline-block;">
-    <button [routerLink] = "['/document']" (click)="change_show(1)" (mouseenter) = "change_show(1)" (mouseleave)="change_show(0)"  class="fixed-btn"><i class="icon font_family icon-btn_enquiry"></i></button>
-    <button (click)="change_show(2)" (mouseenter) ="change_show(2)" (mouseleave)="change_show(0)" class="fixed-btn"><i class="icon font_family icon-btn_phone"></i></button>
-    <button  (click)="change_show(3)" (mouseenter) ="change_show(3)" (mouseleave)="change_show(0)" class="fixed-btn"><i class="icon font_family icon-btn_qrcode"></i></button>
-
-  </div>
-
 </div>
 
 <div style="margin-top: 72px">
   <router-outlet></router-outlet>
+</div>
+
+<div class="menu-div" *ngIf="menu" (click)="close_menu()">
+  <div class="menu" >
+    <a [routerLink] = "['/home']"><p class="route-p">首页</p></a>
+    <hr>
+    <a [routerLink] = "['/system']"><p class="route-p">解决方案</p></a>
+    <div class="sub-menu">
+      <a [routerLink] = "['/system']"><p class="child-p">系统优势</p></a>
+      <hr>
+      <a [routerLink] = "['/tech']"><p class="child-p">核心技术</p></a>
+      <hr>
+      <a [routerLink] = "['/solution']"><p class="child-p">智能新零售解决方案</p></a>
+      <hr>
+      <a [routerLink] = "['/channel']"><p class="child-p">支付和购买渠道</p></a>
+    </div>
+    <hr>
+    <a [routerLink] = "['/product']"><p class="route-p">产品</p></a>
+    <hr>
+    <a [routerLink] = "['/serve']"><p class="route-p">服务</p></a>
+    <hr>
+    <a [routerLink] = "['/case']"><p class="route-p">案例</p></a>
+    <hr>
+    <a [routerLink] = "['/about']"><p class="route-p">关于我们</p></a>
+  </div>
+</div>
+
+
+
+<div style="position: fixed;top:44%;right: 0;z-index: 1996">
+  <button (click)="submit(1)"  class="fixed-btn"><i class="icon font_family icon-btn_enquiry"></i></button>
+</div>
+
+<div class="document" *ngIf="document > 0" >
+  <div class="model">
+
+
+    <div class="form-group download" *ngIf="document == 1">
+      <h2 class="tip">请填写您的信息，我们会很快联系您</h2>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label  class="form-title">产品名称:</label></div>
+        <div style="flex: 3">
+          <select class="form-control" [(ngModel)]="client.product">
+            <option class="option">综合机</option>
+            <option class="option">万能机</option>
+            <option class="option">冰河系列</option>
+            <option class="option">经典系列</option>
+            <option class="option">臻荣系列</option>
+            <option class="option">G2S</option>
+            <option class="option">G2S PLUS</option>
+            <option class="option">玲珑系列</option>
+            <option class="option">熟食系列</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="name" class="form-title"><span style="color: red">*&nbsp;</span>姓名:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="name" [(ngModel)]="client.name" ></div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="email" class="form-title">邮箱:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="email" [(ngModel)]="client.email"></div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="city" class="form-title"><span style="color: red">*&nbsp;</span>城市:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="city" [(ngModel)]="client.city"></div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="amount" class="form-title">数量:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="amount" [(ngModel)]="client.amount"></div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="company" class="form-title">公司名称:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="company" [(ngModel)]="client.company"></div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="phone" class="form-title"><span style="color: red">*&nbsp;</span>电话:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="phone" [(ngModel)]="client.phone"></div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="state" class="form-title">国家:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="state" [(ngModel)]="client.state"></div>
+      </div>
+      <div class="flex-div form-row">
+        <div style="flex: 1"><label for="other" class="form-title" >备注:</label></div>
+        <div style="flex: 3"><input type="text" class="form-control" id="other" style="height: 4rem" [(ngModel)]="client.other"></div>
+      </div>
+      <div class="flex-div">
+
+        <div style="flex: 3"><button (click)="submit(2)" type="submit" class="btn modal-btn" >提交</button></div>
+        <div style="flex: 1"></div>
+        <div style="flex: 3"><button (click)="submit(0)" class="btn modal-btn" >取消</button></div>
+
+      </div>
+
+      <div class="success"  *ngIf="!is_success">
+        <h3>请正确填写带有*的信息!</h3>
+      </div>
+    </div>
+
+
+    <div class="download" *ngIf="document == 2" >
+        <div class="container">
+          <h2 style="font-size: 1.6rem;padding: 1rem 0 1rem 0;text-align: center">技术资料下载</h2>
+          <div class="td">
+            assert(value[, message])
+          </div>
+          <div class="td">
+            assert(value[, message])
+          </div>
+          <div class="td">
+            assert(value[, message])
+          </div>
+          <div class="td">
+            assert(value[, message])
+          </div>
+          <div class="td">
+            assert(value[, message])
+          </div>
+          <div class="td">
+            assert(value[, message])
+          </div>
+          <div class="td">
+            assert(value[, message])
+          </div>
+        </div>
+      <div style="text-align: center;margin:1rem 0 1rem 0" >
+        <!--<div style="flex: 3"><button (click)="submit(2)" type="submit" class="btn modal-btn" >返回主页</button></div>-->
+        <!--<div style="flex: 1"></div>-->
+        <button (click)="submit(0)" class="btn modal-btn" style="width: 30%" >返回</button>
+      </div>
+
+    </div>
+  </div>
 </div>

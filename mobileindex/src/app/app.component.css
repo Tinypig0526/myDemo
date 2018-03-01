@@ -1,7 +1,6 @@
 .nav-div{
   width: 100%;
   height: 72px;
-  /*background-image: linear-gradient(to bottom, #43b0f3, #298df4);*/
   background-color: #3fabf3;
   position: fixed;
   top:0;
@@ -9,72 +8,156 @@
   z-index: 1998;
 }
 
-
-
-.route-div{
-  text-align: right;
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
 }
 
-.route-btn{
+
+.menu-div{
+  height: 100%;
+  width:100%;
+  z-index: 1997;
+  position: fixed;
+  top: 72px;
+}
+
+.menu{
+
+  background-color: #3fabf3;
+  width: 64%;
+  /*position: fixed;*/
+  /*top: 72px;*/
+  /*right: 0;*/
+  float: right;
+  z-index: 1997;
+}
+
+.sub-menu{
+  background-color: #379de8;
+  padding-left: 28%;
+}
+
+
+
+.route-p{
+  padding-left: 18%;
   color: white;
-  background:none;
-  margin: 16px 0.9rem 0 0.9rem;
-  border: 0;
-  border-radius: 20px;
-  font-size: 1.3rem;
-  height: 40px;
+  font-size: 1rem;
+  line-height: 3.2rem;
 }
 
-.active{
-  background-color: white !important;
-  color: #3AA3F4 !important;
+.child-p{
+
+  color: white;
+  font-size: 1rem;
+  line-height: 2.4rem;
 }
 
-
-.route-btn:hover{
-  background-color: white;
-  color: #3AA3F4;
-}
 
 
 .fixed-btn{
   display: block;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   background-color: #3fabf3;
   color: white;
-  border: solid 0.1rem white;
+  border: 0;
   vertical-align: bottom;
 }
 
-.fixed-btn:hover,.fixed-btn:focus{
-  outline-color: white;
-  color: #3fabf3;
-  background-color: white;
+.icon{
+  font-size: 3.2rem;
+  line-height: 4rem;
 }
 
-.icon {
-  font-size: 3rem;
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~model~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.document{
+  position:fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2016;
+  background-color: rgba(51, 51, 51, 0.6);
+}
+
+.model{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: 38rem;
+
+  background-color: white;
+  z-index: 2017;
+  padding: 1rem;
+}
+
+
+.form-title{
+  font-size: 0.8rem;
+
+}
+
+.form-row{
+  margin: 0.8rem 0 0.8rem 0;
+  text-align: right;
+}
+
+.form-control{
+  height: 2.4rem;
+}
+
+
+.option{
+  font-size: 1.6rem;
   line-height: 3rem;
 }
 
-img{
+.tip{
+  font-size: 1rem;
+  padding: 0.6rem 0 0.6rem 0;
+  text-align: center;
+}
+
+.td{
+  line-height:2rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.td:nth-child(odd){
+  background-color: #f8f8f8;
+}
+
+
+.td:nth-child(even){
+
+  background-color: #ccc;
+}
+
+.td:hover{
+  background-color: #39a3f3;
+  color: #ffffff;
+}
+
+
+.modal-btn{
+  width: 100%;background-color: #3fabf3;color: white
+}
+
+.success{
   width: 100%;
-}
-
-.phone-num{
-  background-color: #f6f6f6;
-  font-size: 1.4rem;
-  margin-top: 36%;
-  padding: 1rem;
   text-align: center;
-}
-
-
-.document{
-  background-color: #f6f6f6;
-  font-size: 1.4rem;
-  margin-top: 0.5rem;
-  padding: 1rem;
-  text-align: center;
+  font-size: 1.2rem;
+  color: orangered;
+  position: absolute;
+  bottom: 5rem;
 }

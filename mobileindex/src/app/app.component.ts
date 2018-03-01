@@ -1,34 +1,64 @@
-import {Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
+import {Router} from "@angular/router";
+import {Alert} from "selenium-webdriver";
 
-declare const $: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  active = 1;
-  show = 0;
+  constructor(private route: Router) {
 
-  ngOnInit() {
-    switch (location.pathname) {
-      case '/home': this.active = 1; break;
-      case '/solution': this.active = 2; break;
-      case '/product': this.active = 3; break;
-      case '/case': this.active = 4; break;
-      case '/serve': this.active = 5; break;
-      case '/about': this.active = 6; break;
-      case '/document': this.active = 7; break;
+  }
+  menu = false;
+  document = 0;
+
+  client = {
+    product: '',
+    amount: '',
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    city: '',
+    state: '',
+    other: '',
+  };
+
+  is_success = true;
+
+  show_menu() {
+    this.is_success = true;
+    this.menu = !this.menu;
+  }
+
+  close_menu() {
+    this.menu = false;
+  }
+
+
+  submit(where) {
+
+    if (where == 2) {
+      console.log(this.client);
+      if (this.client.phone == '' || this.client.name == '' || this.client.city == '') {
+
+        this.is_success = false;
+        setTimeout(() => {this.is_success = true} , 600);
+        // alert('请正确填写带有*的信息!');
+      } else {
+        this.document = where;
+      }
+    } else if (where == -1) {
+      this.document = 0;
+      this.route.navigate(['/home']);
+    } else {
+      this.document = where;
     }
+
   }
 
-  change_active(num) {
-    this.active = num;
-  }
-
-  change_show(num) {
-    this.show = num;
-  }
 
 }

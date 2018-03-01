@@ -1,66 +1,29 @@
-import {AfterViewInit, Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 declare const echarts: any;
-declare const $: any;
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements OnInit, AfterViewInit {
 
 
-  tab_num = 1;
+export class AboutComponent implements OnInit {
+
   map_chart: any;
-
-  chart_c = 0;
-
-  zoom = 0.8;
-
   constructor() { }
 
   ngOnInit() {
-
+    setTimeout(() => {
+      this.set_map();
+    }, 200);
   }
 
-  ngAfterViewInit() {
-    if (this.tab_num == 1) {
-      setTimeout( () => {
-        this.set_map(0);
-      }, 200);
-
-    }
-  }
+  set_map() {
 
 
-  change_tab(num) {
-    this.tab_num = num;
-    if (num == 1) {
-      setTimeout( () => {
-        this.set_map(0);
-      }, 200);
-
-    }
-  }
-
-  change_map(option) {
-    if (option == 1 && this.zoom < 1.8) {
-      this.zoom = this.zoom + 0.1;
-      this.set_map(0);
-    }
-
-    if (option == 0 && this.zoom > 0.8) {
-      this.zoom = this.zoom - 0.1;
-      this.set_map(0);
-    }
-
-  }
-
-
-  set_map(real_data) {
-
-    $('#map').height(($('#map').width() * 0.7));
+    // $('#map').height(($('#map').width() * 0.7));
 
     this.map_chart = echarts.init(document.getElementById('map'));
 
@@ -112,7 +75,6 @@ export class AboutComponent implements OnInit, AfterViewInit {
       {name: '嘉峪关', value: 542},
     ];
 
-    let fake_data = 'Created By Chromie Wang';
     let geoCoordMap = {
       '上海':[121.48,31.22],
       '广州':[113.23,23.16],
@@ -175,17 +137,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
       return res;
     };
 
-    if (real_data == 1) {
-      this.chart_c ++;
-      if (this.chart_c >= 10) {
-        console.log(fake_data);
-        this.chart_c = 0;
-      }
-      setTimeout(() => {this.chart_c = 0; }, 3000);
-
-    }
-
-      let option = {
+    let option = {
       backgroundColor: '#fff',
       tooltip : {
         trigger: 'item',
@@ -206,10 +158,12 @@ export class AboutComponent implements OnInit, AfterViewInit {
       geo: {
         map: 'china',
         // zoom: 0.8,
-        zoom: this.zoom,
+        zoom: 1,
         scaleLimit: {
-          min: 0.8,
-          max: 1.8,
+          // min: 0.8,
+          // max: 1.8,
+          min: 1,
+          max: 1,
         },
         roam: false,
         label: {
@@ -234,7 +188,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
           coordinateSystem: 'geo',
           data: convertData(data),
           symbolSize: function (val) {
-            return val[2] / 30;
+            return val[2] / 60;
           },
           label: {
             normal: {
@@ -260,7 +214,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
             return b.value - a.value;
           }).slice(0, 6)),
           symbolSize: function (val) {
-            return val[2] / 30;
+            return val[2] / 60;
           },
           showEffectOn: 'render',
           rippleEffect: {
@@ -286,11 +240,10 @@ export class AboutComponent implements OnInit, AfterViewInit {
       ]
     };
 
-    if (real_data != 1) {
-      this.map_chart.setOption(option, true);
-    }
-  }
 
+    this.map_chart.setOption(option, true);
+
+  }
 
 
 }

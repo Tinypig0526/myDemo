@@ -1,282 +1,84 @@
-
 <div>
-  <img src="./assets/img/about/thybot.jpg" style="width: 100%">
+  <img src="./assets/img/about/thybot.jpg">
+</div>
+
+<div class="row-div flex-div">
+  <div style="flex: 2">
+    <h2 class="title-2">利保简介</h2>
+    <h4 class="title-4">THYBOT</h4>
+  </div>
+  <div style="flex: 5;background-color: #f8f8f8;padding: 0.6rem">
+    <p class="about-text">&nbsp;珠海市利保机器人有限公司成立于2013年11月，是广东省高新技术企业。 公司致力于提供新零售物联网的解决方案。</p>
+    <p class="about-text">&nbsp;公司拥有零售物联网平台研发中心、智能售货机和智能购物商用冷柜、一体液晶触摸屏制造工厂。</p>
+  </div>
 </div>
 
 
-<div nz-row class="child-div">
-  <div nz-col [nzSpan]="5" [nzOffset]="2" style="height: 100%;border-right: solid 1px #cccccc">
-    <button [class.child-active]="tab_num == 1" class="child-btn" (click)="change_tab(1)" >公司简介</button>
+
+<div class="flex-div row-div" style="padding-top: 0">
+  <div style="flex: 10;background-color: #f8f8f8;padding: 1rem 0.6rem 1rem 0.6rem">
+    <h2 class="title-2">我们的目标</h2>
+    <h4 class="title-4">THYBOT&nbsp;TARGET</h4>
+    <p class="about-text">&nbsp;</p>
+    <p class="about-text">让人们的生活更加便利、优质、美好。</p>
+    <p class="about-text">&nbsp;</p>
   </div>
-  <div nz-col [nzSpan]="5" style="height: 100%;border-right: solid 1px #cccccc">
-    <button [class.child-active]="tab_num == 2" class="child-btn" (click)="change_tab(2)">工厂概况</button>
-  </div>
-  <div nz-col [nzSpan]="5" style="height: 100%;border-right: solid 1px #cccccc">
-    <button [class.child-active]="tab_num == 3" class="child-btn" (click)="change_tab(3)">公司动态</button>
-  </div>
-  <div nz-col [nzSpan]="5" style="height: 100%">
-    <button [class.child-active]="tab_num == 4" class="child-btn" (click)="change_tab(4)">行业新闻</button>
+  <div style="flex: 1"></div>
+  <div style="flex: 10;background-color: #f8f8f8;padding: 1rem 0.6rem 1rem 0.6rem">
+    <h2 class="title-2">我们的使命</h2>
+    <h4 class="title-4">THYBOTNESE&nbsp;MISSION</h4>
+       <p class="about-text">聚集客户关注的挑战和压力，提供有竞争力的零售物联网的解决方案和服务，持续为客户创造最大的价值。</p>
   </div>
 </div>
 
-<div *ngIf="tab_num == 1" style="padding-top: 4rem">
-  <div nz-row class="row-div" >
-    <div nz-col [nzSpan]="3" [nzOffset]="2">
-      <h2 class="title-2">利保简介</h2>
-      <h4  class="title-4">THYBOT PROFILE</h4>
-      <span class="thybot-line">——</span>
-    </div>
-    <div nz-col [nzSpan]="16" [nzOffset]="1" style="background-color: #f8f8f8;padding: 2rem">
-      <p class="thybot-desc"> 珠海市利保机器人有限公司成立于2013年11月，是广东省高新技术企业。 公司致力于提供新零售物联网的解决方案。公司拥有零售物联网平台研发中心、智能售货机和智能购物商用冷柜、一体液晶触摸屏制造工厂。</p>
-    </div>
-  </div>
-
-  <div nz-row class="row-div" >
-    <div nz-col [nzSpan]="5" [nzOffset]="2" style="background-color: #f8f8f8;padding: 2rem">
-      <h2 class="title-2">我们的目标</h2>
-      <h4  class="title-4">THYBOTNESE TARGET</h4>
-      <div nz-row style="margin-top: 1rem">
-        <div nz-col [nzXl] = "{span: 5}"  [nzLg] = "{span: 5}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 0}">
-          <span class="thybot-line">——</span>
-        </div>
-        <div nz-col [nzXl] = "{span: 17, offset: 1}"  [nzLg] = "{span: 17, offset: 1}" [nzMd] = "{span: 24}" [nzSm] = "{span: 24}" [nzXs] = "{span: 24}">
-          <p class="thybot-slogan">让人们的生活,更加便利、优质、美好</p>
-          <!--<span class="thybot-slogan">让人们的生活</span>-->
-          <!--<br>-->
-          <!--<span class="thybot-slogan">更加便利、优质、美好</span>-->
-          <!--<br>-->
-          <span class="thybot-slogan">&nbsp;</span>
-        </div>
-      </div>
-    </div>
-
-    <div nz-col [nzSpan]="8" [nzOffset]="1" style="background-color: #f8f8f8;padding: 2rem">
-      <h2 class="title-2">我们的使命</h2>
-      <h4  class="title-4">THYBOTNESE MISSION</h4>
-      <div nz-row style="margin-top: 1rem">
-        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 4}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 0}">
-          <span class="thybot-line">——</span>
-        </div>
-        <div nz-col [nzXl] = "{span: 18, offset: 1}"  [nzLg] = "{span: 18, offset: 1}" [nzMd] = "{span: 24}" [nzSm] = "{span: 24}" [nzXs] = "{span: 24}" >
-          <p class="thybot-slogan">聚集客户关注的挑战和压力，提供有竞争力的零售物联网的解决方案和服务，持续为客户创造最大的价值。</p>
-          <!--<span class="thybot-slogan">去底层人工化，</span>-->
-          <!--<br>-->
-          <!--<span class="thybot-slogan">人机共享未来。</span>-->
-        </div>
-      </div>
-
-    </div>
-    <div nz-col [nzSpan]="5" [nzOffset]="1" style="background-color: #f8f8f8;padding: 2rem">
+<div class="row-div" style="padding-top: 0">
+  <div class="flex-div" style="background-color: #f8f8f8;padding: 1rem 0.4rem 1rem 0">
+    <div style="flex: 1">
       <h2 class="title-2">利保文化</h2>
-      <h4  class="title-4">THYBOTNESE <span (click)="set_map(1)">CULTURE</span></h4>
-      <div nz-row style="margin-top: 1rem">
-        <div nz-col [nzXl] = "{span: 5}"  [nzLg] = "{span: 5}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 0}">
-          <span class="thybot-line">——</span>
-        </div>
-        <div nz-col [nzXl] = "{span: 17, offset: 1}"  [nzLg] = "{span: 17, offset: 1}" [nzMd] = "{span: 24}" [nzSm] = "{span: 24}" [nzXs] = "{span: 24}" >
-          <span class="thybot-slogan">聆听&nbsp;思考</span>
-          <br>
-          <span class="thybot-slogan">行动&nbsp;深度学习</span>
-          <br>
-          <span class="thybot-slogan">&nbsp;</span>
-        </div>
-      </div>
+      <h4 class="title-4">THYBOTNESE&nbsp;CULTURE</h4>
     </div>
-  </div>
-
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="20" [nzOffset]="2" style="border: solid 1px #d6d7dc;position: relative">
-      <h2 class="title-2" style="text-align: center;padding: 2rem 0 2rem 0">利保机器人售货机分布地图</h2>
-      <hr style="width: 40%;margin: auto;color: #e8e8e8">
-      <button class="map-btn" style="top: 8rem" (click)="change_map(1)">+</button>
-      <button class="map-btn" style="top: 14rem" (click)="change_map(0)">-</button>
-      <div style="width: 100%;z-index: 899" id="map"></div>
+    <div style="flex: 1">
+      <p class="about-text">聆听&nbsp;思考&nbsp;行动&nbsp;深度学习</p>
     </div>
   </div>
 
 </div>
 
 
-<div *ngIf="tab_num == 2" style="padding-top: 4rem">
-  <div nz-row  class="row-div" >
-
-    <div nz-col [nzSpan]="8" [nzOffset]="2" class="overflow-div fixed-height2">
-      <img  src="./assets/img/factory_1.png"  class="factory-img-big">
-      <div class="blue-div">
-        <div class="factory-name">
-          <p  >ISO9001,TOM</p>
-          <p  >恒温测试室</p>
-        </div>
-      </div>
+<div class="row-div" style="text-align: center">
+  <h2 class="title-2">
+    <span class="line"></span>
+    工厂概况
+    <span class="line"></span></h2>
+  <h4 class="title-4">COMPANY&nbsp;PROFILE</h4>
+  <p class="about-text">&nbsp;&nbsp;公司生产目前已经全面执行全面质量管理体系（TQM），同时引进先进的测试设备，模拟设备在恶劣工况条件的使用情况，以及在恶劣运输条件下，产品包装的合理性以及稳定性。 严格执行国际先进的全面质量管理体系（TQM）。</p>
+  <div class="flex-div" style="padding-top: 1rem">
+    <div style="flex: 8;">
+      <img src="./assets/img/about/factory1.png" >
+      <p class="factory-name">ISO9001,TOM恒温测试室</p>
     </div>
-
-    <div nz-col [nzSpan]="12">
-      <div nz-row  style="background-color: #eeeced;">
-        <div nz-col [nzSpan]="8"  style="position: relative">
-          <div class="triangle_right"></div>
-          <div class="factory-name">
-            <h2>模拟运输测试仪</h2>
-            <p>--></p>
-          </div>
-        </div>
-        <div nz-col [nzSpan]="16"  class="overflow-div fixed-height1">
-          <img src="./assets/img/factory_2.png" class="factory-img">
-        </div>
-      </div>
-      <div nz-row style="background-color: #eeeced;">
-        <div nz-col [nzSpan]="16"  class="overflow-div fixed-height1">
-          <img src="./assets/img/factory_3.png"class="factory-img" >
-        </div>
-        <div nz-col [nzSpan]="8"  style="position: relative">
-          <div class="triangle_left"></div>
-          <div class="factory-name">
-            <h2>智能制造生产线</h2>
-            <p><--</p>
-          </div>
-        </div>
-      </div>
+    <div style="flex: 1"></div>
+    <div style="flex: 8;">
+      <img src="./assets/img/about/factory2.png" >
+      <p class="factory-name">模拟运输测试仪</p>
+      <p class="factory-name">&nbsp;</p>
     </div>
-  </div>
-
-  <div nz-row style="padding-bottom: 60px">
-    <div nz-col [nzSpan]="20" [nzOffset]="2">
-      <p style="font-size: 1.4rem;line-height: 3rem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司生产目前已经全面执行全面质量管理体系（TQM），同时引进先进的测试设备，模拟设备在恶劣工况条件的使用情况，以及在恶劣运输条件下，产品包装的合理性以及稳定性严格执行国际先进的全面质量管理体系（TQM）</p>
+    <div style="flex: 1"></div>
+    <div style="flex: 8;">
+      <img src="./assets/img/about/factory3.png" >
+      <p class="factory-name">智能制造生产线</p>
+      <p class="factory-name">&nbsp;</p>
     </div>
   </div>
 
 </div>
 
-
-<div *ngIf="tab_num == 3" >
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="6" [nzOffset]="2" >
-      <img src="./assets/img/about/news1.png" >
-      <div class="news-title-div">
-        <p>新零售的女性主义特征</p>
-      </div>
-    </div>
-    <div nz-col [nzSpan]="6" [nzOffset]="1" >
-      <img src="./assets/img/about/news2.png" >
-      <div class="news-title-div">
-        <p>无人超市模式全球落地 将引领零售新趋势？</p>
-      </div>
-    </div>
-    <div nz-col [nzSpan]="6" [nzOffset]="1" >
-      <img src="./assets/img/about/news3.png" >
-      <div class="news-title-div">
-        <p>如何抢占90后市场？</p>
-      </div>
-    </div>
+<div class="row-div">
+  <div style="border: solid 1px #f0f0f0;text-align: center;padding: 1rem">
+    <h2 class="title-2">利保机器人售货机分布地图</h2>
+    <hr style="width: 70%;margin: 1rem 15% 1rem 15%">
+    <div style="width: 100%;height: 70vw" id="map"></div>
   </div>
-
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="5" [nzOffset]="2" >
-      <img src="./assets/img/about/news2.png">
-    </div>
-    <div nz-col [nzSpan]="14" [nzOffset]="1" >
-      <h2 class="news-title">无人超市模式全球落地 将引领零售新趋势？</h2>
-      <p class="news-time">2018-02-07</p>
-      <p class="news-content">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。
-        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a (click)="change_tab(5)"><span class="show-more">查看更多》</span></a></p>
-    </div>
-  </div>
-
-  <div nz-row class="row-div" style="background-color: #f8f8f8">
-    <div nz-col [nzSpan]="14" [nzOffset]="2" >
-      <h2 class="news-title">【聚焦无人店】智慧升级！看看无人超市有多方便！</h2>
-      <p class="news-time">2018-02-07</p>
-      <p class="news-content">最近几年，移动支付大力普及，让大家的生活变得无比便捷，出门购物只带一部手机，已经不是啥新鲜事了。今天给大家介绍一项
-        更炫的“黑科技”——无人超市.....   <a href=""><span class="show-more">查看更多》</span></a></p>
-    </div>
-    <div nz-col [nzSpan]="5" [nzOffset]="1" >
-      <img src="./assets/img/about/news4.png">
-    </div>
-  </div>
-
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="5" [nzOffset]="2" >
-      <img src="./assets/img/about/news2.png">
-    </div>
-    <div nz-col [nzSpan]="14" [nzOffset]="1" >
-      <h2 class="news-title">【聚焦】京东肖军：无界零售快速落地 明年将建500家无人超市</h2>
-      <p class="news-time">2018-02-07</p>
-      <p class="news-content">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。
-        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a href=""><span class="show-more">查看更多》</span></a></p>
-    </div>
-  </div>
-
-  <div style="text-align: center;" class="row-div">
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="50" [nzSize]="'large'"  nzShowQuickJumper></nz-pagination>
-  </div>
-</div>
-
-
-<div *ngIf="tab_num == 4">
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="6" [nzOffset]="2" >
-      <img src="./assets/img/about/news1.png" >
-      <div class="news-title-div">
-        <p>新零售的女性主义特征</p>
-      </div>
-    </div>
-    <div nz-col [nzSpan]="6" [nzOffset]="1" >
-      <img src="./assets/img/about/news2.png" >
-      <div class="news-title-div">
-        <p>无人超市模式全球落地 将引领零售新趋势？</p>
-      </div>
-    </div>
-    <div nz-col [nzSpan]="6" [nzOffset]="1" >
-      <img src="./assets/img/about/news3.png" >
-      <div class="news-title-div">
-        <p>如何抢占90后市场？</p>
-      </div>
-    </div>
-  </div>
-
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="5" [nzOffset]="2" >
-      <img src="./assets/img/about/news2.png">
-    </div>
-    <div nz-col [nzSpan]="14" [nzOffset]="1" >
-      <h2 class="news-title">无人超市模式全球落地 将引领零售新趋势？</h2>
-      <p class="news-time">2018-02-07</p>
-      <p class="news-content">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。
-        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a href=""><span class="show-more">查看更多》</span></a></p>
-    </div>
-  </div>
-
-  <div nz-row class="row-div" style="background-color: #f8f8f8">
-    <div nz-col [nzSpan]="14" [nzOffset]="2" >
-      <h2 class="news-title">【聚焦无人店】智慧升级！看看无人超市有多方便！</h2>
-      <p class="news-time">2018-02-07</p>
-      <p class="news-content">最近几年，移动支付大力普及，让大家的生活变得无比便捷，出门购物只带一部手机，已经不是啥新鲜事了。今天给大家介绍一项
-        更炫的“黑科技”——无人超市.....   <a href=""><span class="show-more">查看更多》</span></a></p>
-    </div>
-    <div nz-col [nzSpan]="5" [nzOffset]="1" >
-      <img src="./assets/img/about/news4.png">
-    </div>
-  </div>
-
-  <div nz-row class="row-div">
-    <div nz-col [nzSpan]="5" [nzOffset]="2" >
-      <img src="./assets/img/about/news2.png">
-    </div>
-    <div nz-col [nzSpan]="14" [nzOffset]="1" >
-      <h2 class="news-title">【聚焦】京东肖军：无界零售快速落地 明年将建500家无人超市</h2>
-      <p class="news-time">2018-02-07</p>
-      <p class="news-content">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。
-        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a href=""><span class="show-more">查看更多》</span></a></p>
-    </div>
-  </div>
-
-  <div style="text-align: center;" class="row-div">
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="50" [nzSize]="'large'"  nzShowQuickJumper></nz-pagination>
-  </div>
-</div>
-
-
-<div *ngIf="tab_num == 5">
-  <h2 style="text-align: center;font-size: 3rem;line-height: 6rem">搞个大新闻</h2>
 </div>
 
 

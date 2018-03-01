@@ -1,0 +1,47 @@
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.row-div{
+  padding: 2rem 4% 1rem 4%;
+  text-align: center;
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  /*justify-content: center;*/
+  align-items:  center;
+}
+
+
+.line{
+  border-top:1px solid  #c9c9c9;
+  width: 12%;
+  display: inline-block;
+  margin: 0 0rem 0.6rem 0rem;
+}
+
+
+.title-2{
+  font-size: 1.6rem;
+  color: #3fabf3;
+  font-weight: bold;
+}
+
+
+.title-4{
+  font-size: 1rem;
+  font-family: Helvetica, monospace;
+  color: #919191;
+}
+
+.pay-text{
+  text-align: center;
+  border: solid 1px #f0f0f0;
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  background-color: white;
+
+}
