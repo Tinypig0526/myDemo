@@ -1,0 +1,113 @@
+<div class="document">
+  <table></table>
+  <div class="title">
+    <div nz-row>
+
+      <div nz-col [nzXl] = "{span: 8, offset: 8}"  [nzLg] = "{span: 10, offset: 7}" [nzMd] = "{span: 12, offset: 6}" [nzSm] = "{span: 16, offset: 4}" [nzXs] = "{span: 24}">
+        <div nz-row >
+
+          <div nz-col [nzXl] = "{span: 6, offset: 6}"  [nzLg] = "{span: 6, offset: 6}" [nzMd] = "{span: 6, offset: 6}" [nzSm] = "{span: 6, offset: 6}" [nzXs] = "{span: 8, offset: 4}" class="content">
+            <button class="tab-btn" [class.tab-active]="tab == 1" (click)="change_tab(1)">INQUIRY</button>
+          </div>
+          <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 6}" [nzSm] = "{span: 6}" [nzXs] = "{span: 8}" class="content">
+            <button class="tab-btn" [class.tab-active]="tab == 2" (click)="change_tab(2)">DOWNLOAD</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div *ngIf="tab ==2">
+      <p  class="tips">Kindly Reminder: Clients can download the technical documentation when you fill in this form and submit.</p>
+  </div>
+
+  <div nz-row>
+
+    <div nz-col  [nzXl] = "{span: 4}"  [nzLg] = "{span: 4}" [nzMd] = "{span: 3}" [nzSm] = "{span: 3}" [nzXs] = "{span: 0}">
+    </div>
+
+    <div nz-col [nzXl] = "{span: 16}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 18}" [nzSm] = "{span: 18}" [nzXs] = "{span: 24}">
+      <div class="from" nz-row style="padding-top:24px">
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          Product item:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <!--<nz-input [nzSize]="'large'" [(ngModel)] = 'client.product'></nz-input>-->
+          <nz-select [nzSize]="'large'" [(ngModel)] = 'client.product' style="width: 100%">
+            <nz-option [nzLabel]="'Glacier Series'" [nzValue]="'Glacier Series'">Glacier Series</nz-option>
+            <nz-option [nzLabel]="'Multi functional Integrated Machine'" [nzValue]="'Multi functional Integrated Machine'">Multi functional Integrated Machine</nz-option>
+            <nz-option [nzLabel]="'G2S'" [nzValue]="'G2S'">G2S</nz-option>
+            <nz-option [nzLabel]="'G2S PLUS'" [nzValue]="'G2S PLUS'">G2S PLUS</nz-option>
+            <nz-option [nzLabel]="'Classic Series'" [nzValue]="'Classic Series'">Classic Series</nz-option>
+            <nz-option [nzLabel]="'Prosperous Series'" [nzValue]="'Prosperous Series'">Prosperous Series</nz-option>
+            <nz-option [nzLabel]="'Auto Stock In–Stock Out Series'" [nzValue]="'Auto Stock In–Stock Out Series'">Auto Stock In–Stock Out Series</nz-option>
+            <nz-option [nzLabel]="'Exquisite Series'" [nzValue]="'Exquisite Series'">Exquisite Series</nz-option>
+            <nz-option [nzLabel]="'Cooked Food Series'" [nzValue]="'Cooked Food Series'">Cooked Food Series</nz-option>
+
+          </nz-select>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          Quantity:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.amount'></nz-input>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          <span style="color: red">*</span>&nbsp;Name:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.name'></nz-input>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          Company:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.company'></nz-input>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          E-mail:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.email'></nz-input>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          <span style="color: red">*</span>&nbsp;Telephone:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.phone'></nz-input>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          <span style="color: red">*</span>&nbsp;City:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.city'></nz-input>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          Country:
+        </div>
+        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.state'></nz-input>
+        </div>
+        <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
+          Remark:
+        </div>
+        <div nz-col [nzXl] = "{span: 17}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}" style="padding-top: 12px;">
+          <nz-input  [nzType]="'textarea'" [nzRows]="'12'" [(ngModel)] = 'client.other' [nzPlaceHolder]="''"></nz-input>
+        </div>
+
+        <div nz-col [nzSpan]="24" style="text-align: center;margin-top: 29px;">
+          <button (click)="submit()"  class="btn" >Submit</button>
+          <span class="success" *ngIf="submit_num == 1">Submitted successfully! Back home in 3 seconds</span>
+          <span class="success" *ngIf="submit_num == 0">Please fill in form with * correctly!</span>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,362 @@
+<div>
+  <img src="./assets/img/solution/solution.png" >
+  <div style="position: absolute;top: 18rem;width: 100%">
+    <!--<img src="./assets/img/solution/text.png" style="width: 50%">-->
+    <h1 class="title-1" >Inspiration coming from life, To create a fascinating product
+      along with the soul of our product.</h1>
+
+  </div>
+  <canvas id="myCanvas" style="position: absolute;top: 0;"></canvas>
+</div>
+
+
+
+
+<div nz-row class="child-div">
+  <div nz-col [nzSpan]="5" [nzOffset]="2" style="height: 100%;border-right: solid 1px #cccccc">
+    <button [class.child-active]="control.tab_num == 1" class="child-btn" (click)="change_tab(1)" >The Core Technology</button>
+  </div>
+  <div nz-col [nzSpan]="5" style="height: 100%;border-right: solid 1px #cccccc">
+    <button [class.child-active]="control.tab_num == 2" class="child-btn" (click)="change_tab(2)">System Advantage</button>
+  </div>
+  <div nz-col [nzSpan]="5" style="height: 100%;border-right: solid 1px #cccccc">
+    <button [class.child-active]="control.tab_num == 3" class="child-btn" (click)="change_tab(3)">
+      <p>Automated New</p>
+      <p>Retail Solutions</p> </button>
+  </div>
+  <div nz-col [nzSpan]="5" style="height: 100%">
+    <button [class.child-active]="control.tab_num == 4" class="child-btn" (click)="change_tab(4)">Purchasing Channel</button>
+  </div>
+</div>
+
+<div *ngIf="control.tab_num == 2">
+  <div nz-row class="row-div" id="no_1">
+    <div nz-col [nzSpan]="10" [nzOffset]="2" class="tech-img-div">
+      <img  [src]="is_move[0]?move[0]:stop[0]" (mouseover)="change_move(0,true)" (mouseout)="change_move(0,false)">
+    </div>
+    <div nz-col [nzSpan]="10" [nzOffset]="2" class="animate-div" [class.down-animate]="top >= height[0]" >
+      <h1 class="tech-num">01</h1>
+      <h2 class="tech-name">Flexible Lane Adjustment</h2>
+      <p class="tech-desc">Conveyor belt safety delivering
+      + Intelligent lifting system</p>
+    </div>
+  </div>
+
+  <div nz-row style="background-color: #f8f8f8" id="no_2">
+    <div nz-col [nzSpan]="8" [nzOffset]="4" class="animate-div" [class.down-animate-2]="top >= height[1]" >
+      <h1 class="tech-num">02</h1>
+      <h2 class="tech-name">Unpowered Storage Rack</h2>
+      <p class="tech-desc">Multi axis manipulator
+      + Accurate positioning</p>
+    </div>
+    <div nz-col [nzSpan]="12"  style="padding-bottom: 1rem">
+      <img  [src]="is_move[1]?move[1]:stop[1]" (mouseover)="change_move(1,true)" (mouseout)="change_move(1,false)">
+    </div>
+  </div>
+
+  <div nz-row style="height:50rem;padding-top: 10rem">
+    <div nz-col [nzSpan]="10" [nzOffset]="2" class="tech-img-div" >
+      <img  [src]="is_move[2]?move[2]:stop[2]" (mouseover)="change_move(2,true)" (mouseout)="change_move(2,false)">
+    </div>
+    <div nz-col [nzSpan]="10" [nzOffset]="2" class="animate-div" [class.down-animate]="top >= height[2]" >
+      <h1 class="tech-num">03</h1>
+      <h2 class="tech-name">Automated intelligent warehouse</h2>
+      <p class="tech-desc">Auto stock in-stock out system</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div *ngIf="control.tab_num == 1">
+  <div class="row-div"  >
+    <h2 class="title-2">
+      <span class="line"></span>
+      Linux Open Source System
+      <span class="line"></span>
+    </h2>
+
+    <div class="flex-div"  style="padding: 8rem 0 4rem 0">
+      <div style="flex: 1">
+      </div>
+      <div style="flex: 4">
+        <img src="./assets/img/solution/system1.png" >
+      </div>
+      <div style="flex: 1">
+      </div>
+
+      <div style="flex: 2" >
+        <p class="sex"><i class="icon font_family icon-compatibility icon-sex"></i>&nbsp;Compatible</p>
+      </div>
+      <div style="flex: 2" >
+        <p class="sex"><i class="icon font_family icon-stability icon-sex"></i>&nbsp;Stable</p>
+      </div>
+      <div style="flex: 2" >
+        <p class="sex"><i class="icon font_family icon-security icon-sex"></i>&nbsp;Safety</p>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <div class="row-div"  style="background-color: #f8f8f8">
+
+    <h2 class="title-2">
+      <span class="line"></span>
+      One-stop R&D System
+      <span class="line"></span>
+    </h2>
+
+    <div class="flex-div"  style="padding: 8rem 0 4rem 0">
+      <div style="flex: 1">
+      </div>
+      <div style="flex: 1">
+        <img src="./assets/img/solution/system2.png" >
+      </div>
+      <div style="flex: 1">
+      </div>
+
+      <div style="flex: 2;text-align: left" >
+        <p class="system-text">Automated retail terminal control system</p>
+        <p class="system-text">Smart retail trading platform</p>
+        <p class="system-text">New media advertising interaction system</p>
+        <p class="system-text">IoT big data analysis platform</p>
+        <p class="system-text">Warehousing inventory control system</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row-div" style="padding-bottom: 0">
+    <h2 class="title-2">
+      <span class="line"></span>
+      Visual Backend Management System
+      <span class="line"></span>
+    </h2>
+
+    <div class="flex-div" style="padding: 2rem 0 2rem 0">
+      <div style="flex: 1">
+      </div>
+      <div style="flex: 4">
+        <img src="./assets/img/solution/system3.png" >
+      </div>
+      <div style="flex: 1">
+      </div>
+      <div style="flex: 1">
+        <img src="./assets/img/solution/system4.png" >
+      </div>
+      <div style="flex: 1">
+      </div>
+      <div style="flex: 3">
+        <img src="./assets/img/solution/system5.png" >
+      </div>
+      <div style="flex: 1">
+      </div>
+    </div>
+
+    <div class="flex-div" style="background-color: #f8f8f8;text-align: left;padding: 2rem 0 4rem 0">
+      <div style="flex: 1">
+      </div>
+      <div style="flex: 5">
+        <p class="system-text"><i class="icon font_family icon-platform icon-system"></i>Comprehensive management platform</p>
+        <p class="system-text"><i class="icon font_family icon-transactiondetail icon-system"></i>Real time transaction report</p>
+        <p class="system-text"><i class="icon font_family icon-close_aisle icon-system"></i>Remote shutdown specified lane</p>
+        <p class="system-text"><i class="icon font_family icon-diagnose icon-system"></i>Troubleshooting performance analysis</p>
+        <p class="system-text"><i class="icon font_family icon-restart icon-system"></i>Automatic restart machine</p>
+        <p class="system-text"><i class="icon font_family icon-maintenance_report icon-system"></i>Maintenance report</p>
+      </div>
+      <div style="flex: 1">
+      </div>
+      <div style="flex: 5">
+        <p class="system-text"><i class="icon font_family icon-datadisplay icon-system"></i>Synthetic data display</p>
+        <p class="system-text"><i class="icon font_family icon-repertory icon-system"></i>Remote inventory monitoring</p>
+        <p class="system-text"><i class="icon font_family icon-advertisement icon-system"></i>Remote ad pushing</p>
+        <p class="system-text"><i class="icon font_family icon-aisle_manage icon-system"></i>Smart lane management</p>
+        <p class="system-text"><i class="icon font_family icon-long_distance icon-system"></i>Remote delivery from backend</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div *ngIf="control.tab_num == 3">
+  <div class="row-div">
+
+    <h2 class="title-2">
+      <span class="line"></span>
+      Big Data Center
+      <span class="line"></span>
+    </h2>
+    <h3 class="title-3"> Business circle analysis&nbsp;&nbsp;Traffic flows data statistics&nbsp;&nbsp;Consumer behavior analysis</h3>
+    <h3 class="title-3"> Marketing data analysis&nbsp;&nbsp;Accurate advertising push</h3>
+
+    <img src="./assets/img/solution/solution2.png"  style="width: 72%;padding: 4rem 0 2rem">
+  </div>
+
+  <div class="row-div" style="background-color: #f8f8f8;position: relative">
+    <h2 class="title-2">
+      <span class="line"></span>
+      One-stop Solution
+      <span class="line"></span>
+    </h2>
+    <div style="padding: 4rem 0 2rem 0;width: 72%;margin: auto">
+      <img src="./assets/img/solution/solution3.png">
+    </div>
+    <div style="width:50%; position: absolute;bottom: 18%; left: 5%;text-align: left">
+      <p class="title-p">Online shopping and offline pickup</p>
+      <p class="title-p">Achieve the O2O closed-loop</p>
+    </div>
+  </div>
+
+
+  <div class="row-div">
+
+    <h2 class="title-2">
+      <span class="line"></span>
+      Personalized Accurate Marketing
+      <span class="line"></span>
+    </h2>
+    <img src="./assets/img/solution/solution4.png"  style="width: 92%;padding: 4rem 0 2rem">
+
+  </div>
+
+
+</div>
+
+<!--<div nz-row  style="padding: 8rem 0 4rem 0">-->
+    <!--<div nz-col [nzSpan]="4" [nzOffset]="2">-->
+      <!--<div class="title-div" style="margin-top: 40px">Big Data Center</div>-->
+      <!--<p class="title-p">Business circle analysis  </p>-->
+      <!--<p class="title-p">Traffic flows data statistics </p>-->
+      <!--<p class="title-p">Consumer behavior analysis</p>-->
+      <!--<p class="title-p">Marketing data analysis </p>-->
+      <!--<p class="title-p">Accurate advertising push</p>-->
+    <!--</div>-->
+    <!--<div nz-col [nzSpan]="14" [nzOffset]="2">-->
+      <!--<img src="./assets/img/big_data.png" >-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <!--<div nz-row class="row-div" style="background-color: #f8f8f8">-->
+    <!--<div nz-col [nzSpan]="4" [nzOffset]="2">-->
+      <!--<div class="title-div" style="margin-top: 10rem">One-stop Solution</div>-->
+      <!--<p class="title-p">Online shopping and offline pickup</p>-->
+      <!--<p class="title-p">Achieve the O2O closed-loop</p>-->
+    <!--</div>-->
+    <!--<div nz-col [nzSpan]="14" [nzOffset]="2">-->
+      <!--<img src="./assets/img/solution_3.png" >-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <!--<div nz-row class="row-div">-->
+    <!--<div nz-col [nzSpan]="4" [nzOffset]="2">-->
+      <!--<div class="title-div">Personalized Accurate Marketing</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <!--<div nz-row class="row-div">-->
+    <!--<div nz-col [nzSpan]="16" [nzOffset]="4">-->
+      <!--<img src="./assets/img/solution/solution4.png">-->
+    <!--</div>-->
+  <!--</div>-->
+
+
+
+<div *ngIf="control.tab_num == 4">
+  <div style=" text-align: center;padding-top: 60px;" >
+    <h2 class="title-2">
+      <span class="line"></span>
+      Purchasing Channel
+      <span class="line"></span></h2>
+  </div>
+
+  <div nz-row class="row-div">
+    <div nz-col [nzSpan]="6" [nzOffset]="2">
+      <div style="text-align: center;">
+        <img src="./assets/img/channel_1.png" style="width: 80%">
+      </div>
+
+      <span class="chanel-text">APP</span>
+    </div>
+    <div nz-col [nzSpan]="6" [nzOffset]="1">
+      <div style="text-align: center;">
+        <img src="./assets/img/channel_2.png" style="width: 80%">
+      </div>
+      <span class="chanel-text">Machine</span>
+    </div>
+    <div nz-col [nzSpan]="6" [nzOffset]="1">
+      <div style="text-align: center;">
+        <img src="./assets/img/channel_3.png" style="width: 80%">
+      </div>
+      <span class="chanel-text">Other platform</span>
+    </div>
+  </div>
+
+  <div style=" text-align: center;background-color: #f8f8f8" class="row-div">
+    <h2 class="title-2">
+      <span class="line"></span>
+      Payment System
+      <span class="line"></span></h2>
+
+
+    <div nz-row style="padding-top: 60px">
+
+      <div nz-col [nzSpan]="9" >
+        <p style="text-align: center;margin-bottom: 40px">
+          <span class="payment-name">Bill</span>
+          <span class="payment-name">Coin</span>
+          <span class="payment-name">Bank card</span>
+        </p>
+      </div>
+
+      <div nz-col [nzSpan]="5" [nzOffset]="2">
+        <p style="text-align: center;margin-bottom: 6px">
+          <span class="payment-name">NFC</span>
+        </p>
+      </div>
+
+      <div nz-col [nzSpan]="5" [nzOffset]="2">
+        <p style="text-align: center;margin-bottom: 12px">
+          <span class="payment-name">QR code</span>
+        </p>
+      </div>
+
+    </div>
+
+    <div nz-row >
+      <div nz-col [nzSpan]="6" [nzOffset]="2" style="text-align: center;">
+         <img src="./assets/img/solution/pay1.png" style="width: 80%">
+      </div>
+
+      <div nz-col [nzSpan]="6" [nzOffset]="1">
+          <img src="./assets/img/solution/pay2.png" style="width: 80%">
+      </div>
+      <div nz-col [nzSpan]="6" [nzOffset]="1" style="text-align: center;">
+          <img src="./assets/img/solution/pay3.png" style="width: 80%">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<app-bottom></app-bottom>
+
+
