@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  font-family: MicrosoftYaHei;
+}
+
+.bg-color{
+  background-color: #f8f8f8;
+}
+
+@media screen and (min-width: 598px) and (max-width: 768px) {
+  html{
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  html{
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,103 @@
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.row-div{
+  padding: 2rem 4% 1rem 4%;
+  text-align: center;
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+
+
+.line{
+  border-top:1px solid  #c9c9c9;
+  width: 6%;
+  display: inline-block;
+  margin: 0 0 0.6rem 0rem;
+}
+
+
+.title-2{
+  font-size: 1.2rem;
+  color: #3fabf3;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+
+
+
+.title-3{
+  font-size: 0.8rem;
+  line-height: 3rem;
+
+}
+
+
+.en-title{
+  font-size: 0.3rem;
+  color: #f8f8f8;
+  line-height: 0.4rem;
+}
+
+
+
+.line-w{
+  color: white;
+  border-top:1px solid  #c9c9c9;
+  width: 12%;
+  display: inline-block;
+  margin: 0 0rem 0.6rem 0rem;
+}
+
+
+.title-2-w{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.title-4-w{
+  color: white;
+  font-size: 0.8rem;
+  font-family: Helvetica, monospace;
+
+}
+
+
+.icon{
+  font-size: 4rem;
+  color: white;
+}
+
+.module-desc{
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.coop-mode{
+  margin: 1rem 0 1rem 0;
+  background-color: #68bc9e;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+}
+
+
+.service-text{
+  text-align: left;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+  line-height: 1.8rem;
+}

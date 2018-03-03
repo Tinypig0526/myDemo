@@ -1,0 +1,52 @@
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+}
+.row-div{
+  padding: 2rem 4% 1rem 4%;
+
+}
+
+.title-div{
+  background-color: #369cf1;
+  height: 3rem;
+  border-radius: 1rem 0 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  line-height: 3rem;
+}
+
+
+.sex{
+  font-size: 1.2rem;
+  line-height: 3.6rem;
+
+}
+
+.icon-compatibility, .icon-stability, .icon-security{
+  font-size: 1.8rem;
+}
+
+
+.system-p{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+
+
+.system-text{
+  font-size: 1rem;
+  line-height: 2.4rem;
+}
+
+.icon-system{
+  font-size: 2rem;
+}
