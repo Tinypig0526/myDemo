@@ -15,6 +15,10 @@
     <button [routerLink] = "['/document']" nz-button [nzType]="'primary'" class="route-btn" [class.active]="active == 7" (click)="change_active(7)">询盘/下载</button>
   </div>
 
+  <div style="position: absolute;right: 1%;top: 20px">
+    <button   nz-button [nzType]="'primary'" (click)="change_language()" ><span [class.language]="language">中</span>&nbsp;/&nbsp;<span [class.language]="!language">En</span> </button>
+  </div>
+
   <div nz-col class="logo-div"  [nzXl] = "{span: 0}"  [nzLg] = "{span: 0}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 12,offset:1}">
     <img src="./assets/img/logo.png" alt="thybot"  style="margin-top: 2rem;max-height: 3rem;max-width: 12rem">
   </div>

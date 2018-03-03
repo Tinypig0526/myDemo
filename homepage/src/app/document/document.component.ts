@@ -14,7 +14,7 @@ export class DocumentComponent {
   }
 
   client = {
-    product: '',
+    product: '综合机',
     amount: '',
     name: '',
     company: '',

@@ -47,10 +47,22 @@
     <div nz-col [nzXl] = "{span: 14}"  [nzLg] = "{span: 14}" [nzMd] = "{span: 16}" [nzSm] = "{span: 16}" [nzXs] = "{span: 24}">
       <div class="from" nz-row style="padding-top:24px">
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
-          产品名称：
+          <label nz-form-item-required>产品名称：</label>
         </div>
-        <div nz-col [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
-          <nz-input [nzSize]="'large'" [(ngModel)] = 'client.product'></nz-input>
+        <div nz-col  [nzXl] = "{span: 6}"  [nzLg] = "{span: 16}" [nzMd] = "{span: 15}" [nzSm] = "{span: 15}" [nzXs] = "{span: 22,offset:1}">
+          <!--<nz-input [nzSize]="'large'" [(ngModel)] = 'client.product'></nz-input>-->
+          <nz-select [nzSize]="'large'" [(ngModel)] = 'client.product' style="width: 100%">
+            <nz-option [nzLabel]="'综合机'" [nzValue]="'综合机'">综合机</nz-option>
+            <nz-option [nzLabel]="'冰河系列'" [nzValue]="'冰河系列'">冰河系列</nz-option>
+            <nz-option [nzLabel]="'G2S'" [nzValue]="'G2S'">G2S</nz-option>
+            <nz-option [nzLabel]="'G2S PLUS'" [nzValue]="'G2S PLUS'">G2S PLUS</nz-option>
+            <nz-option [nzLabel]="'经典系列'" [nzValue]="'经典系列'">经典系列</nz-option>
+            <nz-option [nzLabel]="'臻荣系列'" [nzValue]="'臻荣系列'">臻荣系列</nz-option>
+            <nz-option [nzLabel]="'万能机'" [nzValue]="'万能机'">万能机</nz-option>
+            <nz-option [nzLabel]="'玲珑系列'" [nzValue]="'玲珑系列'">玲珑系列</nz-option>
+            <nz-option [nzLabel]="'熟食系列'" [nzValue]="'熟食系列'">熟食系列</nz-option>
+
+          </nz-select>
         </div>
         <div nz-col [nzXl] = "{span: 4}"  [nzLg] = "{span: 6}" [nzMd] = "{span: 7}" [nzSm] = "{span: 8}" [nzXs] = "{span: 24}" class="title">
           数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：

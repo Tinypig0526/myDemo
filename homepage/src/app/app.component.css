@@ -78,3 +78,10 @@ img{
   padding: 1rem;
   text-align: center;
 }
+
+
+.language{
+  background-color: white;
+  color: #3fabf3;
+  border: solid 1px white;
+}

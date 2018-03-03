@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
 
   active = 1;
   show = 0;
+  language = true;
 
   ngOnInit() {
     switch (location.pathname) {
@@ -31,4 +32,7 @@ export class AppComponent implements OnInit {
     this.show = num;
   }
 
+  change_language() {
+    this.language = !this.language;
+  }
 }
