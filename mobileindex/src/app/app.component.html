@@ -1,17 +1,16 @@
 <div class="nav-div flex-div">
-
-
   <div style="flex: 1"></div>
   <div style="flex: 6">
-    <img src="./assets/img/logo.png" style="width: 100%;max-width: 10rem">
+    <img src="./assets/img/logo.png" style="width: 100%;max-width: 10rem" alt="Thybot利保">
+
   </div>
   <div style="flex: 4"></div>
   <div style="flex: 2" (click)="show_menu()">
-    <i class="icon font_family icon-icon_nav" style="font-size: 3rem;color: white"></i>
+    <i class="icon font_family icon-icon_nav" style="font-size: 3rem;color: white;"></i>
   </div>
 </div>
 
-<div style="margin-top: 72px">
+<div style="margin-top: 60px">
   <router-outlet></router-outlet>
 </div>
 
@@ -37,12 +36,14 @@
     <a [routerLink] = "['/case']"><p class="route-p">案例</p></a>
     <hr>
     <a [routerLink] = "['/about']"><p class="route-p">关于我们</p></a>
+    <hr>
+    <a href="../m_en/index.html"><p class="route-p"><span class="language">中文</span>/English</p></a>
   </div>
 </div>
 
 
 
-<div style="position: fixed;top:44%;right: 0;z-index: 1996">
+<div style="position: fixed;top:44%;right: 0;z-index: 1996;border:solid 1px white">
   <button (click)="submit(1)"  class="fixed-btn"><i class="icon font_family icon-btn_enquiry"></i></button>
 </div>
 
@@ -140,8 +141,6 @@
           </div>
         </div>
       <div style="text-align: center;margin:1rem 0 1rem 0" >
-        <!--<div style="flex: 3"><button (click)="submit(2)" type="submit" class="btn modal-btn" >返回主页</button></div>-->
-        <!--<div style="flex: 1"></div>-->
         <button (click)="submit(0)" class="btn modal-btn" style="width: 30%" >返回</button>
       </div>
 

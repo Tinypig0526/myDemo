@@ -90,25 +90,26 @@ img{
   margin-top: 9rem;
   font-size: 2rem;
 }
-
 .factory-img{
-  transition: width 1s;
   width: 100%;
   min-height: 25rem;
+  transition: transform 1s;
 }
 
 .factory-img:hover{
-  width: 105%;
+  transform: scale(1.05 ,1.05);
 }
 
 .factory-img-big{
-  transition: width 1s;
   width: 100%;
   min-height: 50rem;
+  vertical-align: bottom;
+  transition: transform 1s;
+
 }
 
 .factory-img-big:hover{
-  width: 105%;
+  transform: scale(1.05 ,1.05);
 }
 
 .overflow-div{
@@ -176,9 +177,6 @@ img{
   line-height: 3rem;
 }
 
-.show-more{
-
-}
 
 
 

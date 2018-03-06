@@ -15,6 +15,7 @@ import { CaseComponent } from './case/case.component';
 import { AboutComponent } from './about/about.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { StarsComponent } from './stars/stars.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 const routeConfig: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -49,7 +50,7 @@ const routeConfig: Routes = [
     RouterModule.forRoot(routeConfig),
     FormsModule,
   ],
-  providers: [],
+  providers: [ { provide: LocationStrategy, useClass: HashLocationStrategy, }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

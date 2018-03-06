@@ -13,45 +13,15 @@ export class CaseComponent implements OnInit, AfterViewInit {
 
   swiper: any;
   swiper1: any;
-  is_color = [0, false, false, false, false, false, false, false, false, false, false, false, false, false];
-  black = ['0',
-    './assets/img/b1.png',
-    './assets/img/b2.png',
-    './assets/img/b3.png',
-    './assets/img/b4.png',
-    './assets/img/b5.png',
-    './assets/img/b6.png',
-    './assets/img/b7.png',
-    './assets/img/b8.png',
-    './assets/img/b9.png',
-    './assets/img/b10.png',
-    './assets/img/b11.png',
-    './assets/img/b12.png',
-    './assets/img/b13.png'];
-
-  color = ['0',
-    './assets/img/c1.png',
-    './assets/img/c2.png',
-    './assets/img/c3.png',
-    './assets/img/c4.png',
-    './assets/img/c5.png',
-    './assets/img/c6.png',
-    './assets/img/c7.png',
-    './assets/img/c8.png',
-    './assets/img/c9.png',
-    './assets/img/c10.png',
-    './assets/img/c11.png',
-    './assets/img/c12.png',
-    './assets/img/c13.png'];
 
 
   exhibition_data = [
-    {title: 'NAMA ONESHOW', text: '世界规模最大的自动售货、咖啡服务和食品服务博览会', position: '美国自动售货展', img: './assets/img/case/meeting1.png'},
-    {title: 'NAMA ONESHOW', text: '世界规模最大的自动售货、咖啡服务和食品服务博览会', position: '美国自动售货展', img: './assets/img/case/meeting2.png'},
-    {title: '', text: '', position: '广州展会', img: './assets/img/case/meeting3.png'},
-    {title: '', text: '', position: '上海展会', img: './assets/img/case/meeting4.png'},
-    {title: '', text: '', position: '广州展会', img: './assets/img/case/meeting5.png'},
-    {title: '', text: '', position: '北京展会', img: './assets/img/case/meeting6.png'},
+    {title: 'NAMA ONESHOW', text: '世界规模最大的自动售货、咖啡服务和食品服务博览会', position: '美国自动售货展', img: './assets/img/case/meeting1.jpg'},
+    {title: 'NAMA ONESHOW', text: '世界规模最大的自动售货、咖啡服务和食品服务博览会', position: '美国自动售货展', img: './assets/img/case/meeting2.jpg'},
+    {title: '', text: '', position: '广州展会', img: './assets/img/case/meeting3.jpg'},
+    {title: '', text: '', position: '上海展会', img: './assets/img/case/meeting4.jpg'},
+    {title: '', text: '', position: '广州展会', img: './assets/img/case/meeting5.jpg'},
+    {title: '', text: '', position: '北京展会', img: './assets/img/case/meeting6.jpg'},
   ];
   constructor() { }
 
@@ -63,14 +33,9 @@ export class CaseComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.set_swiper();
-    }, 100);
+    }, 300);
   }
 
-
-
-  change_color(index, iscolor) {
-    this.is_color[index] = iscolor;
-  }
 
   set_swiper() {
     this.swiper1 = new Swiper('#swiper1', {

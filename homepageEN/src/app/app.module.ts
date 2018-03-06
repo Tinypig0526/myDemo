@@ -16,6 +16,7 @@ import { BottomComponent } from './bottom/bottom.component';
 import {DownloadComponent} from './download/download.component';
 import {DocumentComponent} from './document/document.component';
 import {ControlService} from './control.service';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 
 const routeConfig: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -52,7 +53,7 @@ const routeConfig: Routes = [
     RouterModule.forRoot(routeConfig),
   ],
   providers: [
-    ControlService,
+    ControlService,{ provide: LocationStrategy, useClass: HashLocationStrategy, }
   ],
   bootstrap: [AppComponent]
 })

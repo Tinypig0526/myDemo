@@ -1,9 +1,7 @@
 <div class="nav-div flex-div">
-
-
   <div style="flex: 1"></div>
   <div style="flex: 6">
-    <img src="./assets/img/logo.png" style="width: 100%;max-width: 10rem">
+    <img src="./assets/img/logo.png" style="width: 100%;max-width: 10rem" alt="Thybot利保">
   </div>
   <div style="   flex: 4"></div>
   <div style="flex: 2" (click)="show_menu()">
@@ -11,7 +9,7 @@
   </div>
 </div>
 
-<div style="margin-top: 72px">
+<div style="margin-top: 60px">
   <router-outlet></router-outlet>
 </div>
 
@@ -37,6 +35,8 @@
     <a [routerLink] = "['/case']"><p class="route-p">Cases</p></a>
     <hr>
     <a [routerLink] = "['/about']"><p class="route-p">About</p></a>
+    <hr>
+    <a href="../m_cn/index.html"><p class="route-p">中文/<span class="language">English</span></p></a>
   </div>
 </div>
 

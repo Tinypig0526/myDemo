@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 declare const $: any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,8 +14,15 @@ export class AppComponent implements OnInit {
   show = 0;
   language = true;
 
+  constructor(private route: Router) {
+
+  }
+
   ngOnInit() {
+
+
     switch (location.pathname) {
+      case '' : this.route.navigate(['/home']);  this.active = 1; break;
       case '/home': this.active = 1; break;
       case '/solution': this.active = 2; break;
       case '/product': this.active = 3; break;
@@ -32,7 +41,7 @@ export class AppComponent implements OnInit {
     this.show = num;
   }
 
-  change_language() {
-    this.language = !this.language;
-  }
+  // change_language() {
+  //   this.language = !this.language;
+  // }
 }

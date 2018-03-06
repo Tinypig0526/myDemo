@@ -2,7 +2,9 @@
 *{
   font-family: MicrosoftYaHei;
 }
-
+.bg-color{
+  background-color: #f8f8f8;
+}
 
 @media screen and (min-width: 598px) and (max-width: 768px) {
   html{

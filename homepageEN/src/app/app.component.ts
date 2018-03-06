@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 declare const $: any;
 @Component({
@@ -12,8 +13,13 @@ export class AppComponent implements OnInit {
   show = 0;
   language = false;
 
+  constructor(private route: Router) {
+
+  }
+
   ngOnInit() {
     switch (location.pathname) {
+      case '' : this.route.navigate(['/home']);  this.active = 1; break;
       case '/home': this.active = 1; break;
       case '/solution': this.active = 2; break;
       case '/product': this.active = 3; break;

@@ -1,5 +1,5 @@
 .download{
-  background:url("../../assets/img/document/document-bg.png") 0 0  no-repeat;
+  background:url("../../assets/img/document/bg.jpg") 0 0  no-repeat;
   background-size:100%;
   padding-bottom: 50px;
 }
@@ -15,12 +15,7 @@
 .download>.title img{
   vertical-align: middle;
 }
-/*.download>.title .content{*/
-  /*cursor: pointer;*/
-/*}*/
-/*.download>.title .content:hover{*/
-  /*color: #39a3f3;*/
-/*}*/
+
 .download .container{
   background-color: #ffffff;
 }
