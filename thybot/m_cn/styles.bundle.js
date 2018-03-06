@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n*{\n  font-family: MicrosoftYaHei;\n}\n@media screen and (min-width: 598px) and (max-width: 768px) {\n  html{\n    font-size: 22px;\n  }\n}\n@media only screen and (max-width: 598px) {\n  html{\n    font-size: 14px;\n  }\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n*{\n  font-family: MicrosoftYaHei;\n}\n.bg-color{\n  background-color: #f8f8f8;\n}\n@media screen and (min-width: 598px) and (max-width: 768px) {\n  html{\n    font-size: 22px;\n  }\n}\n@media only screen and (max-width: 598px) {\n  html{\n    font-size: 14px;\n  }\n}\n", ""]);
 
 // exports
 

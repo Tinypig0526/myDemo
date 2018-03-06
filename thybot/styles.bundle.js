@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n*{\n  font-family: MicrosoftYaHei;\n  margin: 0;\n  padding: 0;\n}\n.row-div{\n  padding: 60px 0 60px 0;\n}\nbody{\n  height: auto !important;\n}\n@media screen and (min-width:1600px){\n  html{\n    font-size: 14px;\n  }\n}\n@media screen and (min-width: 1200px) and (max-width: 1600px) {\n  html{\n    font-size: 12px;\n  }\n}\n@media screen and (min-width: 992px) and (max-width: 1200px) {\n  html{\n    font-size: 11px;\n  }\n}\n@media screen and (min-width: 768px) and (max-width: 992px) {\n  html{\n    font-size: 10px;\n  }\n}\n@media only screen and (max-width: 768px) {\n  html{\n    font-size: 9px;\n  }\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n*{\n  font-family: MicrosoftYaHei;\n  margin: 0;\n  padding: 0;\n}\n.row-div{\n  padding: 60px 0 60px 0;\n}\n.bg-color{\n  background-color: #f8f8f8;\n}\nbody{\n  height: auto !important;\n}\n@media screen and (min-width:1600px){\n  html{\n    font-size: 14px;\n  }\n}\n@media screen and (min-width: 1200px) and (max-width: 1600px) {\n  html{\n    font-size: 12px;\n  }\n}\n@media screen and (min-width: 992px) and (max-width: 1200px) {\n  html{\n    font-size: 11px;\n  }\n}\n@media screen and (min-width: 768px) and (max-width: 992px) {\n  html{\n    font-size: 10px;\n  }\n}\n@media only screen and (max-width: 768px) {\n  html{\n    font-size: 9px;\n  }\n}\n", ""]);
 
 // exports
 
