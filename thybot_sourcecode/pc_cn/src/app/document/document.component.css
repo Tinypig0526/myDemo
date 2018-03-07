@@ -1,0 +1,109 @@
+.document{
+  background:url("../../assets/img/document/bg.jpg") 0 0  repeat-y;
+  background-size:100%;
+  padding-bottom: 50px;
+}
+.document>.title{
+  margin-top:28px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 4.22;
+  text-align: center;
+  color: #ffffff;
+}
+.document>.title img{
+  vertical-align: middle;
+}
+/*.document>.title .content{*/
+  /*cursor: pointer;*/
+/*}*/
+/*.document>.title .content:hover{*/
+  /*color: #39a3f3;*/
+/*}*/
+.document .about,.document .ercode{
+  text-align: left;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  color: #ffffff;
+}
+.document .about{
+  padding-top: 160px;
+}
+.document .about>span{
+  color: #39a3f3;
+  font-size: 24px;
+  font-weight: bold;
+}
+.document .ercode{
+  padding-top: 48px;
+}
+.document .ercode img{
+  width: 121px;
+  margin-top: 14px;
+}
+.document .from{
+  margin-top: 72px;
+  background-color: #fff;
+  text-align: left;
+  font-size: 18px;
+  line-height: 76px;
+  color: #202020;
+}
+.document .from .title{
+  padding-left: 54px;
+}
+.document .from .btn{
+  border-radius: 4px;
+  background-color: #3fabf3;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  line-height: 0;
+  color: #fff;
+  padding: 20px 45px;
+  outline: none;
+  border: 0;
+}
+
+
+
+.tab-btn{
+  background:none;
+  color: white;
+
+  line-height: 3rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 0;
+  padding: 0 1rem 0 1rem;
+  border-radius: 1.5rem;
+}
+
+.tab-btn:hover,.tab-btn:focus{
+  color: white !important;
+  background-color: #3fabf3;
+  outline: none;
+}
+
+
+.tab-active{
+  color: white !important;
+  background-color: #3fabf3;
+}
+
+
+
+
+.tips{
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+}
+
+
+.success{
+  position: absolute;
+
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,165 @@
+.nav-div{
+  width: 100%;
+  height: 60px;
+  background-color: #3fabf3;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1998;
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+
+.language{
+  background-color: white;
+  color: #3fabf3;
+}
+
+.menu-div{
+  height: 100%;
+  width:100%;
+  z-index: 1997;
+  position: fixed;
+  top: 60px;
+}
+
+.menu{
+
+  background-color: #3fabf3;
+  width: 64%;
+  float: right;
+  z-index: 1997;
+}
+
+.sub-menu{
+  background-color: #379de8;
+  padding-left: 16%;
+}
+
+
+
+.route-p{
+  padding-left: 18%;
+  color: white;
+  font-size: 1rem;
+  line-height: 3.2rem;
+}
+
+.child-p{
+
+  color: white;
+  font-size: 1rem;
+  line-height: 2.4rem;
+}
+
+
+
+.fixed-btn{
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background-color: #3fabf3;
+  color: white;
+  border: 0;
+  vertical-align: bottom;
+}
+
+.icon{
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~model~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.document{
+  position:fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2016;
+  background-color: rgba(51, 51, 51, 0.6);
+}
+
+.model{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: 38rem;
+
+  background-color: white;
+  z-index: 2017;
+  padding: 1rem;
+}
+
+
+.form-title{
+  font-size: 0.8rem;
+
+}
+
+.form-row{
+  margin: 0.8rem 0 0.8rem 0;
+  text-align: right;
+}
+
+.form-control{
+  height: 2rem;
+}
+
+
+.option{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.tip{
+  font-size: 1rem;
+  padding: 0.6rem 0 0.6rem 0;
+  text-align: center;
+}
+
+.td{
+  line-height:2rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.td:nth-child(odd){
+  background-color: #f8f8f8;
+}
+
+
+.td:nth-child(even){
+
+  background-color: #ccc;
+}
+
+.td:hover{
+  background-color: #39a3f3;
+  color: #ffffff;
+}
+
+
+.modal-btn{
+  width: 100%;background-color: #3fabf3;color: white
+}
+
+.success{
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: orangered;
+  position: absolute;
+  bottom: 5rem;
+}

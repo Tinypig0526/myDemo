@@ -1,0 +1,180 @@
+.child-div{
+  margin-top: -40px;
+  height: 96px;
+}
+
+.child-active{
+  border-bottom: solid 5px #3fabf3 !important;
+  color: #3fabf3;
+}
+
+.child-btn{
+  color: #9d9d9d;
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: 0;
+  border: 0;
+  background-color: white;
+}
+
+.child-btn:focus,.child-btn:hover,.child-btn:active{
+  outline: 0;
+  border: 0;
+}
+
+img{
+  width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.animate-div{
+  margin-top: 6rem;
+  opacity: 0;
+}
+
+.down-animate{
+
+
+  animation: down_animate 3s;
+  animation-fill-mode : forwards;
+}
+
+
+@keyframes down_animate {
+  0%  {margin-top: 6rem;opacity: 0;}
+  100% {margin-top:0;opacity: 1;}
+}
+
+.down-animate-2{
+  /*margin-top: 24rem;*/
+  /*opacity: 0;*/
+
+  animation: down_animate_2 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes down_animate_2 {
+  0%  {margin-top: 24rem;opacity: 0;}
+  100% {margin-top:18rem;opacity: 1;}
+}
+
+
+
+.tech-img-div{
+  border: solid 1px #d7d7d7;
+  padding: 2% 5% 2% 5%;
+}
+
+.tech-num{
+
+  font-size: 10rem;
+  line-height: 12rem;
+  font-family: Bebas;
+  color: #d7d7d7;
+}
+
+.tech-name{
+  font-size: 3.6rem;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.tech-desc{
+  font-size: 2.4rem;
+  line-height: 4.8rem;
+
+}
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.sex{
+
+  font-size: 2rem;
+  line-height: 7rem;
+
+}
+
+.icon-sex{
+  font-size: 3.5rem;
+
+}
+
+
+.system-text{
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+}
+
+.icon-system{
+  font-size: 2.5rem;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.title-div{
+  margin-bottom: 40px;
+  background-color: #369cf1;
+  height: 60px;
+  border-radius: 30px 0 30px 0;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.title-p{
+  font-size: 1.6rem;
+  line-height: 4rem;
+  padding-left: 2rem;
+}
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.line{
+  border-top:1px solid  #c9c9c9;
+  width: 100px;
+  display: inline-block;
+  margin: 0 1rem 0.6rem 1rem;
+}
+
+
+.title-2{
+  font-size: 2.4rem;
+  color: #3fabf3;
+  font-weight: bold;
+}
+
+.title-4{
+  font-size: 1.4rem;
+  font-family: Helvetica, monospace;
+  color: #919191;
+}
+
+.chanel-text{
+  text-align: center;
+  font-size: 1.6rem;
+
+}
+
+.payment-name{
+  background-color: white;
+  font-size: 1.5rem;
+  border: solid 1px #dddddd;
+  padding: 1rem;
+  margin: 0 1rem 0 1rem;
+  /*margin-right: 1rem;*/
+}
+

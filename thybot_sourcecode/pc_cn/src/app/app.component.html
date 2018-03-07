@@ -1,0 +1,82 @@
+<div nz-row class="nav-div">
+
+  <div nz-col class="logo-div" [nzXl] = "{span: 3, offset: 1}"  [nzLg] = "{span: 3, offset: 1}" [nzMd] = "{span: 3, offset: 1}" [nzSm] = "{span: 0}" [nzXs] = "{span: 0}">
+
+    <img src="./assets/img/logo.png" alt="thybot"  style="margin-top: 1rem;width: 100%;min-width: 16rem">
+  </div>
+
+  <div nz-col class="route-div"  [nzXl] = "{span: 18}"  [nzLg] = "{span: 18}" [nzMd] = "{span: 18}" [nzSm] = "{span: 24}" [nzXs] = "{span: 0}">
+    <button [routerLink] = "['/home']" nz-button [nzType]="'primary'" class="route-btn"  routerLinkActive="active" >首页</button>
+    <button [routerLink] = "['/solution']" nz-button [nzType]="'primary'" class="route-btn"  routerLinkActive="active" >解决方案</button>
+    <button [routerLink] = "['/product']" nz-button [nzType]="'primary'" class="route-btn"  routerLinkActive="active"  >产品</button>
+    <button [routerLink] = "['/case']" nz-button [nzType]="'primary'" class="route-btn"  routerLinkActive="active" >案例</button>
+    <button [routerLink] = "['/serve']" nz-button [nzType]="'primary'" class="route-btn"  routerLinkActive="active" >服务</button>
+    <button [routerLink] = "['/about']" nz-button [nzType]="'primary'" class="route-btn"  routerLinkActive="active"  >关于</button>
+    <button [routerLink] = "['/document']" nz-button [nzType]="'primary'" class="route-btn"  routerLinkActive="active"  >询盘/下载</button>
+  </div>
+
+  <div style="position: absolute;right: 1%;top: 20px">
+    <!--<button   nz-button [nzType]="'primary'" (click)="change_language()" ><span [class.language]="language">中</span>&nbsp;/&nbsp;<span [class.language]="!language">En</span> </button>-->
+    <a href="pc_en/index.html">
+      <button   nz-button [nzType]="'primary'"  ><span [class.language]="language">中</span>&nbsp;/&nbsp;<span [class.language]="!language">En</span></button>
+    </a>
+  </div>
+
+  <div nz-col class="logo-div"  [nzXl] = "{span: 0}"  [nzLg] = "{span: 0}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 12,offset:1}">
+    <img src="./assets/img/logo.png" alt="thybot"  style="margin-top: 2rem;max-height: 3rem;max-width: 12rem">
+  </div>
+  <!--<div nz-col class="route-div"  [nzXl] = "{span: 0}"  [nzLg] = "{span: 0}" [nzMd] = "{span: 0}" [nzSm] = "{span: 0}" [nzXs] = "{span: 10}">-->
+    <!--<nz-dropdown [nzPlacement]="'bottomRight'">-->
+      <!--<button  nz-dropdown style="background:none;color: white;border:0;margin-top:14px;outline: none">-->
+        <!--<i class="icon font_family icon-platform" style="font-size: 6rem"></i>-->
+      <!--</button>-->
+      <!--<ul nz-menu >-->
+        <!--<li nz-menu-item >-->
+          <!--<a >首页</a>-->
+        <!--</li>-->
+        <!--<li nz-menu-item>-->
+          <!--<a >解决方案</a>-->
+        <!--</li>-->
+        <!--<li nz-menu-item>-->
+          <!--<a>产品</a>-->
+        <!--</li>-->
+        <!--<li nz-menu-item>-->
+          <!--<a>案例</a>-->
+        <!--</li>-->
+        <!--<li nz-menu-item>-->
+          <!--<a>服务</a>-->
+        <!--</li>-->
+        <!--<li nz-menu-item>-->
+          <!--<a >关于</a>-->
+        <!--</li>-->
+        <!--<li nz-menu-item>-->
+          <!--<a>询盘/下载</a>-->
+        <!--</li>-->
+      <!--</ul>-->
+    <!--</nz-dropdown>-->
+  <!--</div>-->
+</div>
+
+
+<div style="position: fixed;right: 0;top: 30%;margin: 0;padding: 0;z-index: 1100">
+  <div *ngIf="show == 3" style="display: inline-block;width:15rem;height: 15rem;background-color: white;vertical-align: bottom;">
+    <img id="contact-img" src="./assets/img/er_wei_ma.jpg" >
+  </div>
+  <div *ngIf="show == 2" style="display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;">
+    <p class="phone-num">86-0756-6893285</p>
+  </div>
+  <div *ngIf="show == 1" style="display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;">
+    <p class="document">点击进入在线询盘</p>
+  </div>
+  <div style="display: inline-block;">
+    <button [routerLink] = "['/document']" (click)="change_show(1)" (mouseenter) = "change_show(1)" (mouseleave)="change_show(0)"  class="fixed-btn"><i class="icon font_family icon-btn_enquiry"></i></button>
+    <button (click)="change_show(2)" (mouseenter) ="change_show(2)" (mouseleave)="change_show(0)" class="fixed-btn"><i class="icon font_family icon-btn_phone"></i></button>
+    <button  (click)="change_show(3)" (mouseenter) ="change_show(3)" (mouseleave)="change_show(0)" class="fixed-btn"><i class="icon font_family icon-btn_qrcode"></i></button>
+
+  </div>
+
+</div>
+
+<div style="margin-top: 72px">
+  <router-outlet></router-outlet>
+</div>

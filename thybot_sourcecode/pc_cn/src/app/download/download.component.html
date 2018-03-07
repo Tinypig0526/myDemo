@@ -1,0 +1,66 @@
+<div class="download">
+  <table></table>
+
+  <div nz-row style="margin-top: 8rem">
+
+    <div nz-col [nzXl] = "{span: 6, offset: 5}"  [nzLg] = "{span: 7, offset: 4}" [nzMd] = "{span: 8, offset: 3}" [nzSm] = "{span: 9, offset: 2}" [nzXs] = "{span: 20, offset: 2}" class="container">
+      <div class="title">
+        今日热门文档（02月10日 00:00~15:27）
+      </div>
+      <div class="td" *ngFor="let d of day">
+        <a [href]="d.fileurl"><p>{{d.filename}}</p></a>
+      </div>
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+    </div>
+
+    <div nz-col [nzXl] = "{span: 6, offset: 2}"  [nzLg] = "{span: 7, offset: 2}" [nzMd] = "{span: 8, offset: 2}" [nzSm] = "{span: 9, offset: 2}" [nzXs] = "{span: 20, offset: 2}" class="container">
+      <div class="title">
+        本周热门文档（02月04日~02月10日）
+      </div>
+      <div class="td" *ngFor="let w of week">
+        <a [href]="w.fileurl"><p>{{w.filename}}</p></a>
+      </div>
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+      <!--<div class="td">-->
+        <!--assert(value[, message])-->
+      <!--</div>-->
+    </div>
+  </div>
+</div>

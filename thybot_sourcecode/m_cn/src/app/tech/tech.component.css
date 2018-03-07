@@ -1,0 +1,39 @@
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.row-div{
+  padding: 2rem 4% 1rem 4%;
+
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+.title-num{
+  font-size: 6rem;
+  color: #d7d7d7;
+}
+
+.title-1{
+  font-size: 2rem;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.title-2{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+.gif-div{
+  width: 100%;
+
+  text-align: center;
+  padding: 1rem 2rem 1rem 2rem;
+}

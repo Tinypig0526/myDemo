@@ -1,0 +1,46 @@
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.row-div{
+  padding: 2rem 4% 1rem 4%;
+  text-align: left;
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+.title-2{
+
+  font-size: 1.5rem;
+  color: #3fabf3;
+  font-weight: bold;
+}
+
+
+.title-4{
+
+  font-size: 1rem;
+  font-family: Helvetica, monospace;
+  color: #919191;
+}
+
+
+.line{
+  border-top:1px solid  #c9c9c9;
+  width: 12%;
+  display: inline-block;
+  margin: 0 0rem 0.6rem 0rem;
+}
+
+
+
+.about-text{
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.6rem;
+}

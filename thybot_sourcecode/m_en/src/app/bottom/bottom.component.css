@@ -1,0 +1,28 @@
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.row-div{
+  padding: 2rem 4% 1rem 4%;
+
+}
+
+.flex-div{
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  align-items:  center;
+}
+
+
+.text{
+  font-size: 0.8rem;
+  color: white;
+}
+
+
+.bottom-text{
+  font-size: 0.6rem;
+  color: #c2c2c2;
+}

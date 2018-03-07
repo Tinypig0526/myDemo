@@ -1,0 +1,80 @@
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.row-div{
+  padding: 2rem 4% 1rem 4%;
+  text-align: center;
+}
+
+.flex-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+}
+
+
+.line{
+  border-top:1px solid  #c9c9c9;
+  width: 12%;
+  display: inline-block;
+  margin: 0 0rem 0.6rem 0rem;
+}
+
+
+.title-2{
+  font-size: 1.6rem;
+  color: #3fabf3;
+  font-weight: bold;
+}
+
+
+.title-4{
+  font-size: 1rem;
+  font-family: Helvetica, monospace;
+  color: #919191;
+}
+
+
+.zh-name{
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+
+.hall-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  line-height: 3rem;
+}
+
+.hall-text{
+  font-size: 1rem;
+  border: solid 1px black;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+
+
+
+.hall-title-w{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  line-height: 2.4rem;
+}
+
+.hall-text-w{
+  color: white;
+  font-size: 1rem;
+  border: solid 1px white;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+
+.hall-p{
+  color: white;
+  font-size: 0.8rem;
+  padding: 0 0 0.2rem 0;
+}
