@@ -303,7 +303,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".nav-div{\r\n  width: 100%;\r\n  height: 60px;\r\n  background-color: #3fabf3;\r\n  position: fixed;\r\n  top:0;\r\n  left: 0;\r\n  z-index: 1998;\r\n}\r\n\r\n.flex-div{\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: justify;\r\n      -ms-flex-pack: justify;\r\n          justify-content: space-between;\r\n  -webkit-box-align:  center;\r\n      -ms-flex-align:  center;\r\n          align-items:  center;\r\n}\r\n\r\n.language{\r\n  background-color: white;\r\n  color: #3fabf3;\r\n}\r\n\r\n.menu-div{\r\n  height: 100%;\r\n  width:100%;\r\n  z-index: 1997;\r\n  position: fixed;\r\n  top: 60px;\r\n}\r\n\r\n.menu{\r\n\r\n  background-color: #3fabf3;\r\n  width: 64%;\r\n  float: right;\r\n  z-index: 1997;\r\n}\r\n\r\n.sub-menu{\r\n  background-color: #379de8;\r\n  padding-left: 16%;\r\n}\r\n\r\n.route-p{\r\n  padding-left: 18%;\r\n  color: white;\r\n  font-size: 1rem;\r\n  line-height: 3.2rem;\r\n}\r\n\r\n.child-p{\r\n\r\n  color: white;\r\n  font-size: 1rem;\r\n  line-height: 2.4rem;\r\n}\r\n\r\n.fixed-btn{\r\n  display: block;\r\n  width: 4rem;\r\n  height: 4rem;\r\n  background-color: #3fabf3;\r\n  color: white;\r\n  border: 0;\r\n  vertical-align: bottom;\r\n}\r\n\r\n.icon{\r\n  font-size: 3.2rem;\r\n  line-height: 4rem;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~model~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.document{\r\n  position:fixed;\r\n  top:0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 2016;\r\n  background-color: rgba(51, 51, 51, 0.6);\r\n}\r\n\r\n.model{\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  width: 80%;\r\n  height: 38rem;\r\n\r\n  background-color: white;\r\n  z-index: 2017;\r\n  padding: 1rem;\r\n}\r\n\r\n.form-title{\r\n  font-size: 0.8rem;\r\n\r\n}\r\n\r\n.form-row{\r\n  margin: 0.8rem 0 0.8rem 0;\r\n  text-align: right;\r\n}\r\n\r\n.form-control{\r\n  height: 2.4rem;\r\n}\r\n\r\n.option{\r\n  font-size: 1.6rem;\r\n  line-height: 3rem;\r\n}\r\n\r\n.tip{\r\n  font-size: 1rem;\r\n  padding: 0.6rem 0 0.6rem 0;\r\n  text-align: center;\r\n}\r\n\r\n.td{\r\n  line-height:2rem;\r\n  font-size: 1rem;\r\n  padding: 1rem;\r\n}\r\n\r\n.td:nth-child(odd){\r\n  background-color: #f8f8f8;\r\n}\r\n\r\n.td:nth-child(even){\r\n\r\n  background-color: #ccc;\r\n}\r\n\r\n.td:hover{\r\n  background-color: #39a3f3;\r\n  color: #ffffff;\r\n}\r\n\r\n.modal-btn{\r\n  width: 100%;background-color: #3fabf3;color: white\r\n}\r\n\r\n.success{\r\n  width: 100%;\r\n  text-align: center;\r\n  font-size: 1.2rem;\r\n  color: orangered;\r\n  position: absolute;\r\n  bottom: 5rem;\r\n}\r\n", ""]);
+exports.push([module.i, ".nav-div{\r\n  width: 100%;\r\n  height: 60px;\r\n  background-color: #3fabf3;\r\n  position: fixed;\r\n  top:0;\r\n  left: 0;\r\n  z-index: 1998;\r\n}\r\n\r\n.flex-div{\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: justify;\r\n      -ms-flex-pack: justify;\r\n          justify-content: space-between;\r\n  -webkit-box-align:  center;\r\n      -ms-flex-align:  center;\r\n          align-items:  center;\r\n}\r\n\r\n.language{\r\n  background-color: white;\r\n  color: #3fabf3;\r\n}\r\n\r\n.menu-div{\r\n  height: 100%;\r\n  width:100%;\r\n  z-index: 1997;\r\n  position: fixed;\r\n  top: 60px;\r\n}\r\n\r\n.menu{\r\n\r\n  background-color: #3fabf3;\r\n  width: 64%;\r\n  float: right;\r\n  z-index: 1997;\r\n}\r\n\r\n.sub-menu{\r\n  background-color: #379de8;\r\n  padding-left: 16%;\r\n}\r\n\r\n.route-p{\r\n  padding-left: 18%;\r\n  color: white;\r\n  font-size: 1rem;\r\n  line-height: 3.2rem;\r\n}\r\n\r\n.child-p{\r\n\r\n  color: white;\r\n  font-size: 1rem;\r\n  line-height: 2.4rem;\r\n}\r\n\r\n.fixed-btn{\r\n  display: block;\r\n  width: 4rem;\r\n  height: 4rem;\r\n  background-color: #3fabf3;\r\n  color: white;\r\n  border: 0;\r\n  vertical-align: bottom;\r\n}\r\n\r\n.icon{\r\n  font-size: 3.2rem;\r\n  line-height: 4rem;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~model~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.document{\r\n  position:fixed;\r\n  top:0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  z-index: 2016;\r\n  background-color: rgba(51, 51, 51, 0.6);\r\n}\r\n\r\n.model{\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  margin: auto;\r\n  width: 80%;\r\n  height: 38rem;\r\n\r\n  background-color: white;\r\n  z-index: 2017;\r\n  padding: 1rem;\r\n}\r\n\r\n.form-title{\r\n  font-size: 0.8rem;\r\n\r\n}\r\n\r\n.form-row{\r\n  margin: 0.8rem 0 0.8rem 0;\r\n  text-align: right;\r\n}\r\n\r\n.form-control{\r\n  height: 2rem;\r\n}\r\n\r\n.option{\r\n  font-size: 1rem;\r\n  line-height: 2rem;\r\n}\r\n\r\n.tip{\r\n  font-size: 1rem;\r\n  padding: 0.6rem 0 0.6rem 0;\r\n  text-align: center;\r\n}\r\n\r\n.td{\r\n  line-height:2rem;\r\n  font-size: 1rem;\r\n  padding: 1rem;\r\n}\r\n\r\n.td:nth-child(odd){\r\n  background-color: #f8f8f8;\r\n}\r\n\r\n.td:nth-child(even){\r\n\r\n  background-color: #ccc;\r\n}\r\n\r\n.td:hover{\r\n  background-color: #39a3f3;\r\n  color: #ffffff;\r\n}\r\n\r\n.modal-btn{\r\n  width: 100%;background-color: #3fabf3;color: white\r\n}\r\n\r\n.success{\r\n  width: 100%;\r\n  text-align: center;\r\n  font-size: 1.2rem;\r\n  color: orangered;\r\n  position: absolute;\r\n  bottom: 5rem;\r\n}\r\n", ""]);
 
 // exports
 
@@ -316,7 +316,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"nav-div flex-div\">\n  <div style=\"flex: 1\"></div>\n  <div style=\"flex: 6\">\n    <img src=\"./assets/img/logo.png\" style=\"width: 100%;max-width: 10rem\" alt=\"Thybot利保\">\n  </div>\n  <div style=\"   flex: 4\"></div>\n  <div style=\"flex: 2\" (click)=\"show_menu()\">\n    <i class=\"icon font_family icon-icon_nav\" style=\"font-size: 3rem;color: white\"></i>\n  </div>\n</div>\n\n<div style=\"margin-top: 60px\">\n  <router-outlet></router-outlet>\n</div>\n\n<div class=\"menu-div\" *ngIf=\"menu\" (click)=\"close_menu()\">\n  <div class=\"menu\" >\n    <a [routerLink] = \"['/home']\"><p class=\"route-p\">Home</p></a>\n    <hr>\n    <a [routerLink] = \"['/system']\"><p class=\"route-p\">Solution</p></a>\n    <div class=\"sub-menu\">\n      <a [routerLink] = \"['/system']\"><p class=\"child-p\">System Advantage</p></a>\n      <hr>\n      <a [routerLink] = \"['/tech']\"><p class=\"child-p\">The Core Technology</p></a>\n      <hr>\n      <a [routerLink] = \"['/solution']\"><p class=\"child-p\">Automated New Retail Solutions</p></a>\n      <hr>\n      <a [routerLink] = \"['/channel']\"><p class=\"child-p\">Purchasing Channel</p></a>\n    </div>\n    <hr>\n    <a [routerLink] = \"['/product']\"><p class=\"route-p\">Product</p></a>\n    <hr>\n    <a [routerLink] = \"['/serve']\"><p class=\"route-p\">Services</p></a>\n    <hr>\n    <a [routerLink] = \"['/case']\"><p class=\"route-p\">Cases</p></a>\n    <hr>\n    <a [routerLink] = \"['/about']\"><p class=\"route-p\">About</p></a>\n    <hr>\n    <a href=\"../m_cn/index.html\"><p class=\"route-p\">中文/<span class=\"language\">English</span></p></a>\n  </div>\n</div>\n\n\n\n<div style=\"position: fixed;top:44%;right: 0;z-index: 1996\">\n  <button (click)=\"submit(1)\"  class=\"fixed-btn\"><i class=\"icon font_family icon-btn_enquiry\"></i></button>\n</div>\n\n<div class=\"document\" *ngIf=\"document > 0\" >\n  <div class=\"model\">\n\n\n    <div class=\"form-group download\" *ngIf=\"document == 1\">\n      <h2 class=\"tip\">Please fill in your information,we will contact you soon;</h2>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label  class=\"form-title\">Product item:</label></div>\n        <div style=\"flex: 3\">\n          <select class=\"form-control\" [(ngModel)]=\"client.product\">\n            <option class=\"option\">Glacier Series</option>\n            <option class=\"option\">Auto Stock In–Stock Out Series</option>\n            <option class=\"option\">Multi functional Integrated Machine</option>\n            <option class=\"option\">Classic Series</option>\n            <option class=\"option\">Prosperous Series</option>\n            <option class=\"option\">G2S</option>\n            <option class=\"option\">G2S PLUS</option>\n            <option class=\"option\">Exquisite Series</option>\n            <option class=\"option\">Cooked Food Series</option>\n          </select>\n        </div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"name\" class=\"form-title\"><span style=\"color: red\">*&nbsp;</span>Name:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"name\" [(ngModel)]=\"client.name\" ></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"email\" class=\"form-title\">E-mail:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"email\" [(ngModel)]=\"client.email\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"city\" class=\"form-title\"><span style=\"color: red\">*&nbsp;</span>City:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"city\" [(ngModel)]=\"client.city\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"amount\" class=\"form-title\">Quantity:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"amount\" [(ngModel)]=\"client.amount\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"company\" class=\"form-title\">Company:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"company\" [(ngModel)]=\"client.company\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"phone\" class=\"form-title\"><span style=\"color: red\">*&nbsp;</span>Telephone:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"phone\" [(ngModel)]=\"client.phone\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"state\" class=\"form-title\">Country:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"state\" [(ngModel)]=\"client.state\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"other\" class=\"form-title\" >Remark:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"other\" style=\"height: 4rem\" [(ngModel)]=\"client.other\"></div>\n      </div>\n      <div class=\"flex-div\">\n\n        <div style=\"flex: 3\"><button (click)=\"submit(2)\" type=\"submit\" class=\"btn modal-btn\" >Submit</button></div>\n        <div style=\"flex: 1\"></div>\n        <div style=\"flex: 3\"><button (click)=\"submit(0)\" class=\"btn modal-btn\" >Cancel</button></div>\n\n      </div>\n\n      <div class=\"success\"  *ngIf=\"!is_success\">\n        <h3>Please fill in form with * correctly!</h3>\n      </div>\n    </div>\n\n\n    <div class=\"download\" *ngIf=\"document == 2\" >\n        <div class=\"container\">\n          <h2 style=\"font-size: 1.6rem;padding: 1rem 0 1rem 0;text-align: center\">Technical documentation download</h2>\n          <div class=\"td\">\n            assert(value[, message])\n          </div>\n          <div class=\"td\">\n            assert(value[, message])\n          </div>\n          <div class=\"td\">\n            assert(value[, message])\n          </div>\n          <div class=\"td\">\n            assert(value[, message])\n          </div>\n          <div class=\"td\">\n            assert(value[, message])\n          </div>\n          <div class=\"td\">\n            assert(value[, message])\n          </div>\n          <div class=\"td\">\n            assert(value[, message])\n          </div>\n        </div>\n      <div style=\"text-align: center;margin:1rem 0 1rem 0\" >\n\n        <button (click)=\"submit(0)\" class=\"btn modal-btn\" style=\"width: 30%\" >Back</button>\n      </div>\n\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"nav-div flex-div\">\n  <div style=\"flex: 1\"></div>\n  <div style=\"flex: 6\">\n    <img src=\"./assets/img/logo.png\" style=\"width: 100%;max-width: 10rem\" alt=\"Thybot利保\">\n  </div>\n  <div style=\"   flex: 4\"></div>\n  <div style=\"flex: 2\" (click)=\"show_menu()\">\n    <i class=\"icon font_family icon-icon_nav\" style=\"font-size: 2.4rem;color: white\"></i>\n  </div>\n</div>\n\n<div style=\"margin-top: 60px\">\n  <router-outlet></router-outlet>\n</div>\n\n<div class=\"menu-div\" *ngIf=\"menu\" (click)=\"close_menu()\">\n  <div class=\"menu\" >\n    <a [routerLink] = \"['/home']\"><p class=\"route-p\">Home</p></a>\n    <hr>\n    <a [routerLink] = \"['/system']\"><p class=\"route-p\">Solution</p></a>\n    <div class=\"sub-menu\">\n      <a [routerLink] = \"['/system']\"><p class=\"child-p\">System Advantage</p></a>\n      <hr>\n      <a [routerLink] = \"['/tech']\"><p class=\"child-p\">The Core Technology</p></a>\n      <hr>\n      <a [routerLink] = \"['/solution']\"><p class=\"child-p\">Automated New Retail Solutions</p></a>\n      <hr>\n      <a [routerLink] = \"['/channel']\"><p class=\"child-p\">Purchasing Channel</p></a>\n    </div>\n    <hr>\n    <a [routerLink] = \"['/product']\"><p class=\"route-p\">Product</p></a>\n    <hr>\n    <a [routerLink] = \"['/serve']\"><p class=\"route-p\">Services</p></a>\n    <hr>\n    <a [routerLink] = \"['/case']\"><p class=\"route-p\">Cases</p></a>\n    <hr>\n    <a [routerLink] = \"['/about']\"><p class=\"route-p\">About</p></a>\n    <hr>\n    <a href=\"../m_cn/index.html\"><p class=\"route-p\">中文/<span class=\"language\">English</span></p></a>\n  </div>\n</div>\n\n\n\n<div style=\"position: fixed;top:44%;right: 0;z-index: 1996\">\n  <button (click)=\"submit(1)\"  class=\"fixed-btn\"><i class=\"icon font_family icon-btn_enquiry\"></i></button>\n</div>\n\n<div class=\"document\" *ngIf=\"document > 0\" >\n  <div class=\"model\">\n\n\n    <div class=\"form-group download\" *ngIf=\"document == 1\">\n      <h2 class=\"tip\">Please fill in your information,we will contact you soon;</h2>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label  class=\"form-title\">Product item:</label></div>\n        <div style=\"flex: 3\">\n          <select class=\"form-control\" [(ngModel)]=\"client.product_name\">\n            <option class=\"option\">Glacier Series</option>\n            <option class=\"option\">Auto Stock In–Stock Out Series</option>\n            <option class=\"option\">Multi functional Integrated Machine</option>\n            <option class=\"option\">Classic Series</option>\n            <option class=\"option\">Prosperous Series</option>\n            <option class=\"option\">G2S</option>\n            <option class=\"option\">G2S PLUS</option>\n            <option class=\"option\">Exquisite Series</option>\n            <option class=\"option\">Cooked Food Series</option>\n          </select>\n        </div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"name\" class=\"form-title\"><span style=\"color: red\">*&nbsp;</span>Name:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"name\" [(ngModel)]=\"client.user_name\" ></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"email\" class=\"form-title\">E-mail:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"email\" [(ngModel)]=\"client.email\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"city\" class=\"form-title\"><span style=\"color: red\">*&nbsp;</span>City:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"city\" [(ngModel)]=\"client.city\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"amount\" class=\"form-title\">Quantity:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"amount\" [(ngModel)]=\"client.product_num\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"company\" class=\"form-title\">Company:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"company\" [(ngModel)]=\"client.company_name\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"phone\" class=\"form-title\"><span style=\"color: red\">*&nbsp;</span>Telephone:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"phone\" [(ngModel)]=\"client.phone\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"state\" class=\"form-title\">Country:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"state\" [(ngModel)]=\"client.country\"></div>\n      </div>\n      <div class=\"flex-div form-row\">\n        <div style=\"flex: 1\"><label for=\"other\" class=\"form-title\" >Remark:</label></div>\n        <div style=\"flex: 3\"><input type=\"text\" class=\"form-control\" id=\"other\" style=\"height: 4rem\" [(ngModel)]=\"client.remark\"></div>\n      </div>\n      <div class=\"flex-div\">\n\n        <div style=\"flex: 3\"><button (click)=\"submit(2)\" type=\"submit\" class=\"btn modal-btn\" >Submit</button></div>\n        <div style=\"flex: 1\"></div>\n        <div style=\"flex: 3\"><button (click)=\"submit(0)\" class=\"btn modal-btn\" >Cancel</button></div>\n\n      </div>\n\n      <div class=\"success\"  *ngIf=\"!is_success\">\n        <h3>Please fill in form with * correctly!</h3>\n      </div>\n    </div>\n\n\n    <div class=\"download\" *ngIf=\"document == 2\" >\n        <div class=\"container\">\n          <h2 style=\"font-size: 1.6rem;padding: 1rem 0 1rem 0;text-align: center\">Technical documentation download</h2>\n          <div class=\"td\" *ngFor=\"let w of week\">\n            <a [href]=\"w.fileurl\"><p>{{w.filename}}</p></a>\n          </div>\n        </div>\n      <div style=\"text-align: center;margin:1rem 0 1rem 0\" >\n        <button (click)=\"submit(0)\" class=\"btn modal-btn\" style=\"width: 30%\" >Back</button>\n      </div>\n\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -327,6 +327,8 @@ module.exports = "<div class=\"nav-div flex-div\">\n  <div style=\"flex: 1\"></d
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_service__ = __webpack_require__("../../../../../src/app/control.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -338,24 +340,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var AppComponent = /** @class */ (function () {
-    function AppComponent(route) {
+    function AppComponent(route, control) {
         this.route = route;
+        this.control = control;
         this.menu = false;
         this.document = 0;
         this.client = {
-            product: '',
-            amount: '',
-            name: '',
-            company: '',
+            product_name: '综合机',
+            product_num: 0,
+            user_name: '',
+            company_name: '',
             email: '',
             phone: '',
             city: '',
-            state: '',
-            other: '',
+            country: '',
+            remark: '',
         };
         this.is_success = true;
+        this.url = 'http://192.168.1.13/homepage/backend/web/api/enquiry/set-enquiry';
+        this.url_day = 'http://192.168.1.13/homepage/backend/web/api/hot-documents/day-sort';
+        this.url_week = 'http://192.168.1.13/homepage/backend/web/api/hot-documents/week-sort';
+        this.url_times = 'http://192.168.1.13/homepage/backend/web/api/hot-documents/click-download';
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.get_week();
+    };
     AppComponent.prototype.show_menu = function () {
         this.is_success = true;
         this.menu = !this.menu;
@@ -363,21 +375,38 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.close_menu = function () {
         this.menu = false;
     };
+    AppComponent.prototype.post_form = function () {
+        var data = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* URLSearchParams */]();
+        for (var key in this.client) {
+            this.client[key].length > 0 && data.append(key, this.client[key]);
+        }
+        // console.log(data);
+        this.control.postData(this.url, data).then(function () {
+            console.log('success!');
+        });
+    };
+    AppComponent.prototype.get_week = function () {
+        var _this = this;
+        this.control.getData(this.url_week).then(function (data) {
+            _this.week = data.data;
+            console.log(_this.week);
+        });
+    };
     AppComponent.prototype.submit = function (where) {
         var _this = this;
         if (where == 2) {
-            console.log(this.client);
-            if (this.client.phone == '' || this.client.name == '' || this.client.city == '') {
+            if (this.client.phone == '' || this.client.user_name == '' || this.client.city == '') {
                 this.is_success = false;
                 setTimeout(function () { _this.is_success = true; }, 600);
-                // alert('请正确填写带有*的信息!');
             }
             else {
                 this.document = where;
+                this.post_form();
             }
         }
         else if (where == -1) {
             this.document = 0;
+            this.post_form();
             this.route.navigate(['/home']);
         }
         else {
@@ -390,7 +419,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_3__control_service__["a" /* ControlService */]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -421,12 +450,16 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__bottom_bottom_component__ = __webpack_require__("../../../../../src/app/bottom/bottom.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__stars_stars_component__ = __webpack_require__("../../../../../src/app/stars/stars.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__control_service__ = __webpack_require__("../../../../../src/app/control.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -479,8 +512,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* RouterModule */].forRoot(routeConfig),
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_17__angular_http__["b" /* HttpModule */],
             ],
-            providers: [{ provide: __WEBPACK_IMPORTED_MODULE_16__angular_common__["g" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_16__angular_common__["d" /* HashLocationStrategy */], }],
+            providers: [__WEBPACK_IMPORTED_MODULE_18__control_service__["a" /* ControlService */], { provide: __WEBPACK_IMPORTED_MODULE_16__angular_common__["g" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_16__angular_common__["d" /* HashLocationStrategy */], }],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
@@ -668,6 +702,66 @@ var ChannelComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ChannelComponent);
     return ChannelComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/control.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ControlService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/catch.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ControlService = /** @class */ (function () {
+    function ControlService(http) {
+        this.http = http;
+    }
+    ControlService.prototype.postData = function (url, value) {
+        return this.http.post(url, value).toPromise()
+            .then(function (response) {
+            return new Promise(function (resolve, reject) {
+                resolve(response.json());
+            });
+        })
+            .catch(this.handleError);
+    };
+    ControlService.prototype.getData = function (url) {
+        return this.http.get(url)
+            .toPromise()
+            .then(function (response) {
+            return new Promise(function (resolve, reject) {
+                resolve(response.json());
+            });
+        })
+            .catch(this.handleError);
+    };
+    ControlService.prototype.handleError = function (error) {
+        console.error('An error occurred', error); // for demo purposes only
+        return Promise.reject(error.message || error);
+    };
+    ControlService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+    ], ControlService);
+    return ControlService;
 }());
 
 

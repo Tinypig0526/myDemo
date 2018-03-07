@@ -25,7 +25,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "\r\n\r\n.child-div{\r\n  margin-top: -40px;\r\n  height: 96px;\r\n}\r\n\r\n.child-active{\r\n  border-bottom: solid 5px #3fabf3 !important;\r\n  color: #3fabf3;\r\n}\r\n\r\n.child-btn{\r\n  color: #9d9d9d;\r\n  height: 100%;\r\n  width: 100%;\r\n  font-size: 1.6rem;\r\n  border-radius: 0;\r\n  border: 0;\r\n  background-color: white;\r\n}\r\n\r\n.child-btn:focus,.child-btn:hover,.child-btn:active{\r\n  outline: 0;\r\n  border: 0;\r\n}\r\n\r\nimg{\r\n  width: 100%;\r\n  vertical-align: bottom;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.title-2{\r\n  font-size: 2.4rem;\r\n  color: #3fabf3;\r\n  font-weight: bold;\r\n}\r\n\r\n.title-4{\r\n  font-size: 1.4rem;\r\n  font-family: Helvetica, monospace;\r\n  color: #919191;\r\n}\r\n\r\n.thybot-line{\r\n  font-size: 2.4rem;\r\n  color: #c9c9c9;\r\n\r\n}\r\n\r\n.thybot-desc{\r\n  font-size: 1.4rem;\r\n  line-height: 3rem;\r\n\r\n}\r\n\r\n.thybot-slogan{\r\n  /*padding-left: 1rem;*/\r\n  font-size: 1.4rem;\r\n  line-height: 3rem;\r\n}\r\n\r\n.map-btn{\r\n  border: solid 0.2rem;\r\n  font-size: 2rem;\r\n  width: 4rem;\r\n  height: 4rem;\r\n  background-color: white;\r\n  position: absolute;\r\n  z-index: 900;\r\n  right: 6rem;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.factory-name{\r\n  text-align: center;\r\n  margin-top: 9rem;\r\n  font-size: 2rem;\r\n}\r\n\r\n.factory-img{\r\n  width: 100%;\r\n  min-height: 25rem;\r\n  -webkit-transition: -webkit-transform 1s;\r\n  transition: -webkit-transform 1s;\r\n  transition: transform 1s;\r\n  transition: transform 1s, -webkit-transform 1s;\r\n}\r\n\r\n.factory-img:hover{\r\n  -webkit-transform: scale(1.05 ,1.05);\r\n          transform: scale(1.05 ,1.05);\r\n}\r\n\r\n.factory-img-big{\r\n  width: 100%;\r\n  min-height: 50rem;\r\n  vertical-align: bottom;\r\n  -webkit-transition: -webkit-transform 1s;\r\n  transition: -webkit-transform 1s;\r\n  transition: transform 1s;\r\n  transition: transform 1s, -webkit-transform 1s;\r\n\r\n}\r\n\r\n.factory-img-big:hover{\r\n  -webkit-transform: scale(1.05 ,1.05);\r\n          transform: scale(1.05 ,1.05);\r\n}\r\n\r\n.overflow-div{\r\n  overflow: hidden;\r\n}\r\n\r\n.triangle_right{\r\n  z-index: 996;\r\n  position: absolute;\r\n  /*left: 19rem;*/\r\n  left: 100%;\r\n  top: 10rem;\r\n  border-top: 1.6rem solid transparent;\r\n  border-left: 1.6rem solid #eeeced;\r\n  border-bottom: 1.6rem solid transparent;\r\n\r\n}\r\n\r\n.triangle_left{\r\n  z-index: 996;\r\n  position: absolute;\r\n  top: 10rem;\r\n  left: -1.6rem;\r\n  border-top: 1.6rem solid transparent;\r\n  border-right: 1.6rem solid #eeeced;\r\n  border-bottom: 1.6rem solid transparent;\r\n}\r\n\r\n.blue-div{\r\n  width: 50%;\r\n  height: 50%;\r\n  position: absolute;\r\n  top:50%;\r\n  left: 50%;\r\n  background-color: rgba(63,171,243,0.6);\r\n  color: white;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 3  tab 4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.news-title-div{\r\n  text-align: center;\r\n  height: 3rem;\r\n  font-size: 1.2rem;\r\n  line-height: 3rem;\r\n  background-color: #f0f0f0;\r\n}\r\n\r\n.news-title{\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n  line-height: 4rem;\r\n}\r\n\r\n.news-time{\r\n  font-size: 1rem;\r\n  color: #999999;\r\n  line-height: 3rem;\r\n}\r\n\r\n.news-content{\r\n  color: #1f1f1f;\r\n  font-size: 1.2rem;\r\n  line-height: 3rem;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~media~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.fixed-height1{\r\n  height: 25rem;\r\n}\r\n\r\n.fixed-height2{\r\n  height: 50rem;\r\n}\r\n", ""]);
+exports.push([module.i, "\r\n\r\n.child-div{\r\n  margin-top: -40px;\r\n  height: 96px;\r\n}\r\n\r\n.child-active{\r\n  border-bottom: solid 5px #3fabf3 !important;\r\n  color: #3fabf3;\r\n}\r\n\r\n.child-btn{\r\n  color: #9d9d9d;\r\n  height: 100%;\r\n  width: 100%;\r\n  font-size: 1.6rem;\r\n  border-radius: 0;\r\n  border: 0;\r\n  background-color: white;\r\n}\r\n\r\n.child-btn:focus,.child-btn:hover,.child-btn:active{\r\n  outline: 0;\r\n  border: 0;\r\n}\r\n\r\nimg{\r\n  width: 100%;\r\n  vertical-align: bottom;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.title-2{\r\n  font-size: 2.4rem;\r\n  color: #3fabf3;\r\n  font-weight: bold;\r\n}\r\n\r\n.title-4{\r\n  font-size: 1.4rem;\r\n  font-family: Helvetica, monospace;\r\n  color: #919191;\r\n}\r\n\r\n.thybot-line{\r\n  font-size: 2.4rem;\r\n  color: #c9c9c9;\r\n\r\n}\r\n\r\n.thybot-desc{\r\n  font-size: 1.4rem;\r\n  line-height: 3rem;\r\n\r\n}\r\n\r\n.thybot-slogan{\r\n  /*padding-left: 1rem;*/\r\n  font-size: 1.4rem;\r\n  line-height: 3rem;\r\n}\r\n\r\n.map-btn{\r\n  border: solid 0.2rem;\r\n  font-size: 2rem;\r\n  width: 4rem;\r\n  height: 4rem;\r\n  background-color: white;\r\n  position: absolute;\r\n  z-index: 900;\r\n  right: 6rem;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.factory-name{\r\n  text-align: center;\r\n  margin-top: 9rem;\r\n  font-size: 2rem;\r\n}\r\n\r\n.factory-img{\r\n  width: 100%;\r\n  min-height: 25rem;\r\n  -webkit-transition: -webkit-transform 1s;\r\n  transition: -webkit-transform 1s;\r\n  transition: transform 1s;\r\n  transition: transform 1s, -webkit-transform 1s;\r\n}\r\n\r\n.factory-img:hover{\r\n  -webkit-transform: scale(1.05 ,1.05);\r\n          transform: scale(1.05 ,1.05);\r\n}\r\n\r\n.factory-img-big{\r\n  width: 100%;\r\n  min-height: 50rem;\r\n  vertical-align: bottom;\r\n  -webkit-transition: -webkit-transform 1s;\r\n  transition: -webkit-transform 1s;\r\n  transition: transform 1s;\r\n  transition: transform 1s, -webkit-transform 1s;\r\n\r\n}\r\n\r\n.factory-img-big:hover{\r\n  -webkit-transform: scale(1.05 ,1.05);\r\n          transform: scale(1.05 ,1.05);\r\n}\r\n\r\n.overflow-div{\r\n  overflow: hidden;\r\n}\r\n\r\n.triangle_right{\r\n  z-index: 996;\r\n  position: absolute;\r\n  /*left: 19rem;*/\r\n  left: 100%;\r\n  top: 10rem;\r\n  border-top: 1.6rem solid transparent;\r\n  border-left: 1.6rem solid #eeeced;\r\n  border-bottom: 1.6rem solid transparent;\r\n\r\n}\r\n\r\n.triangle_left{\r\n  z-index: 996;\r\n  position: absolute;\r\n  top: 10rem;\r\n  left: -1.6rem;\r\n  border-top: 1.6rem solid transparent;\r\n  border-right: 1.6rem solid #eeeced;\r\n  border-bottom: 1.6rem solid transparent;\r\n}\r\n\r\n.blue-div{\r\n  width: 50%;\r\n  height: 50%;\r\n  position: absolute;\r\n  top:50%;\r\n  left: 50%;\r\n  background-color: rgba(63,171,243,0.6);\r\n  color: white;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~tab 3  tab 4~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.news-title-div{\r\n  text-align: center;\r\n  height: 3rem;\r\n  font-size: 1.2rem;\r\n  line-height: 3rem;\r\n  background-color: #f0f0f0;\r\n}\r\n\r\n.news-title{\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n  line-height: 4rem;\r\n}\r\n\r\n.news-time{\r\n  font-size: 1rem;\r\n  color: #999999;\r\n  line-height: 3rem;\r\n}\r\n\r\n.news-content{\r\n  color: #1f1f1f;\r\n  font-size: 1.2rem;\r\n  line-height: 3rem;\r\n}\r\n\r\n.active-title{\r\n  font-size: 2.4rem;\r\n  padding: 2rem 0 2rem 0;\r\n}\r\n\r\n.active-time{\r\n  color: #cccccc;\r\n  font-size: 1rem;\r\n}\r\n\r\n.active-content{\r\n  text-align: left;\r\n  font-size: 1.2rem;\r\n  padding: 2rem 0 2rem 0;\r\n}\r\n\r\n.active-img{\r\n  width: 40%;\r\n  padding: 2rem 0 2rem 0;\r\n}\r\n\r\n/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~media~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/\r\n\r\n.fixed-height1{\r\n  height: 25rem;\r\n}\r\n\r\n.fixed-height2{\r\n  height: 50rem;\r\n}\r\n", ""]);
 
 // exports
 
@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div>\n  <img src=\"./assets/img/about/thybot.jpg\" style=\"width: 100%\">\n</div>\n\n\n<div nz-row class=\"child-div\">\n  <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" style=\"height: 100%;border-right: solid 1px #cccccc\">\n    <button [class.child-active]=\"tab_num == 1\" class=\"child-btn\" (click)=\"change_tab(1)\" >公司简介</button>\n  </div>\n  <div nz-col [nzSpan]=\"5\" style=\"height: 100%;border-right: solid 1px #cccccc\">\n    <button [class.child-active]=\"tab_num == 2\" class=\"child-btn\" (click)=\"change_tab(2)\">工厂概况</button>\n  </div>\n  <div nz-col [nzSpan]=\"5\" style=\"height: 100%;border-right: solid 1px #cccccc\">\n    <button [class.child-active]=\"tab_num == 3\" class=\"child-btn\" (click)=\"change_tab(3)\">公司动态</button>\n  </div>\n  <div nz-col [nzSpan]=\"5\" style=\"height: 100%\">\n    <button [class.child-active]=\"tab_num == 4\" class=\"child-btn\" (click)=\"change_tab(4)\">行业新闻</button>\n  </div>\n</div>\n\n<div *ngIf=\"tab_num == 1\" style=\"padding-top: 4rem\">\n  <div nz-row class=\"row-div\" >\n    <div nz-col [nzSpan]=\"3\" [nzOffset]=\"2\">\n      <h2 class=\"title-2\">利保简介</h2>\n      <h4  class=\"title-4\">THYBOT PROFILE</h4>\n      <span class=\"thybot-line\">——</span>\n    </div>\n    <div nz-col [nzSpan]=\"16\" [nzOffset]=\"1\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <p class=\"thybot-desc\"> 珠海市利保机器人有限公司成立于2013年11月，是广东省高新技术企业。 公司致力于提供新零售物联网的解决方案。公司拥有零售物联网平台研发中心、智能售货机和智能购物商用冷柜、一体液晶触摸屏制造工厂。</p>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\" >\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <h2 class=\"title-2\">我们的目标</h2>\n      <h4  class=\"title-4\">THYBOTNESE TARGET</h4>\n      <div nz-row style=\"margin-top: 1rem\">\n        <div nz-col [nzXl] = \"{span: 5}\"  [nzLg] = \"{span: 5}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n          <span class=\"thybot-line\">——</span>\n        </div>\n        <div nz-col [nzXl] = \"{span: 17, offset: 1}\"  [nzLg] = \"{span: 17, offset: 1}\" [nzMd] = \"{span: 24}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 24}\">\n          <p class=\"thybot-slogan\">让人们的生活,更加便利、优质、美好</p>\n          <!--<span class=\"thybot-slogan\">让人们的生活</span>-->\n          <!--<br>-->\n          <!--<span class=\"thybot-slogan\">更加便利、优质、美好</span>-->\n          <!--<br>-->\n          <span class=\"thybot-slogan\">&nbsp;</span>\n        </div>\n      </div>\n    </div>\n\n    <div nz-col [nzSpan]=\"8\" [nzOffset]=\"1\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <h2 class=\"title-2\">我们的使命</h2>\n      <h4  class=\"title-4\">THYBOTNESE MISSION</h4>\n      <div nz-row style=\"margin-top: 1rem\">\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 4}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n          <span class=\"thybot-line\">——</span>\n        </div>\n        <div nz-col [nzXl] = \"{span: 18, offset: 1}\"  [nzLg] = \"{span: 18, offset: 1}\" [nzMd] = \"{span: 24}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 24}\" >\n          <p class=\"thybot-slogan\">聚集客户关注的挑战和压力，提供有竞争力的零售物联网的解决方案和服务，持续为客户创造最大的价值。</p>\n          <!--<span class=\"thybot-slogan\">去底层人工化，</span>-->\n          <!--<br>-->\n          <!--<span class=\"thybot-slogan\">人机共享未来。</span>-->\n        </div>\n      </div>\n\n    </div>\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"1\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <h2 class=\"title-2\">利保文化</h2>\n      <h4  class=\"title-4\">THYBOTNESE <span (click)=\"set_map(1)\">CULTURE</span></h4>\n      <div nz-row style=\"margin-top: 1rem\">\n        <div nz-col [nzXl] = \"{span: 5}\"  [nzLg] = \"{span: 5}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n          <span class=\"thybot-line\">——</span>\n        </div>\n        <div nz-col [nzXl] = \"{span: 17, offset: 1}\"  [nzLg] = \"{span: 17, offset: 1}\" [nzMd] = \"{span: 24}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 24}\" >\n          <span class=\"thybot-slogan\">聆听&nbsp;思考</span>\n          <br>\n          <span class=\"thybot-slogan\">行动&nbsp;深度学习</span>\n          <br>\n          <span class=\"thybot-slogan\">&nbsp;</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"20\" [nzOffset]=\"2\" style=\"border: solid 1px #d6d7dc;position: relative\">\n      <h2 class=\"title-2\" style=\"text-align: center;padding: 2rem 0 2rem 0\">利保机器人售货机分布地图</h2>\n      <hr style=\"width: 40%;margin: auto;color: #e8e8e8\">\n      <button class=\"map-btn\" style=\"top: 8rem\" (click)=\"change_map(1)\">+</button>\n      <button class=\"map-btn\" style=\"top: 14rem\" (click)=\"change_map(0)\">-</button>\n      <div style=\"width: 100%;z-index: 899\" id=\"map\"></div>\n    </div>\n  </div>\n\n</div>\n\n\n<div *ngIf=\"tab_num == 2\" style=\"padding-top: 4rem\">\n  <div nz-row  class=\"row-div\" >\n\n    <div nz-col [nzSpan]=\"8\" [nzOffset]=\"2\" class=\"overflow-div fixed-height2\">\n      <img  src=\"./assets/img/about/factory1.jpg\"  class=\"factory-img-big\">\n      <div class=\"blue-div\">\n        <div class=\"factory-name\">\n          <p  >ISO9001,TOM</p>\n          <p  >恒温测试室</p>\n        </div>\n      </div>\n    </div>\n\n    <div nz-col [nzSpan]=\"12\">\n      <div nz-row  style=\"background-color: #eeeced;\">\n        <div nz-col [nzSpan]=\"8\"  style=\"position: relative\">\n          <div class=\"triangle_right\"></div>\n          <div class=\"factory-name\">\n            <h2>模拟运输测试仪</h2>\n            <p>--></p>\n          </div>\n        </div>\n        <div nz-col [nzSpan]=\"16\"  class=\"overflow-div fixed-height1\">\n          <img src=\"./assets/img/about/factory2.jpg\" class=\"factory-img\">\n        </div>\n      </div>\n      <div nz-row style=\"background-color: #eeeced;\">\n        <div nz-col [nzSpan]=\"16\"  class=\"overflow-div fixed-height1\">\n          <img src=\"./assets/img/about/factory3.jpg\"class=\"factory-img\" >\n        </div>\n        <div nz-col [nzSpan]=\"8\"  style=\"position: relative\">\n          <div class=\"triangle_left\"></div>\n          <div class=\"factory-name\">\n            <h2>智能制造生产线</h2>\n            <p><--</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row style=\"padding-bottom: 60px\">\n    <div nz-col [nzSpan]=\"20\" [nzOffset]=\"2\">\n      <p style=\"font-size: 1.4rem;line-height: 3rem\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司生产目前已经全面执行全面质量管理体系（TQM），同时引进先进的测试设备，模拟设备在恶劣工况条件的使用情况，以及在恶劣运输条件下，产品包装的合理性以及稳定性严格执行国际先进的全面质量管理体系（TQM）</p>\n    </div>\n  </div>\n\n</div>\n\n\n<div *ngIf=\"tab_num == 3\" >\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"2\" >\n      <img src=\"./assets/img/about/news1.jpg\" >\n      <div class=\"news-title-div\">\n        <p>新零售的女性主义特征</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img src=\"./assets/img/about/news2.jpg\" >\n      <div class=\"news-title-div\">\n        <p>无人超市模式全球落地 将引领零售新趋势？</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img src=\"./assets/img/about/news3.jpg\" >\n      <div class=\"news-title-div\">\n        <p>如何抢占90后市场？</p>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" >\n      <img src=\"./assets/img/about/news2.jpg\">\n    </div>\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"1\" >\n      <h2 class=\"news-title\">无人超市模式全球落地 将引领零售新趋势？</h2>\n      <p class=\"news-time\">2018-02-07</p>\n      <p class=\"news-content\">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。\n        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a (click)=\"change_tab(5)\"><span class=\"show-more\">查看更多》</span></a></p>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\" style=\"background-color: #f8f8f8\">\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"2\" >\n      <h2 class=\"news-title\">【聚焦无人店】智慧升级！看看无人超市有多方便！</h2>\n      <p class=\"news-time\">2018-02-07</p>\n      <p class=\"news-content\">最近几年，移动支付大力普及，让大家的生活变得无比便捷，出门购物只带一部手机，已经不是啥新鲜事了。今天给大家介绍一项\n        更炫的“黑科技”——无人超市.....   <a href=\"\"><span >查看更多》</span></a></p>\n    </div>\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"1\" >\n      <img src=\"./assets/img/about/news4.jpg\">\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" >\n      <img src=\"./assets/img/about/news2.jpg\">\n    </div>\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"1\" >\n      <h2 class=\"news-title\">【聚焦】京东肖军：无界零售快速落地 明年将建500家无人超市</h2>\n      <p class=\"news-time\">2018-02-07</p>\n      <p class=\"news-content\">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。\n        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a href=\"\"><span >查看更多》</span></a></p>\n    </div>\n  </div>\n\n  <div style=\"text-align: center;\" class=\"row-div\">\n    <nz-pagination [nzPageIndex]=\"1\" [nzTotal]=\"50\" [nzSize]=\"'large'\"  nzShowQuickJumper></nz-pagination>\n  </div>\n</div>\n\n\n<div *ngIf=\"tab_num == 4\">\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"2\" >\n      <img src=\"./assets/img/about/news1.jpg\" >\n      <div class=\"news-title-div\">\n        <p>新零售的女性主义特征</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img src=\"./assets/img/about/news2.jpg\" >\n      <div class=\"news-title-div\">\n        <p>无人超市模式全球落地 将引领零售新趋势？</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img src=\"./assets/img/about/news3.jpg\" >\n      <div class=\"news-title-div\">\n        <p>如何抢占90后市场？</p>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" >\n      <img src=\"./assets/img/about/news2.jpg\">\n    </div>\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"1\" >\n      <h2 class=\"news-title\">无人超市模式全球落地 将引领零售新趋势？</h2>\n      <p class=\"news-time\">2018-02-07</p>\n      <p class=\"news-content\">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。\n        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a href=\"\"><span >查看更多》</span></a></p>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\" style=\"background-color: #f8f8f8\">\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"2\" >\n      <h2 class=\"news-title\">【聚焦无人店】智慧升级！看看无人超市有多方便！</h2>\n      <p class=\"news-time\">2018-02-07</p>\n      <p class=\"news-content\">最近几年，移动支付大力普及，让大家的生活变得无比便捷，出门购物只带一部手机，已经不是啥新鲜事了。今天给大家介绍一项\n        更炫的“黑科技”——无人超市.....   <a href=\"\"><span >查看更多》</span></a></p>\n    </div>\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"1\" >\n      <img src=\"./assets/img/about/news4.jpg\">\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" >\n      <img src=\"./assets/img/about/news2.jpg\">\n    </div>\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"1\" >\n      <h2 class=\"news-title\">【聚焦】京东肖军：无界零售快速落地 明年将建500家无人超市</h2>\n      <p class=\"news-time\">2018-02-07</p>\n      <p class=\"news-content\">美国《纽约时报》22日报道称，亚马逊首个无人超市Amazon Go当地时间22日早上正式对公众开门营业。近年来，无人超市模式已在包括中国在内全球多个国家落地。有专家认为，零售无人化是未来零售新趋势，但也有观点表示无人超市尚未展现出绝对的优势与普及必要性。\n        《纽约时报》报道称，该门店位于美国西雅图亚马逊总部中心区...... <a href=\"\"><span >查看更多》</span></a></p>\n    </div>\n  </div>\n\n  <div style=\"text-align: center;\" class=\"row-div\">\n    <nz-pagination [nzPageIndex]=\"1\" [nzTotal]=\"50\" [nzSize]=\"'large'\"  nzShowQuickJumper></nz-pagination>\n  </div>\n</div>\n\n\n<div *ngIf=\"tab_num == 5\">\n  <h2 style=\"text-align: center;font-size: 3rem;line-height: 6rem\">搞个大新闻</h2>\n</div>\n\n\n\n<app-bottom></app-bottom>\n"
+module.exports = "\n<div>\n  <img src=\"./assets/img/about/thybot.jpg\" style=\"width: 100%\">\n</div>\n\n\n<div nz-row class=\"child-div\">\n  <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" style=\"height: 100%;border-right: solid 1px #cccccc\">\n    <button [class.child-active]=\"tab_num == 1\" class=\"child-btn\" (click)=\"change_tab(1)\" >公司简介</button>\n  </div>\n  <div nz-col [nzSpan]=\"5\" style=\"height: 100%;border-right: solid 1px #cccccc\">\n    <button [class.child-active]=\"tab_num == 2\" class=\"child-btn\" (click)=\"change_tab(2)\">工厂概况</button>\n  </div>\n  <div nz-col [nzSpan]=\"5\" style=\"height: 100%;border-right: solid 1px #cccccc\">\n    <button [class.child-active]=\"tab_num == 3\" class=\"child-btn\" (click)=\"change_tab(3)\">公司动态</button>\n  </div>\n  <div nz-col [nzSpan]=\"5\" style=\"height: 100%\">\n    <button [class.child-active]=\"tab_num == 4\" class=\"child-btn\" (click)=\"change_tab(4)\">行业新闻</button>\n  </div>\n</div>\n\n<div *ngIf=\"tab_num == 1\" style=\"padding-top: 4rem\">\n  <div nz-row class=\"row-div\" >\n    <div nz-col [nzSpan]=\"3\" [nzOffset]=\"2\">\n      <h2 class=\"title-2\">利保简介</h2>\n      <h4  class=\"title-4\">THYBOT PROFILE</h4>\n      <span class=\"thybot-line\">——</span>\n    </div>\n    <div nz-col [nzSpan]=\"16\" [nzOffset]=\"1\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <p class=\"thybot-desc\"> 珠海市利保机器人有限公司成立于2013年11月，是广东省高新技术企业。 公司致力于提供新零售物联网的解决方案。公司拥有零售物联网平台研发中心、智能售货机和智能购物商用冷柜、一体液晶触摸屏制造工厂。</p>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\" >\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <h2 class=\"title-2\">我们的目标</h2>\n      <h4  class=\"title-4\">THYBOTNESE TARGET</h4>\n      <div nz-row style=\"margin-top: 1rem\">\n        <div nz-col [nzXl] = \"{span: 5}\"  [nzLg] = \"{span: 5}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n          <span class=\"thybot-line\">——</span>\n        </div>\n        <div nz-col [nzXl] = \"{span: 17, offset: 1}\"  [nzLg] = \"{span: 17, offset: 1}\" [nzMd] = \"{span: 24}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 24}\">\n          <p class=\"thybot-slogan\">让人们的生活,更加便利、优质、美好</p>\n          <!--<span class=\"thybot-slogan\">让人们的生活</span>-->\n          <!--<br>-->\n          <!--<span class=\"thybot-slogan\">更加便利、优质、美好</span>-->\n          <!--<br>-->\n          <span class=\"thybot-slogan\">&nbsp;</span>\n        </div>\n      </div>\n    </div>\n\n    <div nz-col [nzSpan]=\"8\" [nzOffset]=\"1\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <h2 class=\"title-2\">我们的使命</h2>\n      <h4  class=\"title-4\">THYBOTNESE MISSION</h4>\n      <div nz-row style=\"margin-top: 1rem\">\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 4}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n          <span class=\"thybot-line\">——</span>\n        </div>\n        <div nz-col [nzXl] = \"{span: 18, offset: 1}\"  [nzLg] = \"{span: 18, offset: 1}\" [nzMd] = \"{span: 24}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 24}\" >\n          <p class=\"thybot-slogan\">聚集客户关注的挑战和压力，提供有竞争力的零售物联网的解决方案和服务，持续为客户创造最大的价值。</p>\n          <!--<span class=\"thybot-slogan\">去底层人工化，</span>-->\n          <!--<br>-->\n          <!--<span class=\"thybot-slogan\">人机共享未来。</span>-->\n        </div>\n      </div>\n\n    </div>\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"1\" style=\"background-color: #f8f8f8;padding: 2rem\">\n      <h2 class=\"title-2\">利保文化</h2>\n      <h4  class=\"title-4\">THYBOTNESE <span (click)=\"set_map(1)\">CULTURE</span></h4>\n      <div nz-row style=\"margin-top: 1rem\">\n        <div nz-col [nzXl] = \"{span: 5}\"  [nzLg] = \"{span: 5}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n          <span class=\"thybot-line\">——</span>\n        </div>\n        <div nz-col [nzXl] = \"{span: 17, offset: 1}\"  [nzLg] = \"{span: 17, offset: 1}\" [nzMd] = \"{span: 24}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 24}\" >\n          <span class=\"thybot-slogan\">聆听&nbsp;思考</span>\n          <br>\n          <span class=\"thybot-slogan\">行动&nbsp;深度学习</span>\n          <br>\n          <span class=\"thybot-slogan\">&nbsp;</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"20\" [nzOffset]=\"2\" style=\"border: solid 1px #d6d7dc;position: relative\">\n      <h2 class=\"title-2\" style=\"text-align: center;padding: 2rem 0 2rem 0\">利保机器人售货机分布地图</h2>\n      <hr style=\"width: 40%;margin: auto;color: #e8e8e8\">\n      <button class=\"map-btn\" style=\"top: 8rem\" (click)=\"change_map(1)\">+</button>\n      <button class=\"map-btn\" style=\"top: 14rem\" (click)=\"change_map(0)\">-</button>\n      <div style=\"width: 100%;z-index: 899\" id=\"map\"></div>\n    </div>\n  </div>\n\n</div>\n\n\n<div *ngIf=\"tab_num == 2\" style=\"padding-top: 4rem\">\n  <div nz-row  class=\"row-div\" >\n\n    <div nz-col [nzSpan]=\"8\" [nzOffset]=\"2\" class=\"overflow-div fixed-height2\">\n      <img  src=\"./assets/img/about/factory1.jpg\"  class=\"factory-img-big\">\n      <div class=\"blue-div\">\n        <div class=\"factory-name\">\n          <p  >ISO9001,TOM</p>\n          <p  >恒温测试室</p>\n        </div>\n      </div>\n    </div>\n\n    <div nz-col [nzSpan]=\"12\">\n      <div nz-row  style=\"background-color: #eeeced;\">\n        <div nz-col [nzSpan]=\"8\"  style=\"position: relative\">\n          <div class=\"triangle_right\"></div>\n          <div class=\"factory-name\">\n            <h2>模拟运输测试仪</h2>\n            <p>--></p>\n          </div>\n        </div>\n        <div nz-col [nzSpan]=\"16\"  class=\"overflow-div fixed-height1\">\n          <img src=\"./assets/img/about/factory2.jpg\" class=\"factory-img\">\n        </div>\n      </div>\n      <div nz-row style=\"background-color: #eeeced;\">\n        <div nz-col [nzSpan]=\"16\"  class=\"overflow-div fixed-height1\">\n          <img src=\"./assets/img/about/factory3.jpg\"class=\"factory-img\" >\n        </div>\n        <div nz-col [nzSpan]=\"8\"  style=\"position: relative\">\n          <div class=\"triangle_left\"></div>\n          <div class=\"factory-name\">\n            <h2>智能制造生产线</h2>\n            <p><--</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row style=\"padding-bottom: 60px\">\n    <div nz-col [nzSpan]=\"20\" [nzOffset]=\"2\">\n      <p style=\"font-size: 1.4rem;line-height: 3rem\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司生产目前已经全面执行全面质量管理体系（TQM），同时引进先进的测试设备，模拟设备在恶劣工况条件的使用情况，以及在恶劣运输条件下，产品包装的合理性以及稳定性严格执行国际先进的全面质量管理体系（TQM）</p>\n    </div>\n  </div>\n\n</div>\n\n\n<div *ngIf=\"tab_num == 3\" >\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"2\" >\n      <img [src]=\"result[0].img\" >\n      <div class=\"news-title-div\">\n        <p>{{result[0].title}}</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img [src]=\"result[1].img\" >\n      <div class=\"news-title-div\">\n        <p>{{result[1].title}}</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img [src]=\"result[2].img\" >\n      <div class=\"news-title-div\">\n        <p>{{result[2].title}}</p>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\" *ngFor=\"let news of result\">\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" >\n      <img [src]=\"news.img\">\n    </div>\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"1\" >\n      <h2 class=\"news-title\">{{news.title}}</h2>\n      <p class=\"news-time\">{{news.time}}</p>\n      <p class=\"news-content\">{{news.intro}}<a (click)=\"show_news(news.a_id)\"><span class=\"show-more\">&nbsp;&nbsp;查看更多》</span></a></p>\n    </div>\n  </div>\n\n\n  <div style=\"text-align: center;\" class=\"row-div\">\n    <nz-pagination [nzPageIndex]=\"1\" [nzTotal]=\"5\" [nzSize]=\"'large'\"  nzShowQuickJumper></nz-pagination>\n  </div>\n</div>\n\n\n<div *ngIf=\"tab_num == 4\">\n  <div nz-row class=\"row-div\">\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"2\" >\n      <img [src]=\"result[0].img\" >\n      <div class=\"news-title-div\">\n        <p>{{result[0].title}}</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img [src]=\"result[1].img\" >\n      <div class=\"news-title-div\">\n        <p>{{result[1].title}}</p>\n      </div>\n    </div>\n    <div nz-col [nzSpan]=\"6\" [nzOffset]=\"1\" >\n      <img [src]=\"result[2].img\" >\n      <div class=\"news-title-div\">\n        <p>{{result[2].title}}</p>\n      </div>\n    </div>\n  </div>\n\n  <div nz-row class=\"row-div\" *ngFor=\"let news of result\">\n    <div nz-col [nzSpan]=\"5\" [nzOffset]=\"2\" >\n      <img [src]=\"news.img\">\n    </div>\n    <div nz-col [nzSpan]=\"14\" [nzOffset]=\"1\" >\n      <h2 class=\"news-title\">{{news.title}}</h2>\n      <p class=\"news-time\">{{news.time}}</p>\n      <p class=\"news-content\">{{news.intro}}<a (click)=\"show_news(news.a_id)\"><span class=\"show-more\">&nbsp;&nbsp;查看更多》</span></a></p>\n    </div>\n  </div>\n\n\n  <div style=\"text-align: center;\" class=\"row-div\">\n    <nz-pagination [nzPageIndex]=\"1\" [nzTotal]=\"5\" [nzSize]=\"'large'\"  nzShowQuickJumper></nz-pagination>\n  </div>\n</div>\n\n\n<div *ngIf=\"tab_num == 5\">\n  <div style=\"text-align: center; padding:4rem 8% 4rem 8%\">\n    <h2 class=\"active-title\">{{active_news.title}}</h2>\n    <p class=\"active-time\">{{active_news.time}}</p>\n    <p class=\"active-content\">&nbsp;&nbsp;{{active_news.content}}</p>\n    <img [src]=\"active_news.img\" class=\"active-img\" >\n  </div>\n</div>\n\n\n\n<app-bottom></app-bottom>\n"
 
 /***/ }),
 
@@ -48,6 +48,7 @@ module.exports = "\n<div>\n  <img src=\"./assets/img/about/thybot.jpg\" style=\"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_service__ = __webpack_require__("../../../../../src/app/control.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,13 +59,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var AboutComponent = /** @class */ (function () {
-    function AboutComponent() {
+    // article = {
+    //   id: '',
+    //   title: '',
+    //   time: '',
+    //   intro: '',
+    //   content: '',
+    //   img: ''
+    // };
+    function AboutComponent(control) {
+        this.control = control;
+        this.url = 'http://192.168.1.13/homepage/backend/web/api/article/get-article';
         this.tab_num = 1;
         this.chart_c = 0;
         this.zoom = 0.8;
     }
     AboutComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.control.getData(this.url).then(function (data) {
+            _this.result = data.data;
+            for (var i = 0; i < _this.result.length; i++) {
+                _this.result[i].time = _this.timestampToTime(_this.result[i].create_time);
+            }
+            // console.log(this.result);
+        });
     };
     AboutComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
@@ -73,6 +93,28 @@ var AboutComponent = /** @class */ (function () {
                 _this.set_map(0);
             }, 200);
         }
+    };
+    AboutComponent.prototype.show_news = function (id) {
+        this.tab_num = 5;
+        for (var i = 0; i < this.result.length; i++) {
+            if (this.result[i].a_id == id) {
+                this.active_news = this.result[i];
+                break;
+            }
+            else {
+                continue;
+            }
+        }
+    };
+    AboutComponent.prototype.timestampToTime = function (timestamp) {
+        var date = new Date(timestamp * 1000); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        var Y = date.getFullYear() + '-';
+        var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+        var D = date.getDate() + ' ';
+        var h = date.getHours() + ':';
+        var m = date.getMinutes() + ':';
+        var s = date.getSeconds();
+        return Y + M + D + h + m + s;
     };
     AboutComponent.prototype.change_tab = function (num) {
         var _this = this;
@@ -322,7 +364,7 @@ var AboutComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/about/about.component.html"),
             styles: [__webpack_require__("../../../../../src/app/about/about.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__control_service__["a" /* ControlService */]])
     ], AboutComponent);
     return AboutComponent;
 }());
@@ -352,7 +394,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div nz-row class=\"nav-div\">\n\n  <div nz-col class=\"logo-div\" [nzXl] = \"{span: 3, offset: 1}\"  [nzLg] = \"{span: 3, offset: 1}\" [nzMd] = \"{span: 3, offset: 1}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n\n    <img src=\"./assets/img/logo.png\" alt=\"thybot\"  style=\"margin-top: 1rem;width: 100%;min-width: 16rem\">\n  </div>\n\n  <div nz-col class=\"route-div\"  [nzXl] = \"{span: 18}\"  [nzLg] = \"{span: 18}\" [nzMd] = \"{span: 18}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 0}\">\n    <button [routerLink] = \"['/home']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\" [class.active]=\"active == 1\" (click)=\"change_active(1)\">首页</button>\n    <button [routerLink] = \"['/solution']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\" [class.active]=\"active == 2\" (click)=\"change_active(2)\">解决方案</button>\n    <button [routerLink] = \"['/product']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\" [class.active]=\"active == 3\" (click)=\"change_active(3)\">产品</button>\n    <button [routerLink] = \"['/case']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\" [class.active]=\"active == 4\" (click)=\"change_active(4)\">案例</button>\n    <button [routerLink] = \"['/serve']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\" [class.active]=\"active == 5\" (click)=\"change_active(5)\">服务</button>\n    <button [routerLink] = \"['/about']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\" [class.active]=\"active == 6\" (click)=\"change_active(6)\">关于</button>\n    <button [routerLink] = \"['/document']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\" [class.active]=\"active == 7\" (click)=\"change_active(7)\">询盘/下载</button>\n  </div>\n\n  <div style=\"position: absolute;right: 1%;top: 20px\">\n    <!--<button   nz-button [nzType]=\"'primary'\" (click)=\"change_language()\" ><span [class.language]=\"language\">中</span>&nbsp;/&nbsp;<span [class.language]=\"!language\">En</span> </button>-->\n    <a href=\"pc_en/index.html\">\n      <button   nz-button [nzType]=\"'primary'\"  ><span [class.language]=\"language\">中</span>&nbsp;/&nbsp;<span [class.language]=\"!language\">En</span></button>\n    </a>\n  </div>\n\n  <div nz-col class=\"logo-div\"  [nzXl] = \"{span: 0}\"  [nzLg] = \"{span: 0}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 12,offset:1}\">\n    <img src=\"./assets/img/logo.png\" alt=\"thybot\"  style=\"margin-top: 2rem;max-height: 3rem;max-width: 12rem\">\n  </div>\n  <!--<div nz-col class=\"route-div\"  [nzXl] = \"{span: 0}\"  [nzLg] = \"{span: 0}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 10}\">-->\n    <!--<nz-dropdown [nzPlacement]=\"'bottomRight'\">-->\n      <!--<button  nz-dropdown style=\"background:none;color: white;border:0;margin-top:14px;outline: none\">-->\n        <!--<i class=\"icon font_family icon-platform\" style=\"font-size: 6rem\"></i>-->\n      <!--</button>-->\n      <!--<ul nz-menu >-->\n        <!--<li nz-menu-item >-->\n          <!--<a >首页</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a >解决方案</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>产品</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>案例</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>服务</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a >关于</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>询盘/下载</a>-->\n        <!--</li>-->\n      <!--</ul>-->\n    <!--</nz-dropdown>-->\n  <!--</div>-->\n</div>\n\n\n<div style=\"position: fixed;right: 0;top: 30%;margin: 0;padding: 0;z-index: 1100\">\n  <div *ngIf=\"show == 3\" style=\"display: inline-block;width:15rem;height: 15rem;background-color: white;vertical-align: bottom;\">\n    <img id=\"contact-img\" src=\"./assets/img/er_wei_ma.jpg\" >\n  </div>\n  <div *ngIf=\"show == 2\" style=\"display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;\">\n    <p class=\"phone-num\">86-0756-6893285</p>\n  </div>\n  <div *ngIf=\"show == 1\" style=\"display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;\">\n    <p class=\"document\">点击进入在线询盘</p>\n  </div>\n  <div style=\"display: inline-block;\">\n    <button [routerLink] = \"['/document']\" (click)=\"change_show(1)\" (mouseenter) = \"change_show(1)\" (mouseleave)=\"change_show(0)\"  class=\"fixed-btn\"><i class=\"icon font_family icon-btn_enquiry\"></i></button>\n    <button (click)=\"change_show(2)\" (mouseenter) =\"change_show(2)\" (mouseleave)=\"change_show(0)\" class=\"fixed-btn\"><i class=\"icon font_family icon-btn_phone\"></i></button>\n    <button  (click)=\"change_show(3)\" (mouseenter) =\"change_show(3)\" (mouseleave)=\"change_show(0)\" class=\"fixed-btn\"><i class=\"icon font_family icon-btn_qrcode\"></i></button>\n\n  </div>\n\n</div>\n\n<div style=\"margin-top: 72px\">\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div nz-row class=\"nav-div\">\n\n  <div nz-col class=\"logo-div\" [nzXl] = \"{span: 3, offset: 1}\"  [nzLg] = \"{span: 3, offset: 1}\" [nzMd] = \"{span: 3, offset: 1}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 0}\">\n\n    <img src=\"./assets/img/logo.png\" alt=\"thybot\"  style=\"margin-top: 1rem;width: 100%;min-width: 16rem\">\n  </div>\n\n  <div nz-col class=\"route-div\"  [nzXl] = \"{span: 18}\"  [nzLg] = \"{span: 18}\" [nzMd] = \"{span: 18}\" [nzSm] = \"{span: 24}\" [nzXs] = \"{span: 0}\">\n    <button [routerLink] = \"['/home']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\"  routerLinkActive=\"active\" >首页</button>\n    <button [routerLink] = \"['/solution']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\"  routerLinkActive=\"active\" >解决方案</button>\n    <button [routerLink] = \"['/product']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\"  routerLinkActive=\"active\"  >产品</button>\n    <button [routerLink] = \"['/case']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\"  routerLinkActive=\"active\" >案例</button>\n    <button [routerLink] = \"['/serve']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\"  routerLinkActive=\"active\" >服务</button>\n    <button [routerLink] = \"['/about']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\"  routerLinkActive=\"active\"  >关于</button>\n    <button [routerLink] = \"['/document']\" nz-button [nzType]=\"'primary'\" class=\"route-btn\"  routerLinkActive=\"active\"  >询盘/下载</button>\n  </div>\n\n  <div style=\"position: absolute;right: 1%;top: 20px\">\n    <!--<button   nz-button [nzType]=\"'primary'\" (click)=\"change_language()\" ><span [class.language]=\"language\">中</span>&nbsp;/&nbsp;<span [class.language]=\"!language\">En</span> </button>-->\n    <a href=\"pc_en/index.html\">\n      <button   nz-button [nzType]=\"'primary'\"  ><span [class.language]=\"language\">中</span>&nbsp;/&nbsp;<span [class.language]=\"!language\">En</span></button>\n    </a>\n  </div>\n\n  <div nz-col class=\"logo-div\"  [nzXl] = \"{span: 0}\"  [nzLg] = \"{span: 0}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 12,offset:1}\">\n    <img src=\"./assets/img/logo.png\" alt=\"thybot\"  style=\"margin-top: 2rem;max-height: 3rem;max-width: 12rem\">\n  </div>\n  <!--<div nz-col class=\"route-div\"  [nzXl] = \"{span: 0}\"  [nzLg] = \"{span: 0}\" [nzMd] = \"{span: 0}\" [nzSm] = \"{span: 0}\" [nzXs] = \"{span: 10}\">-->\n    <!--<nz-dropdown [nzPlacement]=\"'bottomRight'\">-->\n      <!--<button  nz-dropdown style=\"background:none;color: white;border:0;margin-top:14px;outline: none\">-->\n        <!--<i class=\"icon font_family icon-platform\" style=\"font-size: 6rem\"></i>-->\n      <!--</button>-->\n      <!--<ul nz-menu >-->\n        <!--<li nz-menu-item >-->\n          <!--<a >首页</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a >解决方案</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>产品</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>案例</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>服务</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a >关于</a>-->\n        <!--</li>-->\n        <!--<li nz-menu-item>-->\n          <!--<a>询盘/下载</a>-->\n        <!--</li>-->\n      <!--</ul>-->\n    <!--</nz-dropdown>-->\n  <!--</div>-->\n</div>\n\n\n<div style=\"position: fixed;right: 0;top: 30%;margin: 0;padding: 0;z-index: 1100\">\n  <div *ngIf=\"show == 3\" style=\"display: inline-block;width:15rem;height: 15rem;background-color: white;vertical-align: bottom;\">\n    <img id=\"contact-img\" src=\"./assets/img/er_wei_ma.jpg\" >\n  </div>\n  <div *ngIf=\"show == 2\" style=\"display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;\">\n    <p class=\"phone-num\">86-0756-6893285</p>\n  </div>\n  <div *ngIf=\"show == 1\" style=\"display: inline-block;width:15rem;height: 15rem;vertical-align: bottom;\">\n    <p class=\"document\">点击进入在线询盘</p>\n  </div>\n  <div style=\"display: inline-block;\">\n    <button [routerLink] = \"['/document']\" (click)=\"change_show(1)\" (mouseenter) = \"change_show(1)\" (mouseleave)=\"change_show(0)\"  class=\"fixed-btn\"><i class=\"icon font_family icon-btn_enquiry\"></i></button>\n    <button (click)=\"change_show(2)\" (mouseenter) =\"change_show(2)\" (mouseleave)=\"change_show(0)\" class=\"fixed-btn\"><i class=\"icon font_family icon-btn_phone\"></i></button>\n    <button  (click)=\"change_show(3)\" (mouseenter) =\"change_show(3)\" (mouseleave)=\"change_show(0)\" class=\"fixed-btn\"><i class=\"icon font_family icon-btn_qrcode\"></i></button>\n\n  </div>\n\n</div>\n\n<div style=\"margin-top: 72px\">\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
@@ -362,7 +404,6 @@ module.exports = "<div nz-row class=\"nav-div\">\n\n  <div nz-col class=\"logo-d
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -373,46 +414,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
 var AppComponent = /** @class */ (function () {
-    function AppComponent(route) {
-        this.route = route;
+    function AppComponent() {
         this.active = 1;
         this.show = 0;
         this.language = true;
     }
     AppComponent.prototype.ngOnInit = function () {
-        switch (location.pathname) {
-            case '':
-                this.route.navigate(['/home']);
-                this.active = 1;
-                break;
-            case '/home':
-                this.active = 1;
-                break;
-            case '/solution':
-                this.active = 2;
-                break;
-            case '/product':
-                this.active = 3;
-                break;
-            case '/case':
-                this.active = 4;
-                break;
-            case '/serve':
-                this.active = 5;
-                break;
-            case '/about':
-                this.active = 6;
-                break;
-            case '/document':
-                this.active = 7;
-                break;
-        }
     };
-    AppComponent.prototype.change_active = function (num) {
-        this.active = num;
-    };
+    // change_active(num) {
+    //   this.active = num;
+    // }
     AppComponent.prototype.change_show = function (num) {
         this.show = num;
     };
@@ -422,7 +434,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
+        __metadata("design:paramtypes", [])
     ], AppComponent);
     return AppComponent;
 }());
@@ -455,12 +467,14 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__document_document_component__ = __webpack_require__("../../../../../src/app/document/document.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__control_service__ = __webpack_require__("../../../../../src/app/control.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -515,6 +529,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_5_ng_zorro_antd__["a" /* NgZorroAntdModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_13__angular_router__["b" /* RouterModule */].forRoot(routeConfig),
+                __WEBPACK_IMPORTED_MODULE_19__angular_http__["b" /* HttpModule */],
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_17__control_service__["a" /* ControlService */], { provide: __WEBPACK_IMPORTED_MODULE_18__angular_common__["g" /* LocationStrategy */], useClass: __WEBPACK_IMPORTED_MODULE_18__angular_common__["d" /* HashLocationStrategy */], }
@@ -769,6 +784,9 @@ var CaseComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ControlService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/catch.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -779,14 +797,42 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var ControlService = /** @class */ (function () {
-    function ControlService() {
+    function ControlService(http) {
+        this.http = http;
+        // handleError: any;
         this.route_control = 0;
         this.tab_num = 1;
     }
+    ControlService.prototype.postData = function (url, value) {
+        return this.http.post(url, value).toPromise()
+            .then(function (response) {
+            return new Promise(function (resolve, reject) {
+                resolve(response.json());
+            });
+        })
+            .catch(this.handleError);
+    };
+    ControlService.prototype.getData = function (url) {
+        return this.http.get(url)
+            .toPromise()
+            .then(function (response) {
+            return new Promise(function (resolve, reject) {
+                resolve(response.json());
+            });
+        })
+            .catch(this.handleError);
+    };
+    ControlService.prototype.handleError = function (error) {
+        console.error('An error occurred', error); // for demo purposes only
+        return Promise.reject(error.message || error);
+    };
     ControlService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
     ], ControlService);
     return ControlService;
 }());
@@ -817,7 +863,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/document/document.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"document\">\r\n  <table></table>\r\n  <div class=\"title\">\r\n    <div nz-row>\r\n\r\n      <div nz-col [nzXl] = \"{span: 8, offset: 8}\"  [nzLg] = \"{span: 10, offset: 7}\" [nzMd] = \"{span: 12, offset: 6}\" [nzSm] = \"{span: 16, offset: 4}\" [nzXs] = \"{span: 24}\">\r\n        <div nz-row >\r\n\r\n          <div nz-col [nzXl] = \"{span: 6, offset: 6}\"  [nzLg] = \"{span: 6, offset: 6}\" [nzMd] = \"{span: 6, offset: 6}\" [nzSm] = \"{span: 6, offset: 6}\" [nzXs] = \"{span: 8, offset: 4}\" class=\"content\">\r\n            <button class=\"tab-btn\" [class.tab-active]=\"tab == 1\" (click)=\"change_tab(1)\">询&nbsp;&nbsp;盘</button>\r\n          </div>\r\n          <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 6}\" [nzSm] = \"{span: 6}\" [nzXs] = \"{span: 8}\" class=\"content\">\r\n            <button class=\"tab-btn\" [class.tab-active]=\"tab == 2\" (click)=\"change_tab(2)\">文档下载</button>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n\r\n  <div *ngIf=\"tab ==2\">\r\n      <p  class=\"tips\">温馨提示：请先填写您的公司或个人信息，点击提交，即可下载技术资料</p>\r\n  </div>\r\n\r\n  <div nz-row>\r\n\r\n    <div nz-col  [nzXl] = \"{span: 7, offset: 2}\"  [nzLg] = \"{span: 8}\" [nzMd] = \"{span: 8}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\">\r\n      <div nz-row>\r\n\r\n        <div nz-col [nzXl] = \"{span: 20, offset: 4}\"  [nzLg] = \"{span: 20, offset: 4}\" [nzMd] = \"{span: 22, offset: 2}\" [nzSm] = \"{span: 23, offset: 1}\" [nzXs] = \"{span: 12, offset: 10}\" >\r\n          <div class=\"about\">\r\n            您可以通过热线 <br>\r\n            <span>400-900-7136 </span>\r\n            与我们联系\r\n          </div>\r\n          <div class=\"ercode\">\r\n            或者关注我们的公众号\r\n            <br>\r\n            <img src=\"./assets/img/er_wei_ma.jpg\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div nz-col [nzXl] = \"{span: 14}\"  [nzLg] = \"{span: 14}\" [nzMd] = \"{span: 16}\" [nzSm] = \"{span: 16}\" [nzXs] = \"{span: 24}\">\r\n      <div class=\"from\" nz-row style=\"padding-top:24px\">\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <label nz-form-item-required>产品名称：</label>\r\n        </div>\r\n        <div nz-col  [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <!--<nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.product'></nz-input>-->\r\n          <nz-select [nzSize]=\"'large'\" [(ngModel)] = 'client.product' style=\"width: 100%\">\r\n            <nz-option [nzLabel]=\"'综合机'\" [nzValue]=\"'综合机'\">综合机</nz-option>\r\n            <nz-option [nzLabel]=\"'冰河系列'\" [nzValue]=\"'冰河系列'\">冰河系列</nz-option>\r\n            <nz-option [nzLabel]=\"'G2S'\" [nzValue]=\"'G2S'\">G2S</nz-option>\r\n            <nz-option [nzLabel]=\"'G2S PLUS'\" [nzValue]=\"'G2S PLUS'\">G2S PLUS</nz-option>\r\n            <nz-option [nzLabel]=\"'经典系列'\" [nzValue]=\"'经典系列'\">经典系列</nz-option>\r\n            <nz-option [nzLabel]=\"'臻荣系列'\" [nzValue]=\"'臻荣系列'\">臻荣系列</nz-option>\r\n            <nz-option [nzLabel]=\"'万能机'\" [nzValue]=\"'万能机'\">万能机</nz-option>\r\n            <nz-option [nzLabel]=\"'玲珑系列'\" [nzValue]=\"'玲珑系列'\">玲珑系列</nz-option>\r\n            <nz-option [nzLabel]=\"'熟食系列'\" [nzValue]=\"'熟食系列'\">熟食系列</nz-option>\r\n\r\n          </nz-select>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.amount'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <span style=\"color: red\">*</span>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.name'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          公司名称：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.company'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.email'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <span style=\"color: red\">*</span>&nbsp;电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.phone'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <span style=\"color: red\">*</span>&nbsp;城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.city'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.state'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 17}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\" style=\"padding-top: 12px;\">\r\n          <nz-input  [nzType]=\"'textarea'\" [nzRows]=\"'12'\" [(ngModel)] = 'client.other' [nzPlaceHolder]=\"''\"></nz-input>\r\n        </div>\r\n\r\n        <div nz-col [nzSpan]=\"24\" style=\"text-align: center;margin-top: 29px;\">\r\n          <button (click)=\"submit()\"  class=\"btn\" >提交</button>\r\n          <span class=\"success\" *ngIf=\"submit_num == 1\">!提交成功，{{time}}秒后返回主页</span>\r\n          <span class=\"success\" *ngIf=\"submit_num == 0\">!请正确填写带有*的信息</span>\r\n\r\n        </div>\r\n\r\n      </div>\r\n\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"document\">\r\n  <table></table>\r\n  <div class=\"title\">\r\n    <div nz-row>\r\n\r\n      <div nz-col [nzXl] = \"{span: 8, offset: 8}\"  [nzLg] = \"{span: 10, offset: 7}\" [nzMd] = \"{span: 12, offset: 6}\" [nzSm] = \"{span: 16, offset: 4}\" [nzXs] = \"{span: 24}\">\r\n        <div nz-row >\r\n\r\n          <div nz-col [nzXl] = \"{span: 6, offset: 6}\"  [nzLg] = \"{span: 6, offset: 6}\" [nzMd] = \"{span: 6, offset: 6}\" [nzSm] = \"{span: 6, offset: 6}\" [nzXs] = \"{span: 8, offset: 4}\" class=\"content\">\r\n            <button class=\"tab-btn\" [class.tab-active]=\"tab == 1\" (click)=\"change_tab(1)\">询&nbsp;&nbsp;盘</button>\r\n          </div>\r\n          <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 6}\" [nzSm] = \"{span: 6}\" [nzXs] = \"{span: 8}\" class=\"content\">\r\n            <button class=\"tab-btn\" [class.tab-active]=\"tab == 2\" (click)=\"change_tab(2)\">文档下载</button>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n\r\n  <div *ngIf=\"tab ==2\">\r\n      <p  class=\"tips\">温馨提示：请先填写您的公司或个人信息，点击提交，即可下载技术资料</p>\r\n  </div>\r\n\r\n  <div nz-row>\r\n\r\n    <div nz-col  [nzXl] = \"{span: 7, offset: 2}\"  [nzLg] = \"{span: 8}\" [nzMd] = \"{span: 8}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\">\r\n      <div nz-row>\r\n\r\n        <div nz-col [nzXl] = \"{span: 20, offset: 4}\"  [nzLg] = \"{span: 20, offset: 4}\" [nzMd] = \"{span: 22, offset: 2}\" [nzSm] = \"{span: 23, offset: 1}\" [nzXs] = \"{span: 12, offset: 10}\" >\r\n          <div class=\"about\">\r\n            您可以通过热线 <br>\r\n            <span>400-900-7136 </span>\r\n            与我们联系\r\n          </div>\r\n          <div class=\"ercode\">\r\n            或者关注我们的公众号\r\n            <br>\r\n            <img src=\"./assets/img/er_wei_ma.jpg\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n\r\n    <div nz-col [nzXl] = \"{span: 14}\"  [nzLg] = \"{span: 14}\" [nzMd] = \"{span: 16}\" [nzSm] = \"{span: 16}\" [nzXs] = \"{span: 24}\">\r\n      <div class=\"from\" nz-row style=\"padding-top:24px\">\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <label nz-form-item-required>产品名称：</label>\r\n        </div>\r\n        <div nz-col  [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <!--<nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.product'></nz-input>-->\r\n          <nz-select [nzSize]=\"'large'\" [(ngModel)] = 'client.product_name' style=\"width: 100%\">\r\n            <nz-option [nzLabel]=\"'综合机'\" [nzValue]=\"'综合机'\">综合机</nz-option>\r\n            <nz-option [nzLabel]=\"'冰河系列'\" [nzValue]=\"'冰河系列'\">冰河系列</nz-option>\r\n            <nz-option [nzLabel]=\"'G2S'\" [nzValue]=\"'G2S'\">G2S</nz-option>\r\n            <nz-option [nzLabel]=\"'G2S PLUS'\" [nzValue]=\"'G2S PLUS'\">G2S PLUS</nz-option>\r\n            <nz-option [nzLabel]=\"'经典系列'\" [nzValue]=\"'经典系列'\">经典系列</nz-option>\r\n            <nz-option [nzLabel]=\"'臻荣系列'\" [nzValue]=\"'臻荣系列'\">臻荣系列</nz-option>\r\n            <nz-option [nzLabel]=\"'万能机'\" [nzValue]=\"'万能机'\">万能机</nz-option>\r\n            <nz-option [nzLabel]=\"'玲珑系列'\" [nzValue]=\"'玲珑系列'\">玲珑系列</nz-option>\r\n            <nz-option [nzLabel]=\"'熟食系列'\" [nzValue]=\"'熟食系列'\">熟食系列</nz-option>\r\n\r\n          </nz-select>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.product_num'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <span style=\"color: red\">*</span>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.user_name'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          公司名称：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.company_name'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.email'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <span style=\"color: red\">*</span>&nbsp;电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.phone'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          <span style=\"color: red\">*</span>&nbsp;城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.city'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 6}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\">\r\n          <nz-input [nzSize]=\"'large'\" [(ngModel)] = 'client.country'></nz-input>\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 4}\"  [nzLg] = \"{span: 6}\" [nzMd] = \"{span: 7}\" [nzSm] = \"{span: 8}\" [nzXs] = \"{span: 24}\" class=\"title\">\r\n          备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：\r\n        </div>\r\n        <div nz-col [nzXl] = \"{span: 17}\"  [nzLg] = \"{span: 16}\" [nzMd] = \"{span: 15}\" [nzSm] = \"{span: 15}\" [nzXs] = \"{span: 22,offset:1}\" style=\"padding-top: 12px;\">\r\n          <nz-input  [nzType]=\"'textarea'\" [nzRows]=\"'12'\" [(ngModel)] = 'client.remark' [nzPlaceHolder]=\"''\"></nz-input>\r\n        </div>\r\n\r\n        <div nz-col [nzSpan]=\"24\" style=\"text-align: center;margin-top: 29px;\">\r\n          <button (click)=\"submit()\"  class=\"btn\" >提交</button>\r\n          <span class=\"success\" *ngIf=\"submit_num == 1\">!提交成功，{{time}}秒后返回主页</span>\r\n          <span class=\"success\" *ngIf=\"submit_num == 0\">!请正确填写带有*的信息</span>\r\n\r\n        </div>\r\n\r\n      </div>\r\n\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -828,6 +874,8 @@ module.exports = "<div class=\"document\">\r\n  <table></table>\r\n  <div class=
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DocumentComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__control_service__ = __webpack_require__("../../../../../src/app/control.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -839,40 +887,68 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var DocumentComponent = /** @class */ (function () {
-    function DocumentComponent(route) {
+    function DocumentComponent(route, control) {
         this.route = route;
+        this.control = control;
+        // client = {
+        //   product: '综合机',
+        //   amount: '',
+        //   name: '',
+        //   company: '',
+        //   email: '',
+        //   phone: '',
+        //   city: '',
+        //   state: '',
+        //   other: '',
+        // };
         this.client = {
-            product: '综合机',
-            amount: '',
-            name: '',
-            company: '',
+            product_name: '综合机',
+            product_num: 0,
+            user_name: '',
+            company_name: '',
             email: '',
             phone: '',
             city: '',
-            state: '',
-            other: '',
+            country: '',
+            remark: '',
         };
+        this.url = 'http://192.168.1.13/homepage/backend/web/api/enquiry/set-enquiry';
         this.tab = 1;
-        this.time = 3;
         this.submit_num = -1;
     }
     DocumentComponent.prototype.change_tab = function (num) {
         this.tab = num;
     };
+    DocumentComponent.prototype.post_form = function () {
+        var data = new __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* URLSearchParams */]();
+        for (var key in this.client) {
+            this.client[key].length > 0 && data.append(key, this.client[key]);
+        }
+        // console.log(data);
+        this.control.postData(this.url, data).then(function () {
+            console.log('success!');
+        });
+    };
     DocumentComponent.prototype.submit = function () {
         var _this = this;
         if (this.tab == 1) {
-            if (this.client.phone != '' && this.client.name != '' && this.client.city != '') {
-                setTimeout(function () { _this.route.navigate(['/home']); }, 3000);
+            if (this.client.phone != '' && this.client.user_name != '' && this.client.city != '') {
+                setTimeout(function () {
+                    _this.route.navigate(['/home']);
+                }, 3000);
                 this.submit_num = 1;
+                this.post_form();
             }
             else {
                 this.submit_num = 0;
             }
         }
         if (this.tab == 2) {
-            if (this.client.phone != '' && this.client.name != '' && this.client.city != '') {
+            if (this.client.phone != '' && this.client.user_name != '' && this.client.city != '') {
+                this.post_form();
                 this.route.navigate(['/download']);
             }
             else {
@@ -886,7 +962,7 @@ var DocumentComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/document/document.component.html"),
             styles: [__webpack_require__("../../../../../src/app/document/document.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */], __WEBPACK_IMPORTED_MODULE_2__control_service__["a" /* ControlService */]])
     ], DocumentComponent);
     return DocumentComponent;
 }());
@@ -917,7 +993,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/download/download.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"download\">\r\n  <table></table>\r\n  <!--<div class=\"title\">-->\r\n    <!--<div nz-row>-->\r\n      <!--<div nz-col [nzSpan]=\"8\" style=\"text-align: left;padding-left: 40px\">-->\r\n        <!--&lt;!&ndash;<img src=\"./assets/img/logo.png\" alt=\"thybot\">&ndash;&gt;-->\r\n      <!--</div>-->\r\n      <!--<div nz-col [nzSpan]=\"8\">-->\r\n        <!--<div nz-row >-->\r\n\r\n          <!--<div nz-col [nzSpan]=\"6\" [nzOffset]=\"6\" class=\"content\">-->\r\n            <!--<button class=\"tab-btn\" [class.tab-active]=\"tab == 1\" (click)=\"change_tab(1)\">询&nbsp;&nbsp;盘</button>-->\r\n          <!--</div>-->\r\n          <!--<div nz-col [nzSpan]=\"6\" class=\"content\">-->\r\n            <!--<button class=\"tab-btn\" [class.tab-active]=\"tab == 2\" (click)=\"change_tab(2)\">文档下载</button>-->\r\n          <!--</div>-->\r\n\r\n        <!--</div>-->\r\n      <!--</div>-->\r\n      <!--<div nz-col [nzSpan]=\"8\">-->\r\n      <!--</div>-->\r\n    <!--</div>-->\r\n  <!--</div>-->\r\n\r\n  <div nz-row style=\"margin-top: 8rem\">\r\n\r\n    <div nz-col [nzXl] = \"{span: 6, offset: 5}\"  [nzLg] = \"{span: 7, offset: 4}\" [nzMd] = \"{span: 8, offset: 3}\" [nzSm] = \"{span: 9, offset: 2}\" [nzXs] = \"{span: 20, offset: 2}\" class=\"container\">\r\n      <div class=\"title\">\r\n        今日热门文档（02月10日 00:00~15:27）\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n    </div>\r\n\r\n    <div nz-col [nzXl] = \"{span: 6, offset: 2}\"  [nzLg] = \"{span: 7, offset: 2}\" [nzMd] = \"{span: 8, offset: 2}\" [nzSm] = \"{span: 9, offset: 2}\" [nzXs] = \"{span: 20, offset: 2}\" class=\"container\">\r\n      <div class=\"title\">\r\n        本周热门文档（02月04日~02月10日）\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n      <div class=\"td\">\r\n        assert(value[, message])\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"download\">\r\n  <table></table>\r\n\r\n  <div nz-row style=\"margin-top: 8rem\">\r\n\r\n    <div nz-col [nzXl] = \"{span: 6, offset: 5}\"  [nzLg] = \"{span: 7, offset: 4}\" [nzMd] = \"{span: 8, offset: 3}\" [nzSm] = \"{span: 9, offset: 2}\" [nzXs] = \"{span: 20, offset: 2}\" class=\"container\">\r\n      <div class=\"title\">\r\n        今日热门文档（02月10日 00:00~15:27）\r\n      </div>\r\n      <div class=\"td\" *ngFor=\"let d of day\">\r\n        <a [href]=\"d.fileurl\"><p>{{d.filename}}</p></a>\r\n      </div>\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n    </div>\r\n\r\n    <div nz-col [nzXl] = \"{span: 6, offset: 2}\"  [nzLg] = \"{span: 7, offset: 2}\" [nzMd] = \"{span: 8, offset: 2}\" [nzSm] = \"{span: 9, offset: 2}\" [nzXs] = \"{span: 20, offset: 2}\" class=\"container\">\r\n      <div class=\"title\">\r\n        本周热门文档（02月04日~02月10日）\r\n      </div>\r\n      <div class=\"td\" *ngFor=\"let w of week\">\r\n        <a [href]=\"w.fileurl\"><p>{{w.filename}}</p></a>\r\n      </div>\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n      <!--<div class=\"td\">-->\r\n        <!--assert(value[, message])-->\r\n      <!--</div>-->\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -927,26 +1003,50 @@ module.exports = "<div class=\"download\">\r\n  <table></table>\r\n  <!--<div cl
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DownloadComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__control_service__ = __webpack_require__("../../../../../src/app/control.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var DownloadComponent = /** @class */ (function () {
-    function DownloadComponent() {
-        this.tab = 1;
+    function DownloadComponent(control) {
+        this.control = control;
+        this.url_day = 'http://192.168.1.13/homepage/backend/web/api/hot-documents/day-sort';
+        this.url_week = 'http://192.168.1.13/homepage/backend/web/api/hot-documents/week-sort';
+        this.url_times = 'http://192.168.1.13/homepage/backend/web/api/hot-documents/click-download';
     }
-    DownloadComponent.prototype.change_tab = function (num) {
-        this.tab = num;
+    DownloadComponent.prototype.ngOnInit = function () {
+        this.get_day();
+        this.get_week();
+    };
+    DownloadComponent.prototype.get_day = function () {
+        var _this = this;
+        this.control.getData(this.url_day).then(function (data) {
+            _this.day = data.data;
+            console.log(_this.day);
+        });
+    };
+    DownloadComponent.prototype.get_week = function () {
+        var _this = this;
+        this.control.getData(this.url_week).then(function (data) {
+            _this.week = data.data;
+            console.log(_this.week);
+        });
     };
     DownloadComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-home',
             template: __webpack_require__("../../../../../src/app/download/download.component.html"),
             styles: [__webpack_require__("../../../../../src/app/download/download.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__control_service__["a" /* ControlService */]])
     ], DownloadComponent);
     return DownloadComponent;
 }());
@@ -976,7 +1076,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"banner\" class=\"animated slideInRight\">\n  <!--<img [src]=\"banner_img\" >-->\n  <div class=\"swiper-container\" >\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\" >\n        <img src=\"./assets/img/home/banner1.jpg\" style=\"height: 92vh\">\n      </div>\n      <div class=\"swiper-slide\">\n        <img src=\"./assets/img/home/banner2.jpg\" style=\"height: 92vh\">\n      </div>\n      <div class=\"swiper-slide\">\n        <img src=\"./assets/img/home/banner3.jpg\" style=\"height: 92vh\">\n      </div>\n    </div>\n  </div>\n</div>\n\n<div style=\"position: fixed;bottom: 2rem;left: 48%;z-index: 888\" *ngIf=\"swiper\">\n  <div (click)=\"change_swiper(0)\"  class=\"point-btn\"  [class.point-active]=\"swiper.activeIndex == 0\"></div>\n\n  <div (click)=\"change_swiper(1)\" class=\"point-btn\"  [class.point-active]=\"swiper.activeIndex == 1\"></div>\n\n  <div (click)=\"change_swiper(2)\" class=\"point-btn\"  [class.point-active]=\"swiper.activeIndex == 2\"></div>\n</div>\n\n\n<div id=\"animate\" *ngIf=\"play == 1\" style=\"height: 92%\">\n  <img [src]=\"animate_img\" >\n</div>\n\n<div id=\"hide-animate\" *ngIf=\"play == 2\" style=\"height: 92%\">\n  <img src=\"./assets/img/home/banner1.jpg\" >\n</div>\n"
+module.exports = "<div id=\"banner\" class=\"animated slideInRight\">\n  <!--<img [src]=\"banner_img\" >-->\n  <div class=\"swiper-container\" >\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\" >\n        <img src=\"./assets/img/home/s25.jpg\" style=\"height: 92vh\">\n      </div>\n      <div class=\"swiper-slide\">\n        <img src=\"./assets/img/home/banner2.jpg\" style=\"height: 92vh\">\n      </div>\n      <div class=\"swiper-slide\">\n        <img src=\"./assets/img/home/banner3.jpg\" style=\"height: 92vh\">\n      </div>\n    </div>\n  </div>\n</div>\n\n<div style=\"position: fixed;bottom: 2rem;left: 48%;z-index: 888\" *ngIf=\"swiper\">\n  <div (click)=\"change_swiper(0)\"  class=\"point-btn\"  [class.point-active]=\"swiper.activeIndex == 0\"></div>\n\n  <div (click)=\"change_swiper(1)\" class=\"point-btn\"  [class.point-active]=\"swiper.activeIndex == 1\"></div>\n\n  <div (click)=\"change_swiper(2)\" class=\"point-btn\"  [class.point-active]=\"swiper.activeIndex == 2\"></div>\n</div>\n\n\n<div id=\"animate\" *ngIf=\"play == 1\" style=\"height: 92%\">\n  <img [src]=\"animate_img\" >\n</div>\n\n<div id=\"hide-animate\" *ngIf=\"play == 2\" style=\"height: 92%\">\n  <img src=\"./assets/img/home/s25.jpg\" >\n</div>\n"
 
 /***/ }),
 
@@ -1024,7 +1124,6 @@ var HomeComponent = /** @class */ (function () {
             './assets/img/home/s23.jpg',
             './assets/img/home/s24.jpg',
             './assets/img/home/s25.jpg',
-            './assets/img/home/banner1.jpg',
         ];
         this.animate_img = this.img_path[0];
     }
